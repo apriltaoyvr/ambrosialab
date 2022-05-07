@@ -1,0 +1,83 @@
+{
+  "section": {
+    "name": "Ambrosia Lab",
+    "subtitle": "Health + Wellness Research",
+    "about": "About Us",
+    "research": "Research",
+    "team": "Team",
+    "awards": "Awards",
+    "contact": "Contact"
+  },
+  "about": {
+    "subtitle": "Un design semplice ed intuitivo per un prodotto efficace",
+    "paragraph": [
+      {
+        "first": "La nostra azienda è in grado di fornire un’assistenza completa in tutte le fasi di sviluppo del progetto: validazione clinica delle formule ideate, messa a punto del prototipo, valutazioni di stabilità ed efficacia, formazione degli addetti responsabili della divulgazione scientifica.",
+        "second": "Ambrosialab rappresenta per le aziende committenti un partner esterno estremamente competente, che si avvale di un insieme di risorse, strumentazioni e tecnologie all’avanguardia proprie e dell’intera rete universitaria.",
+        "third": "Ambrosialab offre inoltre interventi di ricerca e sviluppo tramite i quali potrete disporre dell’intero know-how necessario alla realizzazione e alla commercializzazione del vostro prodotto finito."
+      }
+    ]
+  },
+  "activities": [
+    {
+      "title": "Cosmetics",
+      "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
+      "icon": ""
+    },
+    {
+      "title": "Supplements",
+      "description": "Active ingredients research and product design. Regulatory support.",
+      "icon": ""
+    },
+    {
+      "title": "Medical Devices",
+      "description": "Search and selection of raw materials with mechanism consistent with the definition of MD.",
+      "icon": ""
+    },
+    {
+      "title": "Testing",
+      "description": "Clinical evaluations on cosmetic products and supplements.",
+      "icon": ""
+    },
+    {
+      "title": "Patents",
+      "description": "Consultancy in the patents field, patent search and filling of patent applications.",
+      "icon": ""
+    },
+    {
+      "title": "Scientific Activity",
+      "description": "Contract researcher and scientific support in pharmaceutic, cosmetic and nutrition.",
+      "icon": ""
+    },
+    {
+      "title": "Regulation",
+      "description": "Regulatory assistance in pharmaceutical, cosmetic and nutritional fields.",
+      "icon": ""
+    }
+  ],
+  "team": [
+    {
+      "name": "Paola Ziosi",
+      "title": "R&D cosmesis Manager",
+      "description": ""
+    },
+    {
+      "sonia": "Sonia Molesini",
+      "title": "R&D supplements and MD Manager",
+      "description": ""
+    }
+  ],
+      "awards": [
+    {
+      "title": "Land and Water",
+      "description": "",
+      "year": "2005"
+    }
+  ],
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message"
+  }
+}
