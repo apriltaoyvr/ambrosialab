@@ -78,6 +78,14 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
   }
 
+  @font-face {
+    font-family: 'PP Supply Mono';
+    src: url('/fonts/PPSupplyMono-Regular.woff2') format('woff2'),
+         url('/fonts/PPSupplyMono-Regular.ttf') format('ttf'),
+         url('/fonts/PPSupplyMono-Regular.otf') format('otf');
+    font-weight: normal;
+  }
+
   /* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -103,7 +111,7 @@ background: linear-gradient(180deg, #ED4264 0%, #FFEDBC 100%);
   background: linear-gradient(
     135deg,
     hsl(339, 55.75%, 44.33%) 0%,
-    hsl(18, 92.36%, 74.3%) 100%
+    #de9272 100%
   );
     font-family: 'PP Supply Sans', 'Fira Code', Monospace;    
 }
@@ -111,7 +119,7 @@ background: linear-gradient(180deg, #ED4264 0%, #FFEDBC 100%);
   section {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   a {
@@ -120,7 +128,7 @@ background: linear-gradient(180deg, #ED4264 0%, #FFEDBC 100%);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0px 3px 6px hsl(2deg 46% 40%);
+    text-shadow: 0px 2px 4px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
@@ -128,6 +136,8 @@ background: linear-gradient(180deg, #ED4264 0%, #FFEDBC 100%);
   p {
     font-size: 1.15rem;
     font-weight: normal;
+        font-family: 'PP Supply Mono';
+
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
     
     @media screen and (min-width: 1200px) {
@@ -135,7 +145,7 @@ background: linear-gradient(180deg, #ED4264 0%, #FFEDBC 100%);
     }
 
         @media screen and (min-width: 1600px) {
-      font-size: 1.5rem;
+      font-size: 1.35rem;
     }
 
   }

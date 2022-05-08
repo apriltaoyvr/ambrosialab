@@ -9,14 +9,26 @@
     "contact": "Contact"
   },
   "about": {
-    "subtitle": "Un design semplice ed intuitivo per un prodotto efficace",
-    "paragraph": [
-      {
-        "first": "La nostra azienda è in grado di fornire un’assistenza completa in tutte le fasi di sviluppo del progetto: validazione clinica delle formule ideate, messa a punto del prototipo, valutazioni di stabilità ed efficacia, formazione degli addetti responsabili della divulgazione scientifica.",
-        "second": "Ambrosialab rappresenta per le aziende committenti un partner esterno estremamente competente, che si avvale di un insieme di risorse, strumentazioni e tecnologie all’avanguardia proprie e dell’intera rete universitaria.",
-        "third": "Ambrosialab offre inoltre interventi di ricerca e sviluppo tramite i quali potrete disporre dell’intero know-how necessario alla realizzazione e alla commercializzazione del vostro prodotto finito."
-      }
-    ]
+    "subtitle": "A simple and intuitive design is an effective design",
+    "paragraph": {
+      "first": "La nostra azienda è in grado di fornire un’assistenza completa in tutte le fasi di sviluppo del progetto: validazione clinica delle formule ideate, messa a punto del prototipo, valutazioni di stabilità ed efficacia, formazione degli addetti responsabili della divulgazione scientifica.",
+      "second": "Ambrosialab rappresenta per le aziende committenti un partner esterno estremamente competente, che si avvale di un insieme di risorse, strumentazioni e tecnologie all’avanguardia proprie e dell’intera rete universitaria.",
+      "third": "Ambrosialab offre inoltre interventi di ricerca e sviluppo tramite i quali potrete disporre dell’intero know-how necessario alla realizzazione e alla commercializzazione del vostro prodotto finito."
+    }
+  },
+  "partners": {
+    "first": {
+      "title": "Production Partners",
+      "subtitle": "For raw materials"
+    },
+    "second": {
+      "title": "Business Partners",
+      "subtitle": "Under an AmbrosiaLab licence"
+    },
+    "third": {
+      "title": "Production Partners",
+      "subtitle": "For finished products"
+    }
   },
   "activities": [
     {
@@ -67,7 +79,7 @@
       "description": ""
     }
   ],
-      "awards": [
+  "awards": [
     {
       "title": "Land and Water",
       "description": "",

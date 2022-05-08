@@ -3,23 +3,18 @@ import styled from 'styled-components';
 import ResearchItems from './ResearchItems';
 
 const StyledResearch = styled.section`
-  background: linear-gradient(
-    135deg,
-    #9358f7 0.87%,
-    #7b78f2 25.96%,
-    #6197ee 49.23%,
-    #45b5e9 74.93%,
-    #10d7e2 97.48%
-  );
-  padding: 0;
+  background: linear-gradient(135deg, #849f6975 0%, #73795d 100%),
+  url('/images/10.jpg');
+  background-size: cover;
+
   & h1,
   & h2,
   & h3 {
-    text-shadow: 0px 3px 6px hsl(213deg 50% 32%);
+    text-shadow: 0px 3px 6px hsl(73deg 16% 23%);
   }
 
   & p {
-    text-shadow: 0px 1px 3px hsl(213deg 50% 32%);
+    text-shadow: 0px 1px 3px hsl(73deg 16% 23%);
   }
 `;
 

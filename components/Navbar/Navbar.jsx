@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import { useTranslation } from 'next-i18next';
 
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Flags from './Flags';
 
@@ -24,13 +27,15 @@ const StyledNav = styled.nav`
     border-bottom: none;
     border-left: 2px dashed var(--fg);
     font-size: 1.25rem;
-    & .homebutton {
+    & .menu {
       display: none;
     }
   }
 `;
 
 const StyledLinks = styled.div`
+  display: flex;
+  flex-direction: column;
   text-shadow: 0px 1px 2px hsl(2deg 46% 42%);
   text-align: right;
   padding: 1rem;
@@ -52,37 +57,40 @@ const NavFooter = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-  @media screen and (max-width: 1200px) {
-    display: none;
-  }
+  padding: 1rem;
 `;
 
-const NavSocials = styled.div`
-  display: flex;
-  gap: 1rem;
-`;
+const EmptyButton = styled.button`
+  background: none;
+  border: none;
+`
 
-const Navbar = () => {
+const Navbar = ({ innerRef }) => {
   const { t } = useTranslation();
+  const router = useRouter();
 
   return (
     <StyledNav>
-      <FontAwesomeIcon icon={faBars} size='2x' className='homebutton' />
-      <StyledLinks className='link-wrapper'>
-        <p>Home</p>
-        <p>About</p>
-        <p>Research</p>
-        <p>Team</p>
-        <p>Awards</p>
-        <p>Contact</p>
+
+      <FontAwesomeIcon icon={faBars} size='2x' className='menu' />
+        <StyledLinks className='link-wrapper'>
+        <Link href='/'>Home</Link>
+        <Link href='#about'>
+          About
+          </Link>
+        <Link href='#research'>Research</Link>
+        <Link href='#team'>Team</Link>
+        <Link href='#awards'>Awards</Link>
+        <Link href='#contact'>Contact</Link>
       </StyledLinks>
+
+
       <NavFooter>
-        <NavSocials className='socials'>
-          <FontAwesomeIcon icon={faPhone} size='xl' />
-          <FontAwesomeIcon icon={faEnvelope} size='xl' />
-        </NavSocials>
-        <Flags />
+        <Link href='/' locale={router.locale === 'it' ? 'en' : 'it'}>
+          <EmptyButton>
+            <Flags/>
+          </EmptyButton>
+        </Link>
       </NavFooter>
     </StyledNav>
   );

@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 
-const ResearchItems = () => {
+const ResearchItems = (props) => {
   const { t } = useTranslation('common');
 
   return (
