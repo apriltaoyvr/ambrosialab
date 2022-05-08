@@ -1,5 +1,3 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
 import GlobalStyle from '../components/globalStyles';
 import Hero from '../components/Hero';
 import About from '../components/About/About';
@@ -8,6 +6,7 @@ import Team from '../components/Team/Team';
 import Awards from '../components/Awards';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export async function getServerSideProps({ locale }) {
   return {

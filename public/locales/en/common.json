@@ -16,11 +16,10 @@
       "third": "Ambrosialab also offers research and development interventions through which you can have all the know-how necessary for the creation and marketing of your finished product."
     }
   },
-  "partners": 
-    {
+  "partners": {
       "first": {
         "title": "Production Partners",
-        "subtitle": "For raw materials"
+        "subtitle": "Raw Materials"
       },
       "second": {
         "title": "Business Partners",
@@ -28,9 +27,9 @@
       },
       "third": {
         "title": "Production Partners",
-        "subtitle": "For finished products"
+        "subtitle": "Finished Products"
       }
-    },
+  },
   "activities": [
     {
       "title": "Cosmetics",
@@ -72,12 +71,14 @@
     {
       "name": "Paola Ziosi",
       "title": "R&D cosmesis Manager",
-      "description": ""
+      "description": "",
+      "image": ""
     },
     {
       "sonia": "Sonia Molesini",
       "title": "R&D supplements and MD Manager",
-      "description": ""
+      "description": "",
+      "image": ""
     }
   ],
   "awards": [

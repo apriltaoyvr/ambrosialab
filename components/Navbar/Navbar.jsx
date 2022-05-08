@@ -63,7 +63,10 @@ const NavFooter = styled.footer`
 const EmptyButton = styled.button`
   background: none;
   border: none;
-`
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 const Navbar = ({ innerRef }) => {
   const { t } = useTranslation();
@@ -71,24 +74,19 @@ const Navbar = ({ innerRef }) => {
 
   return (
     <StyledNav>
-
       <FontAwesomeIcon icon={faBars} size='2x' className='menu' />
-        <StyledLinks className='link-wrapper'>
-        <Link href='/'>Home</Link>
-        <Link href='#about'>
-          About
-          </Link>
-        <Link href='#research'>Research</Link>
-        <Link href='#team'>Team</Link>
-        <Link href='#awards'>Awards</Link>
-        <Link href='#contact'>Contact</Link>
+      <StyledLinks className='link-wrapper'>
+        <Link href='/#about'>{t('section.about')}</Link>
+        <Link href='/#research'>{t('section.research')}</Link>
+        <Link href='/#team'>{t('section.team')}</Link>
+        <Link href='/#awards'>{t('section.awards')}</Link>
+        <Link href='/#contact'>{t('section.contact')}</Link>
       </StyledLinks>
-
 
       <NavFooter>
         <Link href='/' locale={router.locale === 'it' ? 'en' : 'it'}>
           <EmptyButton>
-            <Flags/>
+            <Flags />
           </EmptyButton>
         </Link>
       </NavFooter>

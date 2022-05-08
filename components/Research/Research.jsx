@@ -1,9 +1,9 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
-import ResearchItems from './ResearchItems';
+import ResearchItem from './ResearchItem';
 
 const StyledResearch = styled.section`
-  background: linear-gradient(135deg, #849f6975 0%, #73795d 100%),
+  background: linear-gradient(135deg, #849f698d 0%, #73795d 100%),
   url('/images/10.jpg');
   background-size: cover;
 
@@ -20,11 +20,16 @@ const StyledResearch = styled.section`
 
 const Research = () => {
   const { t } = useTranslation('common');
-
   return (
     <StyledResearch>
-        <h1>{t('section.research')}</h1>
-        <ResearchItems />
+      <h1>{t('section.research')}</h1>
+      {t('activities', {returnObjects: true}).map((activity) => (
+        <ResearchItem
+          title={activity.title}
+          description={activity.description}
+          icon={activity.icon}
+        />
+      ))}
     </StyledResearch>
   );
 };

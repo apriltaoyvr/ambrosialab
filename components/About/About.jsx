@@ -23,12 +23,12 @@ const StyledAbout = styled.section`
 const MainWrapper = styled.main`
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  gap: 5rem;
-  
+  justify-content: center;
+  gap: 2rem;
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     justify-content: center;
+    gap: 5rem;
   }
 `;
 
@@ -43,22 +43,21 @@ const ParagraphWrapper = styled.article`
 
   @media screen and (min-width: 1200px) {
     max-width: 66%;
+    align-self: flex-start;
   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 33%;
+  @media screen and (min-width: 1600px) {
+    max-width: 50%;
   }
 `;
 
 const PartnerWrapper = styled.aside`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   gap: 2rem;
-
+  align-self: center;
   @media screen and (min-width: 1200px) {
     flex-direction: column;
-    justify-content: flex-start;
   }
 `;
 
@@ -92,9 +91,9 @@ const About = () => {
             description={t('partners.second.subtitle')}
           >
             <FlagWrapper>
-              <CircleFlag countryCode='it' height='30' />
-              <CircleFlag countryCode='kr' height='30' />
-              <CircleFlag countryCode='sn' height='30' />
+              <CircleFlag countryCode='it' height='25' />
+              <CircleFlag countryCode='kr' height='25' />
+              <CircleFlag countryCode='sn' height='25' />
             </FlagWrapper>
           </Partner>
           <Partner
@@ -103,11 +102,11 @@ const About = () => {
             description={t('partners.first.subtitle')}
           >
             <FlagWrapper>
-              <CircleFlag countryCode='it' height='30' />
-              <CircleFlag countryCode='us' height='30' />
-              <CircleFlag countryCode='ru' height='30' />
-              <CircleFlag countryCode='de' height='30' />
-              <CircleFlag countryCode='at' height='30' />
+              <CircleFlag countryCode='it' height='25' />
+              <CircleFlag countryCode='us' height='25' />
+              <CircleFlag countryCode='ru' height='25' />
+              <CircleFlag countryCode='de' height='25' />
+              <CircleFlag countryCode='at' height='25' />
             </FlagWrapper>
           </Partner>
           <Partner
@@ -116,10 +115,10 @@ const About = () => {
             description={t('partners.third.subtitle')}
           >
             <FlagWrapper>
-              <CircleFlag countryCode='it' height='30' />
-              <CircleFlag countryCode='de' height='30' />
+              <CircleFlag countryCode='it' height='25' />
+              <CircleFlag countryCode='de' height='25' />
 
-              <CircleFlag countryCode='ch' height='30' />
+              <CircleFlag countryCode='ch' height='25' />
             </FlagWrapper>
           </Partner>
         </PartnerWrapper>

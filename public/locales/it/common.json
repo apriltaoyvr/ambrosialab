@@ -2,14 +2,14 @@
   "section": {
     "name": "Ambrosia Lab",
     "subtitle": "Health + Wellness Research",
-    "about": "About Us",
-    "research": "Research",
-    "team": "Team",
-    "awards": "Awards",
-    "contact": "Contact"
+    "about": "Chi Siamo",
+    "research": "Ricerca",
+    "team": "Il Nostro Team",
+    "awards": "Riconscimenti",
+    "contact": "Contattaci"
   },
   "about": {
-    "subtitle": "A simple and intuitive design is an effective design",
+    "subtitle": "Un design semplice ed intuitivo per un prodotto efficace",
     "paragraph": {
       "first": "La nostra azienda è in grado di fornire un’assistenza completa in tutte le fasi di sviluppo del progetto: validazione clinica delle formule ideate, messa a punto del prototipo, valutazioni di stabilità ed efficacia, formazione degli addetti responsabili della divulgazione scientifica.",
       "second": "Ambrosialab rappresenta per le aziende committenti un partner esterno estremamente competente, che si avvale di un insieme di risorse, strumentazioni e tecnologie all’avanguardia proprie e dell’intera rete universitaria.",
@@ -18,16 +18,16 @@
   },
   "partners": {
     "first": {
-      "title": "Production Partners",
-      "subtitle": "For raw materials"
+      "title": "Partner Produttivi",
+      "subtitle": "di materie prime"
     },
     "second": {
-      "title": "Business Partners",
-      "subtitle": "Under an AmbrosiaLab licence"
+      "title": "Partner Commerciali",
+      "subtitle": "su licenza AmbrosiaLab"
     },
     "third": {
-      "title": "Production Partners",
-      "subtitle": "For finished products"
+      "title": "Partner Produttivi",
+      "subtitle": "per il prodotto finito"
     }
   },
   "activities": [
@@ -71,12 +71,14 @@
     {
       "name": "Paola Ziosi",
       "title": "R&D cosmesis Manager",
-      "description": ""
+      "description": "",
+      "image": ""
     },
     {
       "sonia": "Sonia Molesini",
       "title": "R&D supplements and MD Manager",
-      "description": ""
+      "description": "",
+      "image": ""
     }
   ],
   "awards": [

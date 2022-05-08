@@ -97,7 +97,7 @@ background: #ED4264;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: linear-gradient(180deg, #ED4264 0%, #FFEDBC 100%);  
+background:  #fc9994;  
     &:hover {
       background: #FFEDBC;
       filter: brightness(1.2);

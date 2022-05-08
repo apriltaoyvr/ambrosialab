@@ -7,7 +7,6 @@ const StyledPartner = styled.div`
   & p {
     text-align: center;
   }
-
 `;
 
 const ContentWrapper = styled.div`
@@ -16,14 +15,19 @@ const ContentWrapper = styled.div`
 
 const NumberWrapper = styled.h3`
   font-size: 2rem;
+  text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
+`;
+
+const InfoText = styled.p`
+  font-size: 1rem;
 `;
 
 const Partner = (props) => {
   return (
     <StyledPartner className='partner'>
       <ContentWrapper>
-        <h4>{props.title}</h4>
-        <p>{props.description}</p>
+          <InfoText>{props.title}</InfoText>
+          <InfoText>{props.description}</InfoText>
         <NumberWrapper>{props.number}</NumberWrapper>
       </ContentWrapper>
       {props.children}

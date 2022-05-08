@@ -1,14 +1,16 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 
-const ResearchItems = (props) => {
+const ResearchItem = (props) => {
   const { t } = useTranslation('common');
 
   return (
     <>
-      <h3>{t('activities[0].title')}</h3>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+      <img src={props.icon} alt="" />
     </>
   );
 };
 
-export default ResearchItems;
+export default ResearchItem;
