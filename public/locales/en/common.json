@@ -17,66 +17,103 @@
     }
   },
   "partners": {
-      "first": {
-        "title": "Production Partners",
-        "subtitle": "Raw Materials"
-      },
-      "second": {
-        "title": "Business Partners",
-        "subtitle": "Under an AmbrosiaLab licence"
-      },
-      "third": {
-        "title": "Production Partners",
-        "subtitle": "Finished Products"
-      }
+    "first": {
+      "title": "Production Partners",
+      "subtitle": "Raw Materials"
+    },
+    "second": {
+      "title": "Business Partners",
+      "subtitle": "Under an AmbrosiaLab licence"
+    },
+    "third": {
+      "title": "Production Partners",
+      "subtitle": "Finished Products"
+    }
   },
   "activities": [
     {
       "title": "Cosmetics",
       "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
-      "icon": ""
+      "icon": "🧴",
+      "info": [
+        "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota.",
+        "Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche.",
+        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
+        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati.",
+        "Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
+      ]
     },
     {
       "title": "Supplements",
       "description": "Active ingredients research and product design. Regulatory support.",
-      "icon": ""
+      "icon": "💊"
     },
     {
       "title": "Medical Devices",
       "description": "Search and selection of raw materials with mechanism consistent with the definition of MD.",
-      "icon": ""
+      "icon": "⚕️"
     },
     {
       "title": "Testing",
       "description": "Clinical evaluations on cosmetic products and supplements.",
-      "icon": ""
+      "icon": "🧪"
     },
     {
       "title": "Patents",
       "description": "Consultancy in the patents field, patent search and filling of patent applications.",
-      "icon": ""
+      "icon": "📋"
     },
     {
       "title": "Scientific Activity",
       "description": "Contract researcher and scientific support in pharmaceutic, cosmetic and nutrition.",
-      "icon": ""
+      "icon": "🥼"
     },
     {
       "title": "Regulation",
       "description": "Regulatory assistance in pharmaceutical, cosmetic and nutritional fields.",
-      "icon": ""
+      "icon": "⚖️"
     }
   ],
   "team": [
     {
       "name": "Paola Ziosi",
+      "title": "Responsabile R&D cosmesi",
+      "description": "",
+      "image": "ziosi.jpg"
+    },
+    {
+      "sonia": "Sonia Molesini",
+      "title": "Responsabile R&D integratori e MD",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "Eleonora Lodi",
+      "title": "Laboratorio sviluppo prototipi",
+      "description": "Eleonora Lodi, laureata in scienze e tecnologie dei prodotti erboristici dietetici e cosmetici. Si occupa della preparazione dei prodotti cosmetici.",
+      "image": ""
+    },
+    {
+      "name": "Silvia Bolognesi",
       "title": "R&D cosmesis Manager",
       "description": "",
       "image": ""
     },
     {
-      "sonia": "Sonia Molesini",
-      "title": "R&D supplements and MD Manager",
+      "name": "Stefano Manfredini",
+      "title": "R&D cosmesis Manager",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "Silvia Vertuani",
+      "title": "R&D cosmesis Manager",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "Francesco Rastrelli",
+      "title": "Comitato Scientifico",
       "description": "",
       "image": ""
     }

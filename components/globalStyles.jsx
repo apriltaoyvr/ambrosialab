@@ -86,23 +86,26 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
   }
 
-  /* Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-background: #ED4264;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-background:  #fc9994;  
-    &:hover {
-      background: #FFEDBC;
-      filter: brightness(1.2);
+    /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
   }
-}
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #ED4264;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background:  #fc9994;  
+      &:hover {
+        background: #FFEDBC;
+        filter: brightness(1.2);
+    }
+  }
+  html {
+      scroll-behavior: smooth;
+  }
 
   body {
     margin: 0;

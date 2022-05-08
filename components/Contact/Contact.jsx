@@ -37,7 +37,7 @@ const Contact = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledContact>
+    <StyledContact id='contact'>
       <h1>{t('section.contact')}</h1>
       <ContactSection>
         <ContactWrapper>

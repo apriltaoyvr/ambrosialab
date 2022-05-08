@@ -19,14 +19,17 @@ const NumberWrapper = styled.h3`
 `;
 
 const InfoText = styled.p`
-  font-size: 1rem;
+  font-size: 1.25rem;
+  media screen and (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Partner = (props) => {
   return (
     <StyledPartner className='partner'>
       <ContentWrapper>
-          <InfoText>{props.title}</InfoText>
+          <h3>{props.title}</h3>
           <InfoText>{props.description}</InfoText>
         <NumberWrapper>{props.number}</NumberWrapper>
       </ContentWrapper>

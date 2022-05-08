@@ -19,7 +19,7 @@ const Awards = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledAwards>
+    <StyledAwards id='awards'>
       <h1>{t('section.awards')}</h1>
       <h2>This is a subtitle</h2>
     </StyledAwards>

@@ -1,6 +1,5 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
-import Navbar from './Navbar/Navbar';
 
 const StyledHero = styled.header`
   background: linear-gradient(
@@ -110,7 +109,6 @@ const Hero = () => {
       <VideoWrapper autoPlay muted loop>
         <source src='/video/sour-cherry-blossom.mp4' type='video/mp4'></source>
       </VideoWrapper>
-      <Navbar />
       <TextWrapper>
         <TitleHero>{t('section.name')}</TitleHero>
         <SubtitleHero>{t('section.subtitle')}</SubtitleHero>

@@ -5,7 +5,6 @@ import { CircleFlag } from 'react-circle-flags';
 import Partner from './Partner';
 
 const StyledAbout = styled.section`
-  border-top: 1px dashed var(--fg);
   gap: 2rem;
 
   & h1,
@@ -42,12 +41,12 @@ const ParagraphWrapper = styled.article`
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 66%;
+    max-width: 33%;
     align-self: flex-start;
   }
 
   @media screen and (min-width: 1600px) {
-    max-width: 50%;
+    max-width: 25%;
   }
 `;
 
@@ -73,7 +72,7 @@ const About = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <hgroup>
         <h1>{t('section.about')}</h1>
         <h2>{t('about.subtitle')}</h2>
