@@ -27,7 +27,6 @@ const Team = () => {
   const { t } = useTranslation('common');
 
   return (
-    <>
       <SectionWrapper id='team'>
         <h1>{t('section.team')}</h1>
         <TeamWrapper>
@@ -42,7 +41,6 @@ const Team = () => {
           ))}
         </TeamWrapper>
       </SectionWrapper>
-    </>
   );
 };
 

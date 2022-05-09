@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import { motion } from 'framer-motion';
 
 const TeamContent = styled.aside`
   display: flex;
@@ -13,6 +14,12 @@ const TeamContent = styled.aside`
   &:last-child {
     grid-column-start: 2;
   }
+`;
+
+const Description = styled.p`
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: justify;
 `;
 
 const customStyles = {
@@ -40,11 +47,8 @@ const customStyles = {
   },
 };
 
-const Description = styled.p`
-  font-size: 1.2rem;
-  padding: 1rem;
-  text-align: justify;
-`
+
+
 const Team = (props) => {
   const { t } = useTranslation('common');
 
@@ -94,17 +98,17 @@ const Team = (props) => {
   return (
     <TeamContent>
       <Portrait onClick={openModal} />
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel='Modal'
-        style={customStyles}
-      >
-        <PortraitExtend />
-        <h3>{props.name}</h3>
-        <h4>{props.title}</h4>
-        <Description>{props.description}</Description>
-      </Modal>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel='Modal'
+          style={customStyles}
+        >
+          <PortraitExtend />
+          <h3>{props.name}</h3>
+          <h4>{props.title}</h4>
+          <Description>{props.description}</Description>
+        </Modal>
       <hgroup>
         <h3>{props.name}</h3>
         <h4>{props.title}</h4>
