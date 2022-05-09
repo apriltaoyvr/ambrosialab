@@ -71,7 +71,7 @@ const Navbar = ({ innerRef }) => {
       }
 
       @media screen and (min-width: 1600px) {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
   `;
@@ -102,6 +102,7 @@ const Navbar = ({ innerRef }) => {
       <StyledLinks>
         <Link href='/#about'>{t('section.about')}</Link>
         <Link href='/#research'>{t('section.research')}</Link>
+        <Link href='/#story'>{t('section.story')}</Link>
         <Link href='/#team'>{t('section.team')}</Link>
         <Link href='/#awards'>{t('section.awards')}</Link>
         <Link href='/#contact'>{t('section.contact')}</Link>

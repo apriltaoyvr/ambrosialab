@@ -116,6 +116,7 @@ const GlobalStyle = createGlobalStyle`
     hsl(339, 55.75%, 44.33%) 0%,
     #de9272 100%
   );
+  background-attachment: fixed;
     font-family: 'PP Supply Sans', 'Fira Code', Monospace;    
 }
 
@@ -131,56 +132,89 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0px 2px 4px hsl(2deg 46% 40%);
+    text-shadow: 0px 4px 8px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
 
   p {
-    font-size: 1.15rem;
+    font-size: 1.75rem;
     font-weight: normal;
-        font-family: 'PP Supply Mono';
-
+    font-family: 'PP Supply Mono';
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
     
     @media screen and (min-width: 1200px) {
-      font-size: 1.25rem;
+      font-size: 2rem;
     }
 
-        @media screen and (min-width: 1600px) {
-      font-size: 1.35rem;
+        @media screen and (min-width: 1920px) {
+      font-size: 2.15rem;
     }
 
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 
-        @media screen and (min-width: 450px) {
-      font-size: 4.5rem;
-    }
-
-    @media screen and (min-width: 720px) {
-      font-size: 5rem;
-    }
-
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 450px) {
       font-size: 5.5rem;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 720px) {
       font-size: 6rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 6.5rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 7rem;
     }
 
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 3rem;
     font-weight: normal;
+    padding-bottom: 1rem;
 
     @media screen and (min-width: 450px) {
-      font-size: 2.25rem;
+      font-size: 3.5rem;
     }
+
+    @media screen and (min-width: 720px) {
+      font-size: 3.75rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 4rem;
+    }
+    @media screen and (min-width: 1600px) {
+      font-size: 4.25rem;
+    }
+  }
+  
+  h3 {
+    font-weight: normal;
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 720px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 3.25rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 3.75rem;
+    }
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 2rem;
 
     @media screen and (min-width: 720px) {
       font-size: 2.5rem;
@@ -189,45 +223,30 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (min-width: 1200px) {
       font-size: 2.75rem;
     }
+
     @media screen and (min-width: 1600px) {
       font-size: 3rem;
     }
   }
   
-  h3 {
+  h5 {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 
     @media screen and (min-width: 720px) {
-      font-size: 1.75rem;
-    }
-
-    @media screen and (min-width: 1200px) {
       font-size: 2rem;
     }
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       font-size: 2.25rem;
     }
-  }
-
-  h4 {
-    font-weight: normal;
-    font-size: 1.25rem;
-
-    @media screen and (min-width: 720px) {
-      font-size: 1.4rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 1.66rem;
-    }
 
     @media screen and (min-width: 1600px) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
-  
+
+
 `;
 
 export default GlobalStyle;

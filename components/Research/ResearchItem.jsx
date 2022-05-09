@@ -1,18 +1,14 @@
 import { useTranslation } from 'next-i18next';
-import { useState } from 'react';
 import styled from 'styled-components';
 
 const ResearchCard = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
-  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: space-around;
 
-  background: rgba(131, 182, 170, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  border: 1px dashed rgba(207, 244, 205, 0.25);
+  border: 1px solid rgba(244, 205, 221, 0.5);
 
   & p {
     align-self: center;
@@ -21,41 +17,49 @@ const ResearchCard = styled.div`
     @media screen and (min-width: 1200px) {
       max-width: unset;
     }
-
-    & h2 {
-      font-size: 1.15rem;
-      @media screen and (min-width: 1600px) {
-        font-size: 1.25rem;
-      }
-    }
   }
+
+  &:last-child {
+    grid-row-start: 3;
+    grid-column: 2 / 3;
+  }
+
 `;
 const ResearchIcon = styled.h2`
   font-size: 5rem;
-  text-shadow: 2px 2px 12px hsl(73deg 16% 23%);
+  text-shadow: 2px 4px 12px hsl(2deg 46% 40%);
+`;
+
+const Description = styled.p`
+  font-size: 1.75rem;
+`;
+
+const StyledButton = styled.button`
+  background: rgba(144, 108, 147, 0.1);
+  color: var(--fg);
+  border: 1px solid rgba(244, 205, 221, 0.5);
+  padding: 0.5rem;
+  width: 75%;
+  align-self: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ResearchItem = (props) => {
   const { t } = useTranslation('common');
-  const [isHover, setIsHover] = useState(false);
-  const toggleHover = () => {
-    setIsHover(!isHover);
-  };
 
   return (
-    <ResearchCard
-      key={props.key}
-      onMouseEnter={toggleHover}
-      onMouseLeave={toggleHover}
-    >
-      {isHover ? (
-        <p>{props.description}</p>
-      ) : (
-        <hgroup>
-          <ResearchIcon>{props.icon}</ResearchIcon>
-          <h2>{props.title}</h2>
-        </hgroup>
-      )}
+    <ResearchCard>
+      <hgroup>
+        <ResearchIcon>{props.icon}</ResearchIcon>
+        <h4>{props.title}</h4>
+      </hgroup>
+      <Description>{props.description}</Description>
+      <StyledButton>
+        <p>{t('utility.learn')}</p>
+      </StyledButton>
     </ResearchCard>
   );
 };

@@ -1,9 +1,13 @@
 {
+  "utility": {
+    "learn": "Scopri di più"
+  },
   "section": {
     "name": "Ambrosia Lab",
     "subtitle": "Health + Wellness Research",
     "about": "Chi Siamo",
     "research": "Ricerca",
+    "story": "Storia dell’azienda",
     "team": "Il Nostro Team",
     "awards": "Riconscimenti",
     "contact": "Contattaci"
@@ -14,6 +18,16 @@
       "first": "La nostra azienda è in grado di fornire un’assistenza completa in tutte le fasi di sviluppo del progetto: validazione clinica delle formule ideate, messa a punto del prototipo, valutazioni di stabilità ed efficacia, formazione degli addetti responsabili della divulgazione scientifica.",
       "second": "Ambrosialab rappresenta per le aziende committenti un partner esterno estremamente competente, che si avvale di un insieme di risorse, strumentazioni e tecnologie all’avanguardia proprie e dell’intera rete universitaria.",
       "third": "Ambrosialab offre inoltre interventi di ricerca e sviluppo tramite i quali potrete disporre dell’intero know-how necessario alla realizzazione e alla commercializzazione del vostro prodotto finito."
+    },
+    "story": {
+      "paragraph": {
+        "first": "Ambrosialab is a research spinoff of the University of Ferrara, which holds 10% of the share capital. The R&D works in the field of life sciences and biotechnology, founded in 2003, on the initiative of Prof. Stefano Manfredini and Prof. Silvia Vertuani, after undergoing university incubation is now placed at its own facility near the University campus of Life, Health and Environment Sciences of the city of Ferrara.",
+        "second": "The location of the new headquarters, open in 2010, allows an effective interchange between the activities of research and development conducted by his staff, and the activities of basic research at the University, which acts as a driving force for technological innovation.",
+        "third": "Ambrosialab develops and produces prototypes of health products and drugs, in the field of degenerative diseases, aging and maintenance of health, from innovative concepts, often unique, patented, passing from their design to the implementation of small pilot production, required for the checks of efficacy and stability. The prototypes are then developed and marketed by partner companies.",
+        "fourth": "Ambrosialab supports, through Scholarships and Research Grants, the basic university research in the area of ​​oxidative stress and its related products. The strength of Ambrosialab resides in the network of industrial productive partnerships, in Italy and abroad.",
+        "fifth": "Ambrosialab also takes care of the QA steps and efficiency, necessary for the production phase and commercial products developed at its partner companies. These networks are increasingly consolidated over the years of activity.",
+        "sixth": "Its prime location in the university area but close to the motorway link and rail, are ideal for an effective technological exchange to its institutional partners."
+      }
     }
   },
   "partners": {
@@ -32,103 +46,150 @@
   },
   "activities": [
     {
-      "title": "Cosmetics",
-      "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
+      "title": "Cosmetici",
+      "description": "Ricerca e sviluppo di nuovi ingredienti, prototipi e prodotti finiti. Assistenza regolatoria.",
       "icon": "🧴",
-            "info": [
-              "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota.",
-              "Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche.",
-              "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
-              "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati.",
-              "Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
-            ]
+      "info": [
+        "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota.",
+        "Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche.",
+        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
+        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati.",
+        "Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
+      ]
     },
     {
-      "title": "Supplements",
-      "description": "Active ingredients research and product design. Regulatory support.",
-      "icon": "💊"
+      "title": "Integratori e alimenti funzionali",
+      "description": "Ricerca di ingredienti attivi e progettazione del prodotto. Assistenza regolatoria.",
+      "icon": "💊",
+      "info": [
+        "Ricerca e selezione di ingredienti attivi finalizzata alla progettazione del prodotto e alla valorizzazione di sinergie tra gli ingredienti funzionali.",
+        "Supporto scientifico su base bibliografica degli effetti vantati dal prodotto.",
+        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
+        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati."
+      ]
     },
     {
-      "title": "Medical Devices",
-      "description": "Search and selection of raw materials with mechanism consistent with the definition of MD.",
-      "icon": "⚕️"
+      "title": "Dispositivi Medici",
+      "description": "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM.",
+      "icon": "⚕️",
+      "info": [
+        "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM, finalizzata alla progettazione e sviluppo di prototipi formulativi (forme topiche).",
+        "Valutazione clinica su base bibliografica per la redazione del fascicolo tecnico."
+      ]
     },
     {
       "title": "Testing",
-      "description": "Clinical evaluations on cosmetic products and supplements.",
-      "icon": "🧪"
+      "description": "Valutazioni cliniche su prodotti cosmetici e integratori.",
+      "icon": "🧪",
+      "info": [
+        "Valutazioni cliniche su prodotti cosmetici e integratori, in particolare: valutazioni di efficacia (idratazione, sebometria, azione lenitiva, elasticità, collagene cutaneo, capacità antiossidante), valutazioni di sicurezza (patch test, PAO, nichel test), test d’uso domiciliari su un panel di consumatori opportunamente selezionato.",
+        "Valutazioni in vitro per fornire informazioni relative al profilo di sicurezza e funzionalità del prodotto cosmetico finito, in particolare analisi microbiologiche e studi di stabilità, utili soprattutto nella fase di sviluppo del prodotto o come test di screening sulle materie prime al fine di selezionare il principio attivo con il miglior profilo di tollerabilità ed efficacia.",
+        "Elaborazione e messa appunto di protocolli specifici e personalizzati in vitro e in vivo per la valutazione di efficacia di cosmetici e integratori.",
+        "Valutazione del fattore di protezione solare (SPF) in vivo e UVA in vitro secondo protocollo ISO.",
+        "Esecuzione di analisi e prove per il controllo di qualità, in particolare test in vitro per la valutazione della capacità antiossidante di materie prime e prodotti finiti."
+      ]
     },
     {
-      "title": "Patents",
-      "description": "Consultancy in the patents field, patent search and filling of patent applications.",
-      "icon": "📋"
+      "title": "Brevetti",
+      "description": "Supporto scientifico alla redazione di domande di brevetto, consulenza scientifica su brevetti, ricerca brevetti.",
+      "icon": "📋",
+      "info": [
+        "Consulenza in campo brevettuale, con particolare riferimento alla componente tecnico-scientifica, comprendente redazione di brevetti, assistenza in controversie per violazione, consulenze tecniche."
+      ]
     },
     {
-      "title": "Scientific Activity",
-      "description": "Contract researcher and scientific support in pharmaceutic, cosmetic and nutrition.",
-      "icon": "🥼"
+      "title": "Attività scientifica",
+      "description": "Ricerca a contratto e supporto scientifico farmaceutico, cosmetico e nutrizionale.",
+      "icon": "🥼",
+      "info": [
+        "Consulenza e ricerca bibliografica per supporto scientifico in ambito farmaceutico, cosmetico e nutrizionale per la compilazione di razionali, valutazioni cliniche, dossier tecnici, materiale per la comunicazione scientifica."
+      ]
     },
     {
-      "title": "Regulation",
-      "description": "Regulatory assistance in pharmaceutical, cosmetic and nutritional fields.",
-      "icon": "⚖️"
+      "title": "Attività regolatoria",
+      "description": "Assistenza regolatoria in campo farmaceutico, cosmetico e nutrizionale.",
+      "icon": "⚖️",
+      "info": [
+        "Consulenza sugli aspetti regolatori relativi a tutti gli aspetti riguardanti la produzione e commercializzazione di prodotti cosmetici (Regolamento (CE) n. 1223/2009 del Parlamento europeo e del Consiglio, del 30 novembre 2009, sui prodotti cosmetici e relativi aggiornamenti), compresa notifica dei prodotti cosmetici sul portale europeo e la valutazione della sicurezza dei prodotti cosmetici con redazione di Relazione sulla Sicurezza del Prodotto Cosmetico (CPSR) e Product Information File (PIF) come previsto dal Reg. Regolamento (CE) n. 1223/2009."
+      ]
     }
   ],
   "team": [
     {
       "name": "Paola Ziosi",
       "title": "Responsabile R&D cosmesi",
-      "description": "",
+      "description": "Paola Ziosi, laureata nel 1999 in Chimica e Tecnologia farmaceutiche e specializzata in Scienze Cosmetiche nel 2002, attualmente è responsabile del laboratorio di ricerca e sviluppo di Ambrosialab",
       "image": "ziosi.jpg"
-    }, 
+    },
     {
-      "sonia": "Sonia Molesini",
+      "name": "Sonia Molesini",
       "title": "Responsabile R&D integratori e MD",
-      "description": "",
-      "image": ""
+      "description": "Laureata in Chimica e Tecnologia Farmaceutiche, ha conseguito un Master in Scienze Forensi ed è specializzata nella valutazione della sicurezza cosmetica. Attualmente si occupa delle attività regolatorie, della progettazione e realizzazione dei test di efficacia e della consulenza scientifica",
+      "image": "molesini.jpg"
     },
     {
       "name": "Eleonora Lodi",
       "title": "Laboratorio sviluppo prototipi",
       "description": "Eleonora Lodi, laureata in scienze e tecnologie dei prodotti erboristici dietetici e cosmetici. Si occupa della preparazione dei prodotti cosmetici.",
-      "image": ""
+      "image": "lodi.jpg"
     },
     {
       "name": "Silvia Bolognesi",
-      "title": "R&D cosmesis Manager",
-      "description": "",
-      "image": ""
+      "title": "Responsabile amministrativa",
+      "description": "Laureata in Economia e Commercio presso l’Università degli Studi di Bologna, in Ambrosialab si occupa di amministrazione, gestione del personale, rapporti clienti e fornitori.",
+      "image": "bolognesi.jpg"
     },
     {
       "name": "Stefano Manfredini",
-      "title": "R&D cosmesis Manager",
-      "description": "",
-      "image": ""
+      "title": "Socio Fondatore e membro del Comitato Scientifico",
+      "description": "Stefano Manfredini è professore di chimica farmaceutica e tossicologica, Direttore del Master in Scienza e Tecnologia Cosmetiche presso l’Università di Ferrara, Italia.",
+      "image": "manfredini.jpg"
     },
     {
       "name": "Silvia Vertuani",
-      "title": "R&D cosmesis Manager",
-      "description": "",
-      "image": ""
+      "title": "Socio Fondatore e membro del Comitato Scientifico",
+      "description": "Silvia Vertuani, Dottore di Ricerca in Scienze Cosmetiche, Specialista in Scienze e Tecnologie Cosmetiche, Professore Associato presso la cattedra di Chimica Farmaceutica e Tossicologica, dell’Università di Ferrara, Facoltà di Farmacia.",
+      "image": "vertuani.jpg"
     },
     {
       "name": "Francesco Rastrelli",
-      "title": "Comitato Scientifico",
-      "description": "",
-      "image": ""
+      "title": "Membro del Comitato Scientifico",
+      "description": "Il comitato scientifico svolge ruolo di monitoraggio al fine del mantenimento di elevati standard qualitativi nei processi di gestione aziendale e di indirizzo scientifico-tecnologico in aderenza ai trend del mercato cosmetico e nutrizionale.",
+      "image": "rastrelli.jpg"
     }
   ],
   "awards": [
     {
-      "title": "Land and Water",
+      "title": "Premio provinciale imprese eccellenti",
       "description": "",
       "year": "2005"
+    },
+    {
+      "title": "Giornata della riconoscenza provinciale",
+      "description": "",
+      "year": "2006"
+    },
+    {
+      "title": "Premio “Mauro Prevedello” al lavoro",
+      "description": "",
+      "year": "2006"
+    },
+    {
+      "title": "Repertorio provinciale imprese eccellenti",
+      "description": "",
+      "year": "2011 "
+    },
+    {
+      "title": "Premio SICC – Luigi Carinelli",
+      "description": "Miglor startup universitaria",
+      "year": "2015"
     }
   ],
   "contact": {
-    "name": "Name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message"
+    "name": "Nome e Cognome",
+    "email": "La tua Email",
+    "subject": "Oggetto",
+    "message": "Messagio",
+    "button": "Invia Messaggio"
   }
 }
