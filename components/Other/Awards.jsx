@@ -29,7 +29,7 @@ const Awards = () => {
       <h1>{t('section.awards')}</h1>
       <AwardsWrapper>
         {t('awards', { returnObjects: true }).map((award) => (
-          <div>
+          <div key={award.id}>
             <h4>{award.title}</h4>
             <AwardDesc>{award.description}</AwardDesc>
             <AwardDesc>{award.year}</AwardDesc>

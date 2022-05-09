@@ -22,6 +22,10 @@ const ResearchCard = styled.div`
     }
   }
 
+  &:last-child {
+    grid-column-start: 2;
+  }
+
   &:hover {
     border: 1px solid #f9e6ee;
     box-shadow: 0px 0px 10px rgba(244, 205, 221, 0.25);

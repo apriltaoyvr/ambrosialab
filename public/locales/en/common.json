@@ -48,7 +48,7 @@
     {
       "title": "Cosmetics",
       "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
-      "icon": "🧴",
+      "icon": "💅",
       "info": "The consultancy on cosmetic products includes the execution of basic analyzes on raw materials and the creation of prototypes and finished products, up to the realization of the final formulation with the commissioning of the pilot test Thanks to a work team, heterogeneous in experience and professional training, the product development project is followed in all its facets, chemical, microbiological and practical. In particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. Scientific assistance for the development of customized applications and patented products. The technical skills acquired in the field of UV protection allow 360 ° assistance in the development of solar products."
     },
     {
@@ -90,6 +90,18 @@
   ],
   "team": [
     {
+      "name": "Stefano Manfredini",
+      "title": "Founder + Member of the Scientific Committee",
+      "description": "Stefano Manfredini is a professor of pharmaceutical chemistry and toxicology, Director of the Master in Cosmetic Science and Technology at the University of Ferrara, Italy.",
+      "image": "manfredini.jpg"
+    },
+    {
+      "name": "Silvia Vertuani",
+      "title": "Founder + Member of the Scientific Committee",
+      "description": "Silvia Vertuani, Ph.D. in Cosmetic Science, Specialist in Cosmetic Science and Technology, Associate Professor at the Department of Pharmaceutical Chemistry and Toxicology, University of Ferrara, Faculty of Pharmacy.",
+      "image": "vertuani.jpg"
+    },
+    {
       "name": "Paola Ziosi",
       "title": "R&D Cosmetics Manager",
       "description": "Paola Ziosi, graduated in 1999 in Chemistry and Pharmaceutical Technology and specialized in Cosmetic Science in 2002, is currently in charge of research and development laboratory of Ambrosialab.",
@@ -112,18 +124,6 @@
       "title": "Administrative Manager",
       "description": "Graduated in Economics from the University of Bologna, in Ambrosialab deals with administration, personnel management, customer and supplier relationships.",
       "image": "bolognesi.jpg"
-    },
-    {
-      "name": "Stefano Manfredini",
-      "title": "Founder + Member of the Scientific Committee",
-      "description": "Stefano Manfredini is a professor of pharmaceutical chemistry and toxicology, Director of the Master in Cosmetic Science and Technology at the University of Ferrara, Italy.",
-      "image": "manfredini.jpg"
-    },
-    {
-      "name": "Silvia Vertuani",
-      "title": "Founder + Member of the Scientific Committee",
-      "description": "Silvia Vertuani, Ph.D. in Cosmetic Science, Specialist in Cosmetic Science and Technology, Associate Professor at the Department of Pharmaceutical Chemistry and Toxicology, University of Ferrara, Faculty of Pharmacy.",
-      "image": "vertuani.jpg"
     },
     {
       "name": "Francesco Rastrelli",

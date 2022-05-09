@@ -15,7 +15,7 @@ const ItemWrapper = styled.div`
   @media screen and (min-width: 1200px) {
     display: grid;
     max-width: 75%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: 500px;
   }
 `;
@@ -33,7 +33,7 @@ const Research = () => {
             description={activity.description}
             info={activity.info}
             icon={activity.icon}
-            key={activity.key}
+            key={activity.id}
           />
         ))}
       </ItemWrapper>

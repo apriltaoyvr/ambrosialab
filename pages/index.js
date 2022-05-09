@@ -22,14 +22,14 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Research />
-      <Story/>
-      <Team />
-      <Awards/>
-      <Contact />
-      <Footer />
+        <Hero />
+        <About />
+        <Research />
+        <Story/>
+        <Team />
+        <Awards/>
+        <Contact />
+        <Footer />
     </>
   )
 }

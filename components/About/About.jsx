@@ -1,6 +1,5 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
-import Partner from './Partner';
 
 const StyledAbout = styled.section`
   gap: 2rem;

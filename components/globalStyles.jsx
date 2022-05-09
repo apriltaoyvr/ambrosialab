@@ -114,16 +114,18 @@ const GlobalStyle = createGlobalStyle`
   background: linear-gradient(
     135deg,
     hsl(339, 55.75%, 44.33%) 0%,
-    #de9272 100%
+    hsl(17.7, 62%, 65.8%) 100%
   );
   background-attachment: fixed;
-    font-family: 'PP Supply Sans', 'Fira Code', Monospace;    
+    font-family: 'PP Supply Sans', 'Fira Code', Monospace;  
+  overflow-x: hidden;
 }
 
   section {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+
   }
 
   a {
@@ -131,26 +133,26 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1, h2, h3 {
+  h1, h2  {
     text-shadow: 0px 2px 8px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
 
-  h4, h5, h6 {
-    text-shadow: 0px 2px 4px hsl(2deg 46% 40%);
+  h3, h4, h5, h6 {
+    text-shadow: 0px 1px 5px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: normal;
     font-family: 'PP Supply Mono';
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
     
     @media screen and (min-width: 1200px) {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
     }
   }
 

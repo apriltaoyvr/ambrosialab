@@ -9,13 +9,17 @@ const TeamWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  align-self: center;
   gap: 2rem;
 
   @media screen and (min-width: 1200px) {
     display: grid;
-    max-width: 90%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 400px);
+    grid-auto-rows: auto;
+  }
+
+  &:last-child {
+    grid-column-start: 2;
   }
 `;
 
@@ -33,7 +37,7 @@ const Team = () => {
               title={team.title}
               description={team.description}
               image={team.image}
-              key={team.key}
+              key={team.id}
             ></TeamMember>
           ))}
         </TeamWrapper>

@@ -48,7 +48,7 @@
     {
       "title": "Cosmetici",
       "description": "Ricerca e sviluppo di nuovi ingredienti, prototipi e prodotti finiti. Assistenza regolatoria.",
-      "icon": "🧴",
+      "icon": "💅",
       "info": "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche. In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.  Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati. Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
     },
     {
@@ -90,6 +90,18 @@
   ],
   "team": [
     {
+      "name": "Stefano Manfredini",
+      "title": "Socio Fondatore e membro del Comitato Scientifico",
+      "description": "Stefano Manfredini è professore di chimica farmaceutica e tossicologica, Direttore del Master in Scienza e Tecnologia Cosmetiche presso l’Università di Ferrara, Italia.",
+      "image": "manfredini.jpg"
+    },
+    {
+      "name": "Silvia Vertuani",
+      "title": "Socio Fondatore e membro del Comitato Scientifico",
+      "description": "Silvia Vertuani, Dottore di Ricerca in Scienze Cosmetiche, Specialista in Scienze e Tecnologie Cosmetiche, Professore Associato presso la cattedra di Chimica Farmaceutica e Tossicologica, dell’Università di Ferrara, Facoltà di Farmacia.",
+      "image": "vertuani.jpg"
+    },
+    {
       "name": "Paola Ziosi",
       "title": "Responsabile R&D cosmesi",
       "description": "Paola Ziosi, laureata nel 1999 in Chimica e Tecnologia farmaceutiche e specializzata in Scienze Cosmetiche nel 2002, attualmente è responsabile del laboratorio di ricerca e sviluppo di Ambrosialab",
@@ -112,18 +124,6 @@
       "title": "Responsabile amministrativa",
       "description": "Laureata in Economia e Commercio presso l’Università degli Studi di Bologna, in Ambrosialab si occupa di amministrazione, gestione del personale, rapporti clienti e fornitori.",
       "image": "bolognesi.jpg"
-    },
-    {
-      "name": "Stefano Manfredini",
-      "title": "Socio Fondatore e membro del Comitato Scientifico",
-      "description": "Stefano Manfredini è professore di chimica farmaceutica e tossicologica, Direttore del Master in Scienza e Tecnologia Cosmetiche presso l’Università di Ferrara, Italia.",
-      "image": "manfredini.jpg"
-    },
-    {
-      "name": "Silvia Vertuani",
-      "title": "Socio Fondatore e membro del Comitato Scientifico",
-      "description": "Silvia Vertuani, Dottore di Ricerca in Scienze Cosmetiche, Specialista in Scienze e Tecnologie Cosmetiche, Professore Associato presso la cattedra di Chimica Farmaceutica e Tossicologica, dell’Università di Ferrara, Facoltà di Farmacia.",
-      "image": "vertuani.jpg"
     },
     {
       "name": "Francesco Rastrelli",
