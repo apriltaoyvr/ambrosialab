@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
   border-top: 1px dotted var(--fg);
 
   & p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 

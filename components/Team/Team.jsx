@@ -7,14 +7,15 @@ const SectionWrapper = styled.section`
 
 const TeamWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
+  gap: 2rem;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    max-width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 `;
 

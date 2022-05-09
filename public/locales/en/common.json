@@ -46,150 +46,117 @@
   },
   "activities": [
     {
-      "title": "Cosmetici",
-      "description": "Ricerca e sviluppo di nuovi ingredienti, prototipi e prodotti finiti. Assistenza regolatoria.",
+      "title": "Cosmetics",
+      "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
       "icon": "🧴",
-      "info": [
-        "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota.",
-        "Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche.",
-        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
-        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati.",
-        "Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
-      ]
+      "info": "The consultancy on cosmetic products includes the execution of basic analyzes on raw materials and the creation of prototypes and finished products, up to the realization of the final formulation with the commissioning of the pilot test Thanks to a work team, heterogeneous in experience and professional training, the product development project is followed in all its facets, chemical, microbiological and practical. In particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. Scientific assistance for the development of customized applications and patented products. The technical skills acquired in the field of UV protection allow 360 ° assistance in the development of solar products."
     },
     {
-      "title": "Integratori e alimenti funzionali",
-      "description": "Ricerca di ingredienti attivi e progettazione del prodotto. Assistenza regolatoria.",
+      "title": "Supplements and Food",
+      "description": "Active ingredients research and product design. Regulatory support.",
       "icon": "💊",
-      "info": [
-        "Ricerca e selezione di ingredienti attivi finalizzata alla progettazione del prodotto e alla valorizzazione di sinergie tra gli ingredienti funzionali.",
-        "Supporto scientifico su base bibliografica degli effetti vantati dal prodotto.",
-        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
-        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati."
-      ]
+      "info": "Research and selection of active ingredients aimed at product design and enhancement of synergies between functional ingredients. Scientific support on a bibliographic basis of the effects claimed by the product. In particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. Scientific assistance for the development of customized applications and patented products."
     },
     {
-      "title": "Dispositivi Medici",
-      "description": "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM.",
+      "title": "Medical Devices",
+      "description": "Search and selection of raw materials with mechanism consistent with the definition of MD.",
       "icon": "⚕️",
-      "info": [
-        "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM, finalizzata alla progettazione e sviluppo di prototipi formulativi (forme topiche).",
-        "Valutazione clinica su base bibliografica per la redazione del fascicolo tecnico."
-      ]
+      "info": "Research and selection of raw materials with a mechanism compatible with the definition of DM, aimed at the design and development of formulation prototypes (topical forms). Clinical evaluation on a bibliographic basis for the preparation of the technical file."
     },
     {
       "title": "Testing",
-      "description": "Valutazioni cliniche su prodotti cosmetici e integratori.",
+      "description": "Clinical evaluations on cosmetic products and supplements.",
       "icon": "🧪",
-      "info": [
-        "Valutazioni cliniche su prodotti cosmetici e integratori, in particolare: valutazioni di efficacia (idratazione, sebometria, azione lenitiva, elasticità, collagene cutaneo, capacità antiossidante), valutazioni di sicurezza (patch test, PAO, nichel test), test d’uso domiciliari su un panel di consumatori opportunamente selezionato.",
-        "Valutazioni in vitro per fornire informazioni relative al profilo di sicurezza e funzionalità del prodotto cosmetico finito, in particolare analisi microbiologiche e studi di stabilità, utili soprattutto nella fase di sviluppo del prodotto o come test di screening sulle materie prime al fine di selezionare il principio attivo con il miglior profilo di tollerabilità ed efficacia.",
-        "Elaborazione e messa appunto di protocolli specifici e personalizzati in vitro e in vivo per la valutazione di efficacia di cosmetici e integratori.",
-        "Valutazione del fattore di protezione solare (SPF) in vivo e UVA in vitro secondo protocollo ISO.",
-        "Esecuzione di analisi e prove per il controllo di qualità, in particolare test in vitro per la valutazione della capacità antiossidante di materie prime e prodotti finiti."
-      ]
+      "info": "Clinical evaluations on cosmetic products and supplements, in particular: efficacy evaluations (hydration, sebometry, soothing action, elasticity, skin collagen, antioxidant capacity), safety evaluations (patch test, PAO, nickel test), home use tests on an appropriately selected panel of consumers. In vitro evaluations to provide information relating to the safety profile and functionality of the finished cosmetic product, in particular microbiological analyzes and stability studies, especially useful in the product development phase or as a screening test on raw materials in order to select the active ingredient with the best tolerability and efficacy profile. Processing and setting up of specific and personalized protocols in vitro and in vivo for the evaluation of the efficacy of cosmetics and supplements. Evaluation of the sun protection factor (SPF) in vivo and UVA in vitro according to the ISO protocol. Execution of analyzes and tests for quality control, in particular in vitro tests for the evaluation of the antioxidant capacity of raw materials and finished products."
     },
     {
-      "title": "Brevetti",
-      "description": "Supporto scientifico alla redazione di domande di brevetto, consulenza scientifica su brevetti, ricerca brevetti.",
+      "title": "Patents",
+      "description": "Consultancy in the patents field, patent search and filling of patent applications.",
       "icon": "📋",
-      "info": [
-        "Consulenza in campo brevettuale, con particolare riferimento alla componente tecnico-scientifica, comprendente redazione di brevetti, assistenza in controversie per violazione, consulenze tecniche."
-      ]
+      "info": "Patent consultancy, with particular reference to the technical-scientific component, including drafting of patents, assistance in infringement disputes, technical consultancy."
     },
     {
-      "title": "Attività scientifica",
-      "description": "Ricerca a contratto e supporto scientifico farmaceutico, cosmetico e nutrizionale.",
+      "title": "Scientific Activities",
+      "description": "Contract researcher and scientific support in pharmaceutic, cosmetic and nutrition.",
       "icon": "🥼",
-      "info": [
-        "Consulenza e ricerca bibliografica per supporto scientifico in ambito farmaceutico, cosmetico e nutrizionale per la compilazione di razionali, valutazioni cliniche, dossier tecnici, materiale per la comunicazione scientifica."
-      ]
+      "info": "Consultancy and bibliographic research for scientific support in the pharmaceutical, cosmetic and nutritional fields for the compilation of rationales, clinical evaluations, technical dossiers, material for scientific communication."
     },
     {
-      "title": "Attività regolatoria",
-      "description": "Assistenza regolatoria in campo farmaceutico, cosmetico e nutrizionale.",
+      "title": "Regulations",
+      "description": "Regulatory assistance in pharmaceutical, cosmetical and nutritional fields.",
       "icon": "⚖️",
-      "info": [
-        "Consulenza sugli aspetti regolatori relativi a tutti gli aspetti riguardanti la produzione e commercializzazione di prodotti cosmetici (Regolamento (CE) n. 1223/2009 del Parlamento europeo e del Consiglio, del 30 novembre 2009, sui prodotti cosmetici e relativi aggiornamenti), compresa notifica dei prodotti cosmetici sul portale europeo e la valutazione della sicurezza dei prodotti cosmetici con redazione di Relazione sulla Sicurezza del Prodotto Cosmetico (CPSR) e Product Information File (PIF) come previsto dal Reg. Regolamento (CE) n. 1223/2009."
-      ]
+      "info": "Advice on regulatory aspects relating to all aspects relating to the production and marketing of cosmetic products (Regulation (EC) No. 1223/2009 of the European Parliament and of the Council, of 30 November 2009, on cosmetic products and related updates), including notification of cosmetic products on the European portal and the evaluation of the safety of cosmetic products with the preparation of the Cosmetic Product Safety Report (CPSR) and Product Information File (PIF) as required by Reg. Regulation (EC) no. 1223/2009."
     }
   ],
   "team": [
     {
       "name": "Paola Ziosi",
-      "title": "Responsabile R&D cosmesi",
-      "description": "Paola Ziosi, laureata nel 1999 in Chimica e Tecnologia farmaceutiche e specializzata in Scienze Cosmetiche nel 2002, attualmente è responsabile del laboratorio di ricerca e sviluppo di Ambrosialab",
+      "title": "R&D Cosmetics Manager",
+      "description": "Paola Ziosi, graduated in 1999 in Chemistry and Pharmaceutical Technology and specialized in Cosmetic Science in 2002, is currently in charge of research and development laboratory of Ambrosialab.",
       "image": "ziosi.jpg"
     },
     {
       "name": "Sonia Molesini",
-      "title": "Responsabile R&D integratori e MD",
-      "description": "Laureata in Chimica e Tecnologia Farmaceutiche, ha conseguito un Master in Scienze Forensi ed è specializzata nella valutazione della sicurezza cosmetica. Attualmente si occupa delle attività regolatorie, della progettazione e realizzazione dei test di efficacia e della consulenza scientifica",
+      "title": "R&D MD Manager",
+      "description": "Degree in Pharmaceutical Chemistry and Technology, Master in Forensic Sciences and specializes in the assessment of cosmetics safety. Currently is in charge of regulatory activities, the design and implementation of effective testing and scientific consultancy.",
       "image": "molesini.jpg"
     },
     {
       "name": "Eleonora Lodi",
-      "title": "Laboratorio sviluppo prototipi",
-      "description": "Eleonora Lodi, laureata in scienze e tecnologie dei prodotti erboristici dietetici e cosmetici. Si occupa della preparazione dei prodotti cosmetici.",
+      "title": "Prototype Development Manager",
+      "description": "Eleonora Lodi, graduated in sciences and technologies of dietary and herbal cosmetic products. She is responsible for the preparation of cosmetic products.",
       "image": "lodi.jpg"
     },
     {
       "name": "Silvia Bolognesi",
-      "title": "Responsabile amministrativa",
-      "description": "Laureata in Economia e Commercio presso l’Università degli Studi di Bologna, in Ambrosialab si occupa di amministrazione, gestione del personale, rapporti clienti e fornitori.",
+      "title": "Administrative Manager",
+      "description": "Graduated in Economics from the University of Bologna, in Ambrosialab deals with administration, personnel management, customer and supplier relationships.",
       "image": "bolognesi.jpg"
     },
     {
       "name": "Stefano Manfredini",
-      "title": "Socio Fondatore e membro del Comitato Scientifico",
-      "description": "Stefano Manfredini è professore di chimica farmaceutica e tossicologica, Direttore del Master in Scienza e Tecnologia Cosmetiche presso l’Università di Ferrara, Italia.",
+      "title": "Founder + Member of the Scientific Committee",
+      "description": "Stefano Manfredini is a professor of pharmaceutical chemistry and toxicology, Director of the Master in Cosmetic Science and Technology at the University of Ferrara, Italy.",
       "image": "manfredini.jpg"
     },
     {
       "name": "Silvia Vertuani",
-      "title": "Socio Fondatore e membro del Comitato Scientifico",
-      "description": "Silvia Vertuani, Dottore di Ricerca in Scienze Cosmetiche, Specialista in Scienze e Tecnologie Cosmetiche, Professore Associato presso la cattedra di Chimica Farmaceutica e Tossicologica, dell’Università di Ferrara, Facoltà di Farmacia.",
+      "title": "Founder + Member of the Scientific Committee",
+      "description": "Silvia Vertuani, Ph.D. in Cosmetic Science, Specialist in Cosmetic Science and Technology, Associate Professor at the Department of Pharmaceutical Chemistry and Toxicology, University of Ferrara, Faculty of Pharmacy.",
       "image": "vertuani.jpg"
     },
     {
       "name": "Francesco Rastrelli",
-      "title": "Membro del Comitato Scientifico",
-      "description": "Il comitato scientifico svolge ruolo di monitoraggio al fine del mantenimento di elevati standard qualitativi nei processi di gestione aziendale e di indirizzo scientifico-tecnologico in aderenza ai trend del mercato cosmetico e nutrizionale.",
+      "title": "Member of the Scientific Committee",
+      "description": "The scientific committee plays a monitoring role in order to maintain high quality standards in the processes of business management and scientific-technological address in accordance with the trends of the cosmetic and nutritional market.",
       "image": "rastrelli.jpg"
     }
   ],
   "awards": [
     {
-      "title": "Premio provinciale imprese eccellenti",
-      "description": "",
+      "title": "Provincial Award",
+      "description": "Female Enterprises",
       "year": "2005"
     },
     {
-      "title": "Giornata della riconoscenza provinciale",
-      "description": "",
+      "title": "Provincial Recognition",
+      "description": "Day of Remembrance and Gratitude",
       "year": "2006"
     },
     {
-      "title": "Premio “Mauro Prevedello” al lavoro",
-      "description": "",
+      "title": "Mauro Prevedello",
+      "description": "SPF booster",
       "year": "2006"
     },
     {
-      "title": "Repertorio provinciale imprese eccellenti",
-      "description": "",
+      "title": "Provincial Award",
+      "description": "Company Excellence",
       "year": "2011 "
     },
     {
       "title": "Premio SICC – Luigi Carinelli",
-      "description": "Miglor startup universitaria",
+      "description": "Best University Startups",
       "year": "2015"
     }
-  ],
-  "contact": {
-    "name": "Name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message",
-    "button": "Send"
-  }
+  ]
 }

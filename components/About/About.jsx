@@ -24,14 +24,11 @@ const IntroWrapper = styled.main`
   @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  @media screen and (min-width: 1600px) {
-    grid-template-columns: repeat(6, 1fr);
-  }
 `;
 
 const ParagraphWrapper = styled.article`
   align-self: center;
+  grid-column: 2 / span 2;
 
   & p {
     text-align: justify;
@@ -40,7 +37,6 @@ const ParagraphWrapper = styled.article`
 
   @media screen and (min-width: 1600px) {
     align-self: flex-start;
-    grid-column: 3 / span 2;
   }
 `;
 

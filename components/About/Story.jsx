@@ -3,6 +3,21 @@ import styled from 'styled-components';
 import Partner from './Partner';
 
 const StoryWrapper = styled.section`
+  background: url(37436.png), linear-gradient(180deg, #7a8a62 0%, #858467 100%),
+    #212935;
+
+  h1,
+  h2,
+  h3 {
+    text-shadow: 0px 2px 8px hsl(76deg 16% 27%);
+  }
+
+  h4,
+  h5,
+  p {
+    text-shadow: 0px 2px 8px hsl(76deg 16% 27%);
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

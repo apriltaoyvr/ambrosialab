@@ -16,9 +16,9 @@ const AwardsWrapper = styled.main`
   }
 `;
 
-const AwardYear = styled.h5`
-  font-size: 1.75rem;
-  font-weight: normal;
+const AwardDesc = styled.p`
+  font-size: 1.25rem;
+  text-align: center;
 `
 
 const Awards = () => {
@@ -31,7 +31,8 @@ const Awards = () => {
         {t('awards', { returnObjects: true }).map((award) => (
           <div>
             <h4>{award.title}</h4>
-            <AwardYear>{award.year}</AwardYear>
+            <AwardDesc>{award.description}</AwardDesc>
+            <AwardDesc>{award.year}</AwardDesc>
           </div>
         ))}
       </AwardsWrapper>

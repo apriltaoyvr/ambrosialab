@@ -88,7 +88,7 @@ const GlobalStyle = createGlobalStyle`
 
     /* Scrollbar */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
 
   /* Track */
@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb {
   background:  #fc9994;  
       &:hover {
-        background: #FFEDBC;
+        background: #fc9994;
         filter: brightness(1.2);
     }
   }
@@ -131,119 +131,59 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0px 4px 8px hsl(2deg 46% 40%);
+  h1, h2, h3 {
+    text-shadow: 0px 2px 8px hsl(2deg 46% 40%);
+  ;
+    text-align: center;
+  }
+
+  h4, h5, h6 {
+    text-shadow: 0px 2px 4px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
 
   p {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
     font-weight: normal;
     font-family: 'PP Supply Mono';
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
     
     @media screen and (min-width: 1200px) {
-      font-size: 2rem;
+      font-size: 1.25rem;
     }
-
-        @media screen and (min-width: 1920px) {
-      font-size: 2.15rem;
-    }
-
   }
 
   h1 {
-    font-size: 5rem;
-
-    @media screen and (min-width: 450px) {
-      font-size: 5.5rem;
-    }
-
-    @media screen and (min-width: 720px) {
-      font-size: 6rem;
-    }
+    font-size: 4rem;
+    padding: 1rem;
 
     @media screen and (min-width: 1200px) {
-      font-size: 6.5rem;
+      font-size: 4.5rem;
     }
-
-    @media screen and (min-width: 1600px) {
-      font-size: 7rem;
-    }
-
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
     padding-bottom: 1rem;
-
-    @media screen and (min-width: 450px) {
-      font-size: 3.5rem;
-    }
-
-    @media screen and (min-width: 720px) {
-      font-size: 3.75rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 4rem;
-    }
-    @media screen and (min-width: 1600px) {
-      font-size: 4.25rem;
-    }
   }
   
   h3 {
     font-weight: normal;
-    font-size: 2.5rem;
-
-    @media screen and (min-width: 720px) {
-      font-size: 3rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 3.25rem;
-    }
-
-    @media screen and (min-width: 1600px) {
-      font-size: 3.75rem;
-    }
+    font-size: 2rem;
   }
 
   h4 {
     font-weight: normal;
-    font-size: 2rem;
-
-    @media screen and (min-width: 720px) {
-      font-size: 2.5rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 2.75rem;
-    }
-
-    @media screen and (min-width: 1600px) {
-      font-size: 3rem;
-    }
+    font-size: 1.25rem;
+    font-family: 'PP Supply Mono';
   }
   
   h5 {
     font-weight: normal;
-    font-size: 1.75rem;
-
-    @media screen and (min-width: 720px) {
-      font-size: 2rem;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 2.25rem;
-    }
-
-    @media screen and (min-width: 1600px) {
-      font-size: 2.5rem;
-    }
+    font-size: 1rem;
+    font-family: 'PP Supply Mono';
   }
 
 

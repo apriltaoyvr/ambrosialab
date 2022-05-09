@@ -14,12 +14,15 @@ const ItemWrapper = styled.div`
 
   @media screen and (min-width: 1200px) {
     display: grid;
-    grid-auto-columns: minmax(20%, 30vmax);
+    max-width: 75%;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 500px;
   }
 `;
 
 const Research = () => {
   const { t } = useTranslation('common');
+
   return (
     <StyledResearch id='research'>
       <h1>{t('section.research')}</h1>
@@ -28,6 +31,7 @@ const Research = () => {
           <ResearchItem
             title={activity.title}
             description={activity.description}
+            info={activity.info}
             icon={activity.icon}
             key={activity.key}
           />

@@ -35,6 +35,7 @@ const Navbar = ({ innerRef }) => {
     justify-content: space-between;
     align-items: ${collapsed ? 'flex-start' : 'center'};
     padding: 0.5rem;
+    z-index: 3;
 
     @media screen and (min-width: 1200px) {
       height: 100%;
@@ -64,14 +65,14 @@ const Navbar = ({ innerRef }) => {
     }
 
     & a {
-      font-size: 8rem;
+      font-size: 3rem;
 
       @media screen and (min-width: 1200px) {
         font-size: 1.5rem;
       }
-
-      @media screen and (min-width: 1600px) {
-        font-size: 2.5rem;
+      &:hover {
+        color: #eeffd5;
+        text-shadow: 0px 0px 10px rgba(244, 205, 221, 0.25);
       }
     }
   `;
@@ -81,6 +82,7 @@ const Navbar = ({ innerRef }) => {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
+    align-self: ${collapsed ? 'center' : 'null'}
   `;
 
   const EmptyButton = styled.button`

@@ -58,25 +58,14 @@ const TextWrapper = styled.div`
 
 const TitleHero = styled.h1`
   word-break: normal;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
   text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
 
-  @media screen and (min-width: 450px) {
-    font-size: 5rem;
-  }
-
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 1200px) {
     font-size: 8rem;
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 9rem;
-  }
-
-  @media screen and (min-width: 1600px) {
-    font-size: 12rem;
-  }
 `;
 
 const SubtitleHero = styled.h2`

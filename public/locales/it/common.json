@@ -7,8 +7,8 @@
     "subtitle": "Health + Wellness Research",
     "about": "Chi Siamo",
     "research": "Ricerca",
-    "story": "Storia dell’azienda",
-    "team": "Il Nostro Team",
+    "story": "Storia",
+    "team": "Team",
     "awards": "Riconscimenti",
     "contact": "Contattaci"
   },
@@ -49,69 +49,43 @@
       "title": "Cosmetici",
       "description": "Ricerca e sviluppo di nuovi ingredienti, prototipi e prodotti finiti. Assistenza regolatoria.",
       "icon": "🧴",
-      "info": [
-        "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota.",
-        "Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche.",
-        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
-        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati.",
-        "Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
-      ]
+      "info": "La consulenza sui prodotti cosmetici comprende l’esecuzione delle analisi di base sulle materie prime e la realizzazione di prototipi e prodotti finiti, arrivando fino alla realizzazione della formulazione finale con la messa in produzione della prova pilota Grazie ad un team di lavoro, eterogeneo per esperienze e formazione professionale, il progetto di sviluppo di prodotto viene seguito in tutte le sfaccettature, chimiche, microbiologiche e pratiche. In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.  Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati. Le competenze tecniche acquisite nell’ambito della protezione dai raggi UV permettono un’assistenza a 360° nello sviluppo di prodotti solari."
     },
     {
       "title": "Integratori e alimenti funzionali",
       "description": "Ricerca di ingredienti attivi e progettazione del prodotto. Assistenza regolatoria.",
       "icon": "💊",
-      "info": [
-        "Ricerca e selezione di ingredienti attivi finalizzata alla progettazione del prodotto e alla valorizzazione di sinergie tra gli ingredienti funzionali.",
-        "Supporto scientifico su base bibliografica degli effetti vantati dal prodotto.",
-        "In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing.",
-        "Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati."
-      ]
+      "info": "Ricerca e selezione di ingredienti attivi finalizzata alla progettazione del prodotto e alla valorizzazione di sinergie tra gli ingredienti funzionali. Supporto scientifico su base bibliografica degli effetti vantati dal prodotto. In particolare, nello studio delle nuove formulazioni si creano nuovi prodotti ad alto contenuto tecnologico, ricercando continuamente nuove materie prime, che rispondano sia ai requisiti funzionali che a specifiche richieste del marketing. Assistenza scientifica per lo sviluppo di applicazioni personalizzate e prodotti brevettati."
     },
     {
       "title": "Dispositivi Medici",
       "description": "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM.",
       "icon": "⚕️",
-      "info": [
-        "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM, finalizzata alla progettazione e sviluppo di prototipi formulativi (forme topiche).",
-        "Valutazione clinica su base bibliografica per la redazione del fascicolo tecnico."
-      ]
+      "info": "Ricerca e selezione di materie prime con meccanismo compatibile con la definizione di DM, finalizzata alla progettazione e sviluppo di prototipi formulativi (forme topiche). Valutazione clinica su base bibliografica per la redazione del fascicolo tecnico."
     },
     {
       "title": "Testing",
       "description": "Valutazioni cliniche su prodotti cosmetici e integratori.",
       "icon": "🧪",
-      "info": [
-        "Valutazioni cliniche su prodotti cosmetici e integratori, in particolare: valutazioni di efficacia (idratazione, sebometria, azione lenitiva, elasticità, collagene cutaneo, capacità antiossidante), valutazioni di sicurezza (patch test, PAO, nichel test), test d’uso domiciliari su un panel di consumatori opportunamente selezionato.",
-        "Valutazioni in vitro per fornire informazioni relative al profilo di sicurezza e funzionalità del prodotto cosmetico finito, in particolare analisi microbiologiche e studi di stabilità, utili soprattutto nella fase di sviluppo del prodotto o come test di screening sulle materie prime al fine di selezionare il principio attivo con il miglior profilo di tollerabilità ed efficacia.",
-        "Elaborazione e messa appunto di protocolli specifici e personalizzati in vitro e in vivo per la valutazione di efficacia di cosmetici e integratori.",
-        "Valutazione del fattore di protezione solare (SPF) in vivo e UVA in vitro secondo protocollo ISO.",
-        "Esecuzione di analisi e prove per il controllo di qualità, in particolare test in vitro per la valutazione della capacità antiossidante di materie prime e prodotti finiti."
-      ]
+      "info": "Valutazioni cliniche su prodotti cosmetici e integratori, in particolare: valutazioni di efficacia (idratazione, sebometria, azione lenitiva, elasticità, collagene cutaneo, capacità antiossidante), valutazioni di sicurezza (patch test, PAO, nichel test), test d’uso domiciliari su un panel di consumatori opportunamente selezionato. Valutazioni in vitro per fornire informazioni relative al profilo di sicurezza e funzionalità del prodotto cosmetico finito, in particolare analisi microbiologiche e studi di stabilità, utili soprattutto nella fase di sviluppo del prodotto o come test di screening sulle materie prime al fine di selezionare il principio attivo con il miglior profilo di tollerabilità ed efficacia. Elaborazione e messa appunto di protocolli specifici e personalizzati in vitro e in vivo per la valutazione di efficacia di cosmetici e integratori. Valutazione del fattore di protezione solare (SPF) in vivo e UVA in vitro secondo protocollo ISO. Esecuzione di analisi e prove per il controllo di qualità, in particolare test in vitro per la valutazione della capacità antiossidante di materie prime e prodotti finiti."
     },
     {
       "title": "Brevetti",
       "description": "Supporto scientifico alla redazione di domande di brevetto, consulenza scientifica su brevetti, ricerca brevetti.",
       "icon": "📋",
-      "info": [
-        "Consulenza in campo brevettuale, con particolare riferimento alla componente tecnico-scientifica, comprendente redazione di brevetti, assistenza in controversie per violazione, consulenze tecniche."
-      ]
+      "info": "Consulenza in campo brevettuale, con particolare riferimento alla componente tecnico-scientifica, comprendente redazione di brevetti, assistenza in controversie per violazione, consulenze tecniche."
     },
     {
       "title": "Attività scientifica",
       "description": "Ricerca a contratto e supporto scientifico farmaceutico, cosmetico e nutrizionale.",
       "icon": "🥼",
-      "info": [
-        "Consulenza e ricerca bibliografica per supporto scientifico in ambito farmaceutico, cosmetico e nutrizionale per la compilazione di razionali, valutazioni cliniche, dossier tecnici, materiale per la comunicazione scientifica."
-      ]
+      "info": "Consulenza e ricerca bibliografica per supporto scientifico in ambito farmaceutico, cosmetico e nutrizionale per la compilazione di razionali, valutazioni cliniche, dossier tecnici, materiale per la comunicazione scientifica."
     },
     {
       "title": "Attività regolatoria",
       "description": "Assistenza regolatoria in campo farmaceutico, cosmetico e nutrizionale.",
       "icon": "⚖️",
-      "info": [
-        "Consulenza sugli aspetti regolatori relativi a tutti gli aspetti riguardanti la produzione e commercializzazione di prodotti cosmetici (Regolamento (CE) n. 1223/2009 del Parlamento europeo e del Consiglio, del 30 novembre 2009, sui prodotti cosmetici e relativi aggiornamenti), compresa notifica dei prodotti cosmetici sul portale europeo e la valutazione della sicurezza dei prodotti cosmetici con redazione di Relazione sulla Sicurezza del Prodotto Cosmetico (CPSR) e Product Information File (PIF) come previsto dal Reg. Regolamento (CE) n. 1223/2009."
-      ]
+      "info": "Consulenza sugli aspetti regolatori relativi a tutti gli aspetti riguardanti la produzione e commercializzazione di prodotti cosmetici (Regolamento (CE) n. 1223/2009 del Parlamento europeo e del Consiglio, del 30 novembre 2009, sui prodotti cosmetici e relativi aggiornamenti), compresa notifica dei prodotti cosmetici sul portale europeo e la valutazione della sicurezza dei prodotti cosmetici con redazione di Relazione sulla Sicurezza del Prodotto Cosmetico (CPSR) e Product Information File (PIF) come previsto dal Reg. Regolamento (CE) n. 1223/2009."
     }
   ],
   "team": [
@@ -184,12 +158,5 @@
       "description": "Miglor startup universitaria",
       "year": "2015"
     }
-  ],
-  "contact": {
-    "name": "Nome e Cognome",
-    "email": "La tua Email",
-    "subject": "Oggetto",
-    "message": "Messagio",
-    "button": "Invia Messaggio"
-  }
+  ]
 }

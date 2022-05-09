@@ -5,9 +5,9 @@ const Flags = () => {
   const router = useRouter();
 
   if (router.locale === 'en') {
-    return <CircleFlag countryCode='us' height='35' />;
+    return <CircleFlag countryCode='us' height='30' />;
   } else {
-    return <CircleFlag countryCode='it' height='35' />;
+    return <CircleFlag countryCode='it' height='30' />;
   }
 };
 

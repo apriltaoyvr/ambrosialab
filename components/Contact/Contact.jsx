@@ -15,6 +15,11 @@ const ContactSection = styled.footer`
   display: flex;
   justify-content: center;
   gap: 5rem;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;    
+  }
 `;
 
 const ContactWrapper = styled.aside`
@@ -31,6 +36,7 @@ const ContactItem = styled.div`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
 `;
 
 const Contact = () => {
