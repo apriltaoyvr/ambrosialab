@@ -9,4 +9,4 @@ A repository for my design of [ambrosialab.it](http://www.ambrosialab.it)
 ## Stack
 * NextJS
 * Styled Components
-* i18 (next-18next)
+* i18n (next-18next)
