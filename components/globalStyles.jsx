@@ -105,7 +105,6 @@ const GlobalStyle = createGlobalStyle`
   );
   background-attachment: fixed;
     font-family: 'PP Supply Sans', 'Fira Code', Monospace;  
-  overflow-x: hidden;
 }
 
   section {
