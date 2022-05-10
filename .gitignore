@@ -12,9 +12,6 @@
 /.next/
 /out/
 
-# development 
-/.vscode 
-
 # production
 /build
 
@@ -33,3 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# development 
+.vscode/settings.json
