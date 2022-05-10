@@ -31,6 +31,7 @@ export const TeamWrapper = styled.div`
 
   @media screen and (min-width: 1200px) {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 400px);
     &:last-child {
       grid-column-start: 2;

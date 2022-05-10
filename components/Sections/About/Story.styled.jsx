@@ -25,14 +25,15 @@ export const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 `;
 
 export const ParagraphWrapper = styled.main`
-  padding: 1rem;
+  padding: 2rem;
+  max-width: 900px;
   & p {
     text-align: justify;
     padding-bottom: 2rem;

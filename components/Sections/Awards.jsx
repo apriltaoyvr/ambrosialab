@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
+import FadeIn from './FadeIn';
 
 const StyledAwards = styled.section`
   align-items: center;
@@ -9,9 +10,9 @@ const StyledAwards = styled.section`
 const AwardsWrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 80%;
 
   @media screen and (min-width: 1200px) {
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
@@ -26,16 +27,20 @@ const Awards = () => {
 
   return (
     <StyledAwards id='awards'>
-      <h1>{t('section.awards')}</h1>
-      <AwardsWrapper>
-        {t('awards', { returnObjects: true }).map((award) => (
-          <div key={award.id}>
-            <h4>{award.title}</h4>
-            <AwardDesc>{award.description}</AwardDesc>
-            <AwardDesc>{award.year}</AwardDesc>
-          </div>
-        ))}
-      </AwardsWrapper>
+      <FadeIn>
+        <h1>{t('section.awards')}</h1>
+      </FadeIn>
+      <FadeIn delay='1200'>
+        <AwardsWrapper>
+          {t('awards', { returnObjects: true }).map((award) => (
+            <div key={award.id}>
+              <h3>{award.title}</h3>
+              <AwardDesc>{award.description}</AwardDesc>
+              <AwardDesc>{award.year}</AwardDesc>
+            </div>
+          ))}
+        </AwardsWrapper>
+      </FadeIn>
     </StyledAwards>
   );
 };

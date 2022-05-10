@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 import ResearchItem from './ResearchItem';
+import FadeIn from '../FadeIn';
 
 const ItemWrapper = styled.div`
   display: flex;
@@ -12,8 +13,7 @@ const ItemWrapper = styled.div`
 
   @media screen and (min-width: 1200px) {
     display: grid;
-    max-width: 75%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
     grid-auto-columns: 500px;
   }
 `;
@@ -23,18 +23,22 @@ const Research = () => {
 
   return (
     <section id='research'>
-      <h1>{t('section.research')}</h1>
-      <ItemWrapper>
-        {t('activities', { returnObjects: true }).map((activity) => (
-          <ResearchItem
-            title={activity.title}
-            description={activity.description}
-            info={activity.info}
-            icon={activity.icon}
-            key={activity.id}
-          />
-        ))}
-      </ItemWrapper>
+      <FadeIn>
+        <h1>{t('section.research')}</h1>
+      </FadeIn>
+      <FadeIn delay='1000'>
+        <ItemWrapper>
+          {t('activities', { returnObjects: true }).map((activity) => (
+            <ResearchItem
+              title={activity.title}
+              description={activity.description}
+              info={activity.info}
+              icon={activity.icon}
+              key={activity.id}
+            />
+          ))}
+        </ItemWrapper>
+      </FadeIn>
     </section>
   );
 };

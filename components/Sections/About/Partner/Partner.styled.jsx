@@ -8,15 +8,12 @@ export const StyledPartner = styled.div`
   }
 `;
 
-export const ContentWrapper = styled.div`
-  padding-bottom: 1rem;
-`;
 
 export const NumberWrapper = styled.h5`
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-shadow: 0px 2px 3px hsl(2deg 46% 40%);
 `;
 
-export const SubtitleWrapper = styled.h4`
+export const SubtitleWrapper = styled.h3`
   text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
 `;
