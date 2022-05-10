@@ -4,7 +4,6 @@ import FadeIn from './FadeIn';
 
 const StyledAwards = styled.section`
   align-items: center;
-  grid-column: 8 / span 3;
 `;
 
 const AwardsWrapper = styled.main`
@@ -13,14 +12,14 @@ const AwardsWrapper = styled.main`
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 400px);
   }
 `;
 
 const AwardDesc = styled.p`
   font-size: 1.25rem;
   text-align: center;
-`
+`;
 
 const Awards = () => {
   const { t } = useTranslation('common');
