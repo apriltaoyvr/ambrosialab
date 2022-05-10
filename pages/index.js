@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar/Navbar';
-import Hero from '../components/Sections/Hero.jsx'
+import Hero from '../components/Sections/Hero/Hero.jsx'
 import About from '../components/Sections/About/About';
 import Research from '../components/Sections/Research/Research';
 import Story from '../components/Sections/About/Story';
@@ -22,14 +22,14 @@ export default function Home() {
   return (
     <>
       <Navbar />
-        <Hero />
-        <About />
-        <Research />
-        <Story/>
-        <Team />
-        <Awards/>
-        <Contact />
-        <Footer />
+      <Hero />
+      <About />
+      <Research />
+      <Story />
+      <Team />
+      <Awards />
+      <Contact />
+      <Footer />
     </>
   )
 }

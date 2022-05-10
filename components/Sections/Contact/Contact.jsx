@@ -1,5 +1,9 @@
 import { useTranslation } from 'next-i18next';
-import styled from 'styled-components';
+import {
+  ContactSection,
+  ContactWrapper, 
+  ContactItem
+} from './Contact.styled.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,
@@ -7,43 +11,11 @@ import {
   faLocationDot,
 } from '@fortawesome/free-solid-svg-icons';
 
-const StyledContact = styled.section`
-  display: flex;
-`;
-
-const ContactSection = styled.footer`
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  flex-direction: column;
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;    
-  }
-`;
-
-const ContactWrapper = styled.aside`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
-const ContactItem = styled.div`
-  display: flex;
-  gap: 1rem;
-`;
-
-const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-`;
-
 const Contact = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledContact id='contact'>
+    <section id='contact'>
       <h1>{t('section.contact')}</h1>
       <ContactSection>
         <ContactWrapper>
@@ -58,14 +30,10 @@ const Contact = () => {
         </ContactWrapper>
         <ContactItem>
           <FontAwesomeIcon icon={faLocationDot} size='2x' />
-          <TextWrapper>
-            <p>Via Mortara 171</p>
-            <p>Ferrara, Italy</p>
-            <p>44121</p>
-          </TextWrapper>
+            <p>Via Mortara 171 Ferrara, Italy 44121</p>
         </ContactItem>
       </ContactSection>
-    </StyledContact>
+    </section>
   );
 };
 

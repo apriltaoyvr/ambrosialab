@@ -88,23 +88,10 @@ const GlobalStyle = createGlobalStyle`
 
     /* Scrollbar */
   ::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-  background: #ED4264;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-  background:  #fc9994;  
-      &:hover {
-        background: #fc9994;
-        filter: brightness(1.2);
-    }
+    width: 0;
   }
   html {
-      scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -188,6 +175,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'PP Supply Mono';
   }
 
+  /* Keyframes */
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 
 `;
 

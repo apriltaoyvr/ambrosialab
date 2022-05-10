@@ -2,8 +2,6 @@ import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 import ResearchItem from './ResearchItem';
 
-const StyledResearch = styled.section``;
-
 const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,7 +22,7 @@ const Research = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledResearch id='research'>
+    <section id='research'>
       <h1>{t('section.research')}</h1>
       <ItemWrapper>
         {t('activities', { returnObjects: true }).map((activity) => (
@@ -37,7 +35,7 @@ const Research = () => {
           />
         ))}
       </ItemWrapper>
-    </StyledResearch>
+    </section>
   );
 };
 
