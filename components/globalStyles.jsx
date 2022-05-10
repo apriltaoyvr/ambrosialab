@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
   /*
     6. Improve media defaults
@@ -54,8 +55,7 @@ const GlobalStyle = createGlobalStyle`
   #root, #__next {
     isolation: isolate;
   }
-  /** NOTE: End of Reset **/
-
+  
   :root {
     --fg: hsl(201, 100%, 95%);
     --bg: hsl(18, 92.36%, 74.3%);
@@ -115,6 +115,7 @@ const GlobalStyle = createGlobalStyle`
 
   svg {
     max-height: 35px;
+    max-width: 35px;
   }
 
   a {

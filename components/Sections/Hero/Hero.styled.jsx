@@ -24,11 +24,6 @@ export const StyledHero = styled.header`
   & p {
     text-shadow: 0px 1px 3px hsl(347deg 51% 29%);
   }
-
-  @media screen and (min-width: 1200px) {
-    flex-direction: row-reverse;
-    align-items: flex-start;
-  }
 `;
 
 export const VideoWrapper = styled.video`
@@ -43,24 +38,20 @@ export const VideoWrapper = styled.video`
 
 export const TextWrapper = styled.hgroup`
   height: 75%;
-  padding: 1rem;
-  display: grid;
-  text-align: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;
 
   @media screen and (min-width: 1200px) {
     width: 100%;
     justify-content: center;
     justify-items: start;
-    text-align: left;
   }
 `;
 
 export const TitleHero = styled(animated.h1)`
-  word-break: normal;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
 
@@ -70,9 +61,8 @@ export const TitleHero = styled(animated.h1)`
 `;
 
 export const SubtitleHero = styled(animated.h2)`
-  word-break: normal;
   text-shadow: 0px 4px 6px hsl(2deg 46% 42%);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: normal;
 
   @media screen and (min-width: 1200px) {

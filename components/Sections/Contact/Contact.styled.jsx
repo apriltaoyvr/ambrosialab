@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const ContactSection = styled.footer`
   display: flex;
-  justify-content: center;
-  gap: 5rem;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;

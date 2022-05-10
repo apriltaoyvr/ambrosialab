@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
 import Flags from './Flags';
 
@@ -95,12 +95,18 @@ const Navbar = ({ innerRef }) => {
 
   return (
     <StyledNav>
-      <FontAwesomeIcon
-        icon={faBars}
-        size='2x'
-        className='menu'
-        onClick={toggleNav}
-      />
+      {collapsed ? (
+        <FontAwesomeIcon icon={faX} size='2x' onClick={toggleNav} fixedWidth />
+      ) : (
+        <FontAwesomeIcon
+          icon={faBars}
+          size='2x'
+          style={{ maxHeight: '35px' }}
+          onClick={toggleNav}
+          fixedWidth
+        />
+      )}
+
       <StyledLinks>
         <Link href='/#about'>{t('section.about')}</Link>
         <Link href='/#research'>{t('section.research')}</Link>
