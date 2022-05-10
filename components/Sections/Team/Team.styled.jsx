@@ -12,12 +12,32 @@ export const TeamContent = styled.aside`
   flex-direction: column;
   justify-items: center;
   justify-content: center;
-  max-width: 80%;
 
   &:last-child {
     grid-column-start: 2;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 80%;
+  }
 `;
+
+export const TeamWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-self: center;
+  gap: 2rem;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    &:last-child {
+      grid-column-start: 2;
+    }
+  }
+`;
+
 
 export const Portrait = styled.figure`
   display: flex;
@@ -53,8 +73,6 @@ export const PortraitExtend = styled(Portrait)`
     cursor: default;
   }
 `;
-
-
 
 export const customStyles = {
   overlay: {
