@@ -52,6 +52,8 @@ export const StyledButton = styled.button`
 
 export const StyledParagraph = styled.p`
   font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
   @media screen and (min-width: 1200px) {
     font-size: 1rem;
   }
@@ -67,10 +69,11 @@ export const customStyles = {
     transition: 'all 1s cubic-bezier(0.4, 0, 1, 1)',
   },
   content: {
-    background: `rgba(252, 153, 148, 0.66)`,
+    background: `rgba(195, 111, 106, 0.66)`,
     border: '1px solid rgba(252, 153, 148, 1)',
     borderRadius: '16px',
     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(6px)',
     color: 'var(--fg)',
     height: 'min(50%, 900px)',
     width: 'clamp(50%, 700px, 90%)',

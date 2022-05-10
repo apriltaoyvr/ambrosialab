@@ -39,20 +39,19 @@ export const TeamWrapper = styled.div`
   }
 `;
 
-
 export const Portrait = styled.figure`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
 
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
-  border: 2px solid hsla(0, 75%, 76%, 1);
+  border: 3.5px solid #efccca;
 
   background-size: cover;
-  background-image: url('/images/team/${props => props.image}');
+  background-image: url('/images/team/${(props) => props.image}');
 
   filter: opacity(0.8);
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
@@ -68,6 +67,8 @@ export const PortraitExtend = styled(Portrait)`
   height: 250px;
   filter: none;
   margin: 1rem;
+  border: 6px solid #daa09d;
+
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 
   &:hover {
@@ -86,10 +87,11 @@ export const customStyles = {
   content: {
     display: 'flex',
     flexDirection: 'column',
-    background: `rgba(252, 153, 148, 0.66)`,
+    background: `rgba(195, 111, 106, 0.66)`,
     border: '1px solid rgba(252, 153, 148, 1)',
     borderRadius: '16px',
     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(6px)',
     color: 'var(--fg)',
     height: 'min(50%, 600px)',
     width: 'clamp(50%, 700px, 90%)',

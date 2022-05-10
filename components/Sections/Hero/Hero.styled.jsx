@@ -7,6 +7,8 @@ export const StyledHero = styled.header`
     hsla(339, 55.75%, 44.33%, 0.25) 0%,
     hsla(18, 92.36%, 74.3%, 0.25) 100%
   );
+  border-bottom: 2px dashed var(--fg);
+
   height: 100vh;
 
   display: flex;
