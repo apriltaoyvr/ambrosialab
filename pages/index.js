@@ -27,6 +27,7 @@ export default function Home() {
         <title>Ambrosia Lab</title>
         <meta name="description" content="Health and wellness research."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" type="image/svg" href="/images/favicon.svg"/>
       </Head>
       <Navbar />
       <Hero />
