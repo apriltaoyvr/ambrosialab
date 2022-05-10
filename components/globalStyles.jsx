@@ -112,7 +112,10 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     padding: 2rem;
+  }
 
+  svg {
+    max-height: 35px;
   }
 
   a {
