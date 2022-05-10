@@ -59,7 +59,6 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --fg: hsl(201, 100%, 95%);
     --bg: hsl(18, 92.36%, 74.3%);
-    --pink: hsl(339, 55.75%, 44.33%);
   }
 
   @font-face {
@@ -113,6 +112,8 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   svg {
@@ -126,18 +127,23 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2  {
-    text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
+    text-shadow: 0px 2px 4px hsl(2deg 46% 40%);
   ;
     text-align: center;
+    user-select: none;
   }
 
   h3, h4, h5, h6 {
-    text-shadow: 0px 1px 4px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 6px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
 
-  p {
+  figure {
+    user-select: none;
+  }
+
+  p, a {
     font-size: 1rem;
     font-weight: normal;
     font-family: 'PP Supply Mono';
@@ -149,16 +155,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem;
 
     @media screen and (min-width: 1200px) {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: normal;
     padding-bottom: 1rem;
 
@@ -168,8 +174,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   h3 {
+    font-size: 1.5rem;
     font-weight: normal;
-    font-size: 2rem;
   }
 
   h4 {

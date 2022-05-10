@@ -6,16 +6,17 @@ export const StyledNav = styled.nav`
   right: 0;
 
   width: 100%;
-  height: ${(props) => (props.collapsed ? '100vh' : 'unset')};
+  height: ${(props) => (props.isCollapsed ? '100vh' : 'unset')};
   border: ${(props) =>
-    props.collapsed ? '2px solid transparent' : '2px dashed transparent'};
+    props.isCollapsed ? '2px solid transparent' : '2px dashed transparent'};
   border-bottom: 2px dashed var(--fg);
-  backdrop-filter: blur(${(props) => (props.collapsed ? '30px' : '4px')});
+  backdrop-filter: blur(${(props) => (props.isCollapsed ? '30px' : '4px')});
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 
   display: flex;
-  flex-direction: ${(props) => (props.collapsed ? 'column' : 'row')};
+  flex-direction: ${(props) => (props.isCollapsed ? 'column' : 'row')};
   justify-content: space-between;
-  align-items: ${(props) => (props.collapsed ? 'flex-start' : 'center')};
+  align-items: ${(props) => (props.isCollapsed ? 'flex-start' : 'center')};
   z-index: 3;
 
   @media screen and (min-width: 1200px) {
@@ -33,7 +34,7 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledLinks = styled.div`
-  display: ${(props) => (props.collapsed ? 'flex' : 'none')};
+  display: ${(props) => (props.isCollapsed ? 'flex' : 'none')};
   flex-direction: column;
   align-self: center;
   padding: 1rem;
@@ -76,13 +77,7 @@ export const NavFooter = styled.footer`
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem;
-  align-self: ${(props) => (props.collapsed ? 'center' : 'null')};
+  align-self: ${(props) => (props.isCollapsed ? 'center' : 'null')};
 `;
 
-export const EmptyButton = styled.button`
-  background: none;
-  border: none;
-  &:hover {
-    cursor: pointer;
-  }
-`;
+

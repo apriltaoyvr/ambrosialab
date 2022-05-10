@@ -9,46 +9,56 @@ import {
   StyledLinks,
   StyledIcon,
   NavFooter,
-  EmptyButton
 } from './Navbar.styled';
 
 /* Icons */
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
-import Flags from './Flags';
+import LangMenu from './LangMenu/LangMenu';
 
-
-const Navbar = ({ innerRef }) => {
+const Navbar = ({}) => {
   const { t } = useTranslation();
   const router = useRouter();
-  const [collapsed, setCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleNav = () => {
-    setCollapsed(!collapsed);
+    setIsCollapsed(!isCollapsed);
+  };
+
+  const closeNav = () => {
+    setIsCollapsed(false);
   };
 
   return (
-    <StyledNav collapsed={collapsed}>
-      {collapsed ? (
+    <StyledNav isCollapsed={isCollapsed}>
+      {isCollapsed ? (
         <StyledIcon icon={faX} size='2x' onClick={toggleNav} />
       ) : (
         <StyledIcon icon={faBars} size='2x' onClick={toggleNav} />
       )}
 
-      <StyledLinks collapsed={collapsed}>
-        <Link href='/#about'>{t('section.about')}</Link>
-        <Link href='/#research'>{t('section.research')}</Link>
-        <Link href='/#story'>{t('section.story')}</Link>
-        <Link href='/#team'>{t('section.team')}</Link>
-        <Link href='/#awards'>{t('section.awards')}</Link>
-        <Link href='/#contact'>{t('section.contact')}</Link>
+      <StyledLinks isCollapsed={isCollapsed}>
+        <Link href='/#about'>
+          <a onClick={closeNav}>{t('section.about')}</a>
+        </Link>
+        <Link href='/#research'>
+          <a onClick={closeNav}>{t('section.research')}</a>
+        </Link>
+        <Link href='/#story'>
+          <a onClick={closeNav}>{t('section.story')}</a>
+        </Link>
+        <Link href='/#team'>
+          <a onClick={closeNav}>{t('section.team')}</a>
+        </Link>
+        <Link href='/#awards'>
+          <a onClick={closeNav}>{t('section.awards')}</a>
+        </Link>
+        <Link href='/#contact'>
+          <a onClick={closeNav}>{t('section.contact')}</a>
+        </Link>
       </StyledLinks>
 
-      <NavFooter collapsed={collapsed}>
-        <Link href='/' locale={router.locale === 'it' ? 'en' : 'it'}>
-          <EmptyButton>
-            <Flags />
-          </EmptyButton>
-        </Link>
+      <NavFooter isCollapsed={isCollapsed}>
+        <LangMenu />
       </NavFooter>
     </StyledNav>
   );
