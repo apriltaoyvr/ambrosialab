@@ -134,9 +134,14 @@
   ],
   "awards": [
     {
+      "title": "Premio SICC – Luigi Carinelli",
+      "description": "Best University Startups",
+      "year": "2015"
+    },
+    {
       "title": "Provincial Award",
-      "description": "Female Enterprises",
-      "year": "2005"
+      "description": "Company Excellence",
+      "year": "2011 "
     },
     {
       "title": "Provincial Recognition",
@@ -150,13 +155,8 @@
     },
     {
       "title": "Provincial Award",
-      "description": "Company Excellence",
-      "year": "2011 "
-    },
-    {
-      "title": "Premio SICC – Luigi Carinelli",
-      "description": "Best University Startups",
-      "year": "2015"
+      "description": "Female Enterprises",
+      "year": "2005"
     }
   ]
 }

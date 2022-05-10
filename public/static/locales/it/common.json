@@ -134,9 +134,14 @@
   ],
   "awards": [
     {
-      "title": "Premio provinciale imprese eccellenti",
+      "title": "Premio SICC – Luigi Carinelli",
+      "description": "Miglor startup universitaria",
+      "year": "2015"
+    },
+    {
+      "title": "Repertorio provinciale imprese eccellenti",
       "description": "",
-      "year": "2005"
+      "year": "2011 "
     },
     {
       "title": "Giornata della riconoscenza provinciale",
@@ -149,14 +154,9 @@
       "year": "2006"
     },
     {
-      "title": "Repertorio provinciale imprese eccellenti",
+      "title": "Premio provinciale imprese eccellenti",
       "description": "",
-      "year": "2011 "
-    },
-    {
-      "title": "Premio SICC – Luigi Carinelli",
-      "description": "Miglor startup universitaria",
-      "year": "2015"
+      "year": "2005"
     }
   ]
 }
