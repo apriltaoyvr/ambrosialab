@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 export const StyledNav = styled.nav`
   position: fixed;
@@ -57,6 +58,14 @@ export const StyledLinks = styled.div`
       text-shadow: 0px 0px 10px rgba(244, 205, 221, 0.25);
     }
   }
+
+  & span {
+    justify-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
@@ -72,6 +81,7 @@ export const StyledIcon = styled(FontAwesomeIcon)`
     display: none;
   }
 `;
+
 export const NavFooter = styled.footer`
   display: flex;
   flex-direction: column;
@@ -80,4 +90,9 @@ export const NavFooter = styled.footer`
   align-self: ${(props) => (props.isCollapsed ? 'center' : 'null')};
 `;
 
-
+export const LogoWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+`

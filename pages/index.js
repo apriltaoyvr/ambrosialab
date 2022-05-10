@@ -27,7 +27,7 @@ export default function Home() {
         <title>AmbrosiaLab</title>
         <meta name="description" content="A health, wellness, and cosmetics research company headquartered in Ferrara, Italy."/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" type="image/svg" href="/static/images/favicon.svg"/>
+        <link rel="icon" type="image/svg" href="/static/images/logo.svg"/>
       </Head>
       <Navbar />
       <Hero />

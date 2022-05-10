@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useState } from 'react';
+import Image from 'next/image'
+import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 
 /* Components and Styles */
@@ -8,6 +8,7 @@ import {
   StyledNav,
   StyledLinks,
   StyledIcon,
+  LogoWrapper,
   NavFooter,
 } from './Navbar.styled';
 
@@ -17,7 +18,6 @@ import LangMenu from './LangMenu/LangMenu';
 
 const Navbar = ({}) => {
   const { t } = useTranslation();
-  const router = useRouter();
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleNav = () => {
@@ -37,6 +37,17 @@ const Navbar = ({}) => {
       )}
 
       <StyledLinks isCollapsed={isCollapsed}>
+        <LogoWrapper>
+          <Link href='/'>
+            <Image
+              src={'/images/logo-full.svg'}
+              alt='AmbrosiaLab Logo'
+              width='150'
+              height='75'
+              onClick={closeNav}
+            />
+          </Link>
+        </LogoWrapper>
         <Link href='/#about'>
           <a onClick={closeNav}>{t('section.about')}</a>
         </Link>
