@@ -24,18 +24,18 @@ const Contact = () => {
         <ContactSection>
           <ContactWrapper>
             <ContactItem>
-              <FontAwesomeIcon icon={faPhone} size='2x' />
+              <FontAwesomeIcon icon={faPhone} size='m' />
               <p>+33 0532 249307</p>
             </ContactItem>
             <ContactItem>
-              <FontAwesomeIcon icon={faEnvelope} size='2x' />
+              <FontAwesomeIcon icon={faEnvelope} size='m' />
               <p>alabcustomer@ambrosialab.com</p>
             </ContactItem>
+            <ContactItem>
+              <FontAwesomeIcon icon={faLocationDot} size='m' />
+              <p>Via Mortara 171 Ferrara, Italy 44121</p>
+            </ContactItem>
           </ContactWrapper>
-          <ContactItem>
-            <FontAwesomeIcon icon={faLocationDot} size='2x' />
-            <p>Via Mortara 171 Ferrara, Italy 44121</p>
-          </ContactItem>
         </ContactSection>
       </FadeIn>
     </section>
