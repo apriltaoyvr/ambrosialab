@@ -8,11 +8,11 @@ export const StyledAbout = styled.section`
   & h3,
   & h4,
   & h5 {
-    text-shadow: 0px 3px 6px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
   }
 
   & p {
-    text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 4px hsl(2deg 46% 40%);
   }
 `;
 

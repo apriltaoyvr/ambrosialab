@@ -51,7 +51,7 @@ export const TextWrapper = styled.hgroup`
 `;
 
 export const TitleHero = styled(animated.h1)`
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
 

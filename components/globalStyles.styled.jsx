@@ -90,6 +90,7 @@ const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar {
     width: 0;
   }
+
   html {
     scroll-behavior: smooth;
   }
@@ -125,13 +126,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2  {
-    text-shadow: 0px 2px 8px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
 
   h3, h4, h5, h6 {
-    text-shadow: 0px 1px 5px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 4px hsl(2deg 46% 40%);
   ;
     text-align: center;
   }
@@ -148,7 +149,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 1rem;
 
     @media screen and (min-width: 1200px) {
@@ -157,9 +158,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: normal;
     padding-bottom: 1rem;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
   }
   
   h3 {
