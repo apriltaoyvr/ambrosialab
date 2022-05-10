@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Sections/Hero/Hero.jsx'
 import About from '../components/Sections/About/About';
@@ -21,6 +23,11 @@ export async function getServerSideProps({ locale }) {
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Ambrosia Lab</title>
+        <meta name="description" content="Health and wellness research."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </Head>
       <Navbar />
       <Hero />
       <About />
