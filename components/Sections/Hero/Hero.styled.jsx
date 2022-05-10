@@ -55,6 +55,10 @@ export const TitleHero = styled(animated.h1)`
   font-weight: bold;
   text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
 
+  @media screen and (min-width: 768px) {
+    font-size: 5rem;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 8rem;
   }
@@ -64,6 +68,10 @@ export const SubtitleHero = styled(animated.h2)`
   text-shadow: 0px 4px 6px hsl(2deg 46% 42%);
   font-size: 2rem;
   font-weight: normal;
+
+  @media screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 4rem;
