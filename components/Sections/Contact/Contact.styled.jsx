@@ -10,6 +10,11 @@ export const ContactSection = styled.footer`
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
+
+  & svg {
+    height: 30px;
+    width: 30px;
+  }
 `;
 
 export const ContactWrapper = styled.aside`

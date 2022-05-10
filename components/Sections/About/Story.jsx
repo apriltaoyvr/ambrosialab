@@ -5,7 +5,7 @@ import { StoryWrapper, InnerWrapper, ParagraphWrapper } from './Story.styled';
 
 const Story = () => {
   const { t } = useTranslation('common');
-
+  
   return (
     <FadeIn>
       <StoryWrapper id='story'>
@@ -15,12 +15,9 @@ const Story = () => {
         <InnerWrapper>
           <FadeIn delay='1200'>
             <ParagraphWrapper>
-              <p>{t('about.story.paragraph.first')}</p>
-              <p>{t('about.story.paragraph.second')}</p>
-              <p>{t('about.story.paragraph.third')}</p>
-              <p>{t('about.story.paragraph.fourth')}</p>
-              <p>{t('about.story.paragraph.fifth')}</p>
-              <p>{t('about.story.paragraph.sixth')}</p>
+              {t('about.story.paragraphs', { returnObjects: true }).map((paragraph) => (
+                <p key={paragraph.id}>{paragraph}</p>
+              ))}
             </ParagraphWrapper>
           </FadeIn>
           <FadeIn delay='800'>

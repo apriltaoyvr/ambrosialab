@@ -12,6 +12,7 @@ export const TeamContent = styled.aside`
   flex-direction: column;
   justify-items: center;
   justify-content: center;
+  gap: 1rem;
 
   &:last-child {
     grid-column-start: 2;
@@ -27,6 +28,7 @@ export const TeamWrapper = styled.div`
   flex-direction: column;
   justify-items: center;
   align-self: center;
+  align-items: flex-start;
   gap: 2rem;
 
   @media screen and (min-width: 1200px) {
@@ -45,10 +47,10 @@ export const Portrait = styled.figure`
   justify-content: center;
   align-self: center;
 
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 3.5px solid #efccca;
+  border: 2px solid rgb(252, 153, 148);
 
   background-size: cover;
   background-image: url('/images/team/${(props) => props.image}');
@@ -67,7 +69,6 @@ export const PortraitExtend = styled(Portrait)`
   height: 250px;
   filter: none;
   margin: 1rem;
-  border: 6px solid #daa09d;
 
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 
@@ -92,7 +93,7 @@ export const customStyles = {
     borderRadius: '16px',
     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
     color: 'var(--fg)',
-    height: 'min(50%, 900px)',
+    height: 'min(60%, 900px)',
     width: 'clamp(50%, 700px, 90%)',
     top: '0',
     left: '0',

@@ -8,13 +8,13 @@ export const StoryWrapper = styled.section`
   h1,
   h2,
   h3 {
-    text-shadow: 0px 2px 8px hsl(76deg 16% 27%);
+    text-shadow: 0px 2px 2px hsl(76deg 16% 27%);
   }
 
   h4,
   h5,
   p {
-    text-shadow: 0px 2px 8px hsl(76deg 16% 27%);
+    text-shadow: 0px 2px 4px hsl(76deg 16% 27%);
   }
 
   display: flex;

@@ -5,7 +5,7 @@ export const ResearchCard = styled.div`
   flex-direction: column;
   padding: 1rem;
   gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-between;
 
   border: 1px solid rgba(244, 205, 221, 0.5);
   transition: all 0.3s ease-out;
@@ -29,9 +29,10 @@ export const ResearchCard = styled.div`
   }
 `;
 
-export const ResearchIcon = styled.h2`
+export const ResearchIcon = styled.figure`
   font-size: 5rem;
-  text-shadow: 0px 2px 6px hsl(2deg 46% 40%);
+  text-shadow: 1px 2px 2px hsl(2deg 46% 40%);
+  text-align: center;
 `;
 
 export const StyledButton = styled.button`

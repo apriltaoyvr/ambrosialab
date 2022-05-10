@@ -14,9 +14,11 @@ const About = () => {
       <FadeIn delay='800'>
         <IntroWrapper>
           <ParagraphWrapper>
-            <p>{t('about.paragraph.first')}</p>
-            <p>{t('about.paragraph.second')}</p>
-            <p>{t('about.paragraph.third')}</p>
+            {t('about.paragraphs', { returnObjects: true }).map(
+              (paragraph) => (
+                <p key={paragraph.id}>{paragraph}</p>
+              )
+            )}
           </ParagraphWrapper>
         </IntroWrapper>
       </FadeIn>
