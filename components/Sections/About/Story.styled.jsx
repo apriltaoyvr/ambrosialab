@@ -35,13 +35,12 @@ export const InnerWrapper = styled.div`
 
 export const ParagraphWrapper = styled.main`
   padding: 2rem;
-  max-width: 900px;
+  max-width: 800px;
   & p {
     text-align: justify;
     padding-bottom: 2rem;
   }
   @media screen and (min-width: 1200px) {
     align-self: flex-start;
-    grid-column: 3 / span 6;
   }
 `;
