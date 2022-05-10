@@ -66,6 +66,7 @@ export const StyledIcon = styled(FontAwesomeIcon)`
   &:hover {
     cursor: pointer;
   }
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
