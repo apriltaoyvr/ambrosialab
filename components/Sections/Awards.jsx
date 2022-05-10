@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
-import FadeIn from './FadeIn';
+import FadeIn from '../FadeIn';
 
 const StyledAwards = styled.section`
   align-items: center;

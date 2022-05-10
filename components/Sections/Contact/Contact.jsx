@@ -4,7 +4,7 @@ import {
   ContactWrapper,
   ContactItem,
 } from './Contact.styled.jsx';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../FadeIn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,

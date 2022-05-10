@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 import ResearchItem from './ResearchItem';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../FadeIn';
 
 const ItemWrapper = styled.div`
   display: flex;

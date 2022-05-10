@@ -1,5 +1,5 @@
 import { StyledAbout, IntroWrapper, ParagraphWrapper } from './About.styled';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../FadeIn';
 import { useTranslation } from 'next-i18next';
 
 const About = () => {

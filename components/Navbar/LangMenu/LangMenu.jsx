@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
-
+import FadeIn from '../../FadeIn';
 import { StyledMenu, Divider, Flag } from './LangMenu.styled';
 
 const countryCodes = {
   en: 'us',
-  it: 'it'
+  it: 'it',
 };
 
 const Flags = () => {
@@ -26,16 +26,18 @@ const Flags = () => {
     <>
       {isOpen ? (
         <StyledMenu>
-          {Object.entries(countryCodes).filter(([key]) => key !== router.locale).map(([key, value]) => (
-            <Link href={`/`} key={key} locale={key}>
-              <Flag
-                countryCode={value}
-                height='30'
-                onClick={closeMenu}
-              />
-            </Link>
-          ))}
-          <Divider/>
+          <FadeIn delay='1000'>
+            {Object.entries(countryCodes)
+              .filter(([key]) => key !== router.locale)
+              .map(([key, value]) => (
+                <Link href={`/`} key={key} locale={key}>
+                  <Flag countryCode={value} height='30' onClick={closeMenu} />
+                </Link>
+              ))}
+          </FadeIn>
+          <FadeIn>
+            <Divider />
+          </FadeIn>
           <Flag
             countryCode={`${countryCodes[router.locale]}`}
             height='30'
@@ -43,7 +45,11 @@ const Flags = () => {
           />
         </StyledMenu>
       ) : (
-        <Flag countryCode={`${countryCodes[router.locale]}`} height='30' onClick={setIsOpen} />
+        <Flag
+          countryCode={`${countryCodes[router.locale]}`}
+          height='30'
+          onClick={setIsOpen}
+        />
       )}
     </>
   );

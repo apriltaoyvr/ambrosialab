@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../FadeIn';
 import Partner from './Partner/Partner';
 import { StoryWrapper, InnerWrapper, ParagraphWrapper } from './Story.styled';
 

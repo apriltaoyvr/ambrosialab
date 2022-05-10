@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import TeamMember from './TeamMember';
 import { TeamWrapper } from './Team.styled';
-import FadeIn from '../FadeIn';
+import FadeIn from '../../FadeIn';
 
 const Team = () => {
   const { t } = useTranslation('common');
