@@ -14,9 +14,6 @@
 
 # production
 /build
-/public/fonts
-/public/images
-/public/video
 
 # misc
 .DS_Store
