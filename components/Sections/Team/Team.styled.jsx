@@ -50,7 +50,7 @@ export const Portrait = styled.figure`
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid rgb(252, 153, 148);
+  border: 1.5px solid rgb(252, 153, 148);
 
   background-size: cover;
   background-image: url('/images/team/${(props) => props.image}');
@@ -65,8 +65,8 @@ export const Portrait = styled.figure`
 `;
 
 export const PortraitExtend = styled(Portrait)`
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   filter: none;
   margin: 1rem;
 

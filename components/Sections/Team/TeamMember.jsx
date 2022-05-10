@@ -31,8 +31,8 @@ const Team = (props) => {
         style={customStyles}
       >
         <PortraitExtend image={props.image} />
-        <h1>{props.name}</h1>
-        <h2>{props.title}</h2>
+        <h2>{props.name}</h2>
+        <h3>{props.title}</h3>
         <Description>{props.description}</Description>
       </Modal>
       <hgroup>
