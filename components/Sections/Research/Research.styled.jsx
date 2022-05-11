@@ -1,20 +1,5 @@
 import styled from 'styled-components';
 
-export const ItemWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-
-  justify-content: center;
-  align-self: center;
-
-  @media screen and (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: repeat(3, 445px);
-    grid-auto-columns: 500px;
-  }
-`;
-
 export const ResearchCard = styled.div`
   display: flex;
   flex-direction: column;
