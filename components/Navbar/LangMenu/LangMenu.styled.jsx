@@ -34,9 +34,5 @@ export const StyledMenu = styled.div`
     top: unset;
     padding: 0;
     flex-direction: column;
-
-    &:hover {
-      box-shadow: 0px 0px 2px rgba(244, 205, 221, 0.25);
-    }
   }
 `;

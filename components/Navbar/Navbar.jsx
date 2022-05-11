@@ -40,10 +40,10 @@ const Navbar = ({}) => {
         <LogoWrapper>
           <Link href='/'>
             <Image
-              src={'/images/logo-full.svg'}
+              src={'/static/images/logo.svg'}
               alt='AmbrosiaLab Logo'
-              width='150'
-              height='75'
+              width='50'
+              height='50'
               onClick={closeNav}
             />
           </Link>

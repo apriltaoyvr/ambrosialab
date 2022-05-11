@@ -5,9 +5,10 @@ import Image from 'next/image';
 export const StyledNav = styled.nav`
   position: fixed;
   right: 0;
-
   width: 100%;
   height: ${(props) => (props.isCollapsed ? '100vh' : 'unset')};
+  z-index: 3;
+
   border: ${(props) =>
     props.isCollapsed ? '2px solid transparent' : '2px dashed transparent'};
   border-bottom: 2px dashed var(--fg);
@@ -18,7 +19,6 @@ export const StyledNav = styled.nav`
   flex-direction: ${(props) => (props.isCollapsed ? 'column' : 'row')};
   justify-content: space-between;
   align-items: ${(props) => (props.isCollapsed ? 'flex-start' : 'center')};
-  z-index: 3;
 
   @media screen and (min-width: 1200px) {
     height: 100%;
@@ -38,34 +38,31 @@ export const StyledLinks = styled.div`
   display: ${(props) => (props.isCollapsed ? 'flex' : 'none')};
   flex-direction: column;
   align-self: center;
+  align-items: center;
   padding: 1rem;
 
   text-shadow: 0px 2px 6px hsla(232, 14%, 31%, 0.2);
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: flex-end;
-  }
-
   & a {
     font-size: 3rem;
 
-    @media screen and (min-width: 1200px) {
-      font-size: 1.5rem;
-    }
     &:hover {
       color: #eeffd5;
       text-shadow: 0px 0px 10px rgba(244, 205, 221, 0.25);
     }
   }
 
-  & span {
-    justify-items: center;
-
-    &:hover {
-      cursor: pointer;
+  & span:hover {
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & a {
+      font-size: 1.5rem;
     }
   }
+
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
@@ -95,4 +92,4 @@ export const LogoWrapper = styled.div`
   width: 100%;
   justify-content: center;
   margin-bottom: 1rem;
-`
+`;
