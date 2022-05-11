@@ -19,7 +19,7 @@ const ResearchItem = (props) => {
     <ResearchCard>
       <hgroup>
         <ResearchIcon>{props.icon}</ResearchIcon>
-        <h2>{props.title}</h2>
+        <h3>{props.title}</h3>
       </hgroup>
       <StyledButton onClick={openModal}>
         <p>{t('utility.learn')}</p>

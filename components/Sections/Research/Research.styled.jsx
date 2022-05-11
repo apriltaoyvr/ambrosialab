@@ -10,7 +10,7 @@ export const ItemWrapper = styled.div`
 
   @media screen and (min-width: 1200px) {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 400px);
     grid-auto-columns: 500px;
   }
 `;

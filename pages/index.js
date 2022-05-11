@@ -1,5 +1,8 @@
+/* Libs */
 import Head from 'next/head'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
+/* Components */
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Sections/Hero/Hero.jsx'
 import About from '../components/Sections/About/About';
@@ -10,8 +13,7 @@ import Awards from '../components/Sections/Awards';
 import Contact from '../components/Sections/Contact/Contact';
 import Footer from '../components/Sections/Footer';
 
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
+/* next-i18next */
 export async function getServerSideProps({ locale }) {
   return {
     props: {
