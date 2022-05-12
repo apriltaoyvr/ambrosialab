@@ -15,9 +15,11 @@ const Story = () => {
         <InnerWrapper>
           <FadeIn delay='1200'>
             <ParagraphWrapper>
-              {t('about.story.paragraphs', { returnObjects: true }).map((paragraph) => (
-                <p key={paragraph.id}>{paragraph}</p>
-              ))}
+              {t('about.story.paragraphs', { returnObjects: true }).map(
+                (paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                )
+              )}
             </ParagraphWrapper>
           </FadeIn>
           <FadeIn delay='800'>

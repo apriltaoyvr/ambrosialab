@@ -13,14 +13,14 @@ const Team = () => {
       </FadeIn>
       <FadeIn delay='1200'>
         <TeamWrapper>
-          {t('team', { returnObjects: true }).map((team) => (
+          {t('team', { returnObjects: true }).map((team, index) => (
             <TeamMember
               name={team.name}
               title={team.title}
               description={team.description}
               image={team.image}
-              key={team.id}
-            ></TeamMember>
+              key={index}
+            />
           ))}
         </TeamWrapper>
       </FadeIn>

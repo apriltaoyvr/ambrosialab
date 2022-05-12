@@ -1,8 +1,10 @@
 /* Libs */
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
+import LoadingScreen from '../components/Loading/LoadingScreen';
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Sections/Hero/Hero.jsx'
 import About from '../components/Sections/About/About';
@@ -23,23 +25,33 @@ export async function getServerSideProps({ locale }) {
 }
 
 export default function Home() {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 6000)
+  }, [])
+
   return (
     <>
       <Head>
         <title>AmbrosiaLab</title>
-        <meta name="description" content="A health, wellness, and cosmetics research company headquartered in Ferrara, Italy."/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" type="image/svg" href="/static/images/logo.svg"/>
+        <meta name="description" content="A health, wellness, and cosmetics research company headquartered in Ferrara, Italy." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/svg" href="/static/images/logo.svg" />
       </Head>
-      <Navbar />
-      <Hero />
-      <About />
-      <Research />
-      <Story />
-      <Team />
-      <Awards />
-      <Contact />
-      <Footer />
+      {loading === false ? (
+        <>
+          <Navbar />
+          <Hero />
+          <About />
+          <Research />
+          <Story />
+          <Team />
+          <Awards />
+          <Contact />
+          <Footer />
+        </>
+      ) : (<LoadingScreen />)}
     </>
   )
 }

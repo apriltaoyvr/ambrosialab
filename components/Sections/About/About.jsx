@@ -15,8 +15,8 @@ const About = () => {
         <IntroWrapper>
           <ParagraphWrapper>
             {t('about.paragraphs', { returnObjects: true }).map(
-              (paragraph) => (
-                <p key={paragraph.id}>{paragraph}</p>
+              (paragraph, index) => (
+                <p key={index}>{paragraph}</p>
               )
             )}
           </ParagraphWrapper>

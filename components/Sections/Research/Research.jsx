@@ -13,13 +13,13 @@ const Research = () => {
       </FadeIn>
       <FadeIn delay='1000'>
         <ItemWrapper>
-          {t('activities', { returnObjects: true }).map((activity) => (
+          {t('activities', { returnObjects: true }).map((activity, index) => (
             <ResearchItem
               title={activity.title}
               description={activity.description}
               info={activity.info}
               icon={activity.icon}
-              key={activity.id}
+              key={index}
             />
           ))}
         </ItemWrapper>

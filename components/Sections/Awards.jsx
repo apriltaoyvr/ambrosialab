@@ -31,8 +31,8 @@ const Awards = () => {
       </FadeIn>
       <FadeIn delay='1200'>
         <AwardsWrapper>
-          {t('awards', { returnObjects: true }).map((award) => (
-            <div key={award.id}>
+          {t('awards', { returnObjects: true }).map((award, index) => (
+            <div key={index}>
               <h3>{award.title}</h3>
               <AwardDesc>{award.description}</AwardDesc>
               <AwardDesc>{award.year}</AwardDesc>
