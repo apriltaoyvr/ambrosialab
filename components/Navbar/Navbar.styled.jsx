@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
 
 export const StyledNav = styled.nav`
   position: fixed;

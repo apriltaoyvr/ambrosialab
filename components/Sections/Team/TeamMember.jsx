@@ -22,7 +22,7 @@ const Team = (props) => {
   }
 
   return (
-    <TeamContent>
+    <TeamContent key={props.key}>
       <Portrait image={props.image} onClick={openModal} />
       <Modal
         isOpen={modalIsOpen}

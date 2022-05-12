@@ -38,19 +38,15 @@ const Flags = () => {
           <FadeIn>
             <Divider />
           </FadeIn>
-          <Flag
-            countryCode={`${countryCodes[router.locale]}`}
-            height='30'
-            onClick={toggleMenu}
-          />
         </StyledMenu>
       ) : (
-        <Flag
-          countryCode={`${countryCodes[router.locale]}`}
-          height='30'
-          onClick={setIsOpen}
-        />
+        ''
       )}
+      <Flag
+        countryCode={`${countryCodes[router.locale]}`}
+        height='30'
+        onClick={toggleMenu}
+      />
     </>
   );
 };
