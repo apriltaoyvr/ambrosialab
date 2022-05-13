@@ -63,25 +63,19 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'PP Supply Sans';
-    src: url('/fonts/PPSupplySans-Regular.woff2') format('woff2'),
-         url('/fonts/PPSupplySans-Regular.ttf') format('ttf'),
-         url('/fonts/PPSupplySans-Regular.otf') format('otf');
+    src: url('/fonts/PPSupplySans-Regular.ttf') format('ttf');
     font-weight: normal;
   }
 
   @font-face {
     font-family: 'PP Supply Sans';
-    src: url('/fonts/PPSupplySans-Bold.woff2') format('woff2'),
-         url('/fonts/PPSupplySans-Bold.ttf') format('ttf'),
-         url('/fonts/PPSupplySans-Bold.otf') format('otf');
+    src: url('https://res.cloudinary.com/dsbhmynmq/raw/upload/v1652411837/AmbrosiaLab/Font/PPSupplySans-Bold_dmicbx.ttf') format('ttf');
     font-weight: bold;
   }
 
   @font-face {
     font-family: 'PP Supply Mono';
-    src: url('/fonts/PPSupplyMono-Regular.woff2') format('woff2'),
-         url('/fonts/PPSupplyMono-Regular.ttf') format('ttf'),
-         url('/fonts/PPSupplyMono-Regular.otf') format('otf');
+    src: url('https://res.cloudinary.com/dsbhmynmq/raw/upload/v1652411837/AmbrosiaLab/Font/PPSupplyMono-Regular_i1gjsm.ttf') format('ttf');
     font-weight: normal;
   }
 

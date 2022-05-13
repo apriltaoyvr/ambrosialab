@@ -30,11 +30,16 @@ const Hero = () => {
   return (
     <StyledHero className='hero'>
       <VideoWrapper autoPlay muted loop>
-        <source src='/video/sour-cherry-blossom.mp4' type='video/mp4'></source>
+        <source
+          src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652411735/AmbrosiaLab/sour-cherry-blossom_uowq2m.mp4'
+          type='video/mp4'
+        ></source>
       </VideoWrapper>
       <TextWrapper>
         <TitleHero style={titleFade}>{t('section.name')}</TitleHero>
-        <SubtitleHero style={subtitleFade}>{t('section.subtitle')}</SubtitleHero>
+        <SubtitleHero style={subtitleFade}>
+          {t('section.subtitle')}
+        </SubtitleHero>
       </TextWrapper>
     </StyledHero>
   );
