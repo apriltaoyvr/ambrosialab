@@ -25,7 +25,7 @@ const FadeIn = ({ delay, children }) => {
 
 FadeIn.defaultProps = {
   delay: 500,
-  children: 'Test',
+  children: 'Test'
 };
 
 export default FadeIn;
