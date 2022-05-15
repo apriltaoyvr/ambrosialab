@@ -89,18 +89,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-  margin: 0;
-  padding: 0;
-  color: var(--fg);
-  background: hsl(17.7, 62%, 65.8%);
-  background: linear-gradient(
-    135deg,
-    hsl(339, 55.75%, 44.33%) 0%,
-    hsl(17.7, 62%, 65.8%) 100%
-  );
-  background-attachment: fixed;
-  font-family: 'PP Supply Mono', 'Fira Code', Monospace;  
-}
+    margin: 0;
+    padding: 0;
+    color: var(--fg);
+    background: hsl(17.7, 62%, 65.8%);
+    background: linear-gradient(
+      135deg,
+      hsl(339, 55.75%, 44.33%) 0%,
+      hsl(17.7, 62%, 65.8%) 100%
+    );
+    background-attachment: fixed;
+    font-family: 'PP Supply Mono', 'Fira Code', Monospace;  
+  }
 
   section {
     display: flex;
