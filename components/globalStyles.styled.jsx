@@ -108,6 +108,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-right: 
   }
 
   svg {
