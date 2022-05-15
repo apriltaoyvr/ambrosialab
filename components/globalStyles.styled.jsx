@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
     hsl(17.7, 62%, 65.8%) 100%
   );
   background-attachment: fixed;
-  font-family: 'PP Supply Sans', 'Fira Code', Monospace;  
+  font-family: 'PP Supply Mono', 'Fira Code', Monospace;  
 }
 
   section {
