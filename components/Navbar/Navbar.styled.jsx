@@ -19,7 +19,7 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: ${(props) => (props.isCollapsed ? 'flex-start' : 'center')};
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1700px) {
     height: 100%;
     width: unset;
     flex-direction: column;
@@ -54,14 +54,13 @@ export const StyledLinks = styled.div`
   & span:hover {
     cursor: pointer;
   }
-  
-  @media screen and (min-width: 1600px) {
+
+  @media screen and (min-width: 1700px) {
     display: flex;
     & a {
       font-size: 1.5rem;
     }
   }
-
 `;
 
 export const StyledIcon = styled(FontAwesomeIcon)`
@@ -73,7 +72,7 @@ export const StyledIcon = styled(FontAwesomeIcon)`
     cursor: pointer;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1700px) {
     display: none;
   }
 `;

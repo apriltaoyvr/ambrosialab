@@ -23,9 +23,9 @@ const Flags = () => {
   };
 
   return (
-    <>
+    <StyledMenu>
       {isOpen ? (
-        <StyledMenu>
+        <>
           <FadeIn delay='1000'>
             {Object.entries(countryCodes)
               .filter(([key]) => key !== router.locale)
@@ -35,10 +35,8 @@ const Flags = () => {
                 </Link>
               ))}
           </FadeIn>
-          <FadeIn>
-            <Divider />
-          </FadeIn>
-        </StyledMenu>
+          <Divider delay='500' />
+        </>
       ) : (
         ''
       )}
@@ -47,7 +45,7 @@ const Flags = () => {
         height='30'
         onClick={toggleMenu}
       />
-    </>
+    </StyledMenu>
   );
 };
 

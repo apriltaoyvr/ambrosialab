@@ -12,7 +12,7 @@ export const Divider = styled.hr`
   border-left: 1px solid hsla(202.5, 40%, 96%, 0.75);
   box-shadow: 0px 0px 2px rgba(244, 205, 221, 0.25);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1700px) {
     border: none;
     border-top: 1px solid hsla(202.5, 40%, 96%, 0.75);
   }
@@ -29,7 +29,7 @@ export const StyledMenu = styled.div`
   top: 0;
   right: 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1700px) {
     position: relative;
     top: unset;
     padding: 0;

@@ -28,7 +28,7 @@ export const TeamWrapper = styled.div`
   flex-direction: column;
   justify-items: center;
   align-self: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
 
   @media screen and (min-width: 1200px) {
