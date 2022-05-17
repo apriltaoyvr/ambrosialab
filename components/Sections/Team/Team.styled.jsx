@@ -47,8 +47,10 @@ export const Portrait = styled.figure`
   justify-content: center;
   align-self: center;
 
-  width: 150px;
-  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  aspect-ratio: 1;
+
   border-radius: 50%;
   border: 1.5px solid rgb(252, 153, 148);
 
@@ -65,8 +67,8 @@ export const Portrait = styled.figure`
 `;
 
 export const PortraitExtend = styled(Portrait)`
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   filter: none;
   margin: 1rem;
 
@@ -79,7 +81,7 @@ export const PortraitExtend = styled(Portrait)`
 
 export const customStyles = {
   overlay: {
-    background: '#c45d5d99',
+    background: 'rgba(196, 93, 93, 0.5)',
     backdropFilter: 'blur(6px)',
     display: 'flex',
     alignContent: 'center',
@@ -89,11 +91,11 @@ export const customStyles = {
     display: 'flex',
     flexDirection: 'column',
     background: `rgba(219, 157, 154, 0.25)`,
-    border: '1px solid rgba(252, 153, 148, 1)',
+    border: '1px solid #f7a9a5',
     borderRadius: '16px',
-    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
     color: 'var(--fg)',
-    height: 'min(40%, 800px)',
+    height: 'clamp(35%, 40%, 1000px)',
     width: 'clamp(40%, 700px, 90%)',
     top: '0',
     left: '0',

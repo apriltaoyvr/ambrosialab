@@ -77,7 +77,7 @@ export const StyledParagraph = styled.p`
 
 export const customStyles = {
   overlay: {
-    background: '#c45d5d99',
+    background: 'rgba(196, 93, 93, 0.5)',
     display: 'flex',
     alignContent: 'center',
     backdropFilter: 'blur(6px)',
@@ -86,9 +86,9 @@ export const customStyles = {
   },
   content: {
     background: `rgba(219, 157, 154, 0.25)`,
-    border: '1px solid rgba(252, 153, 148, 1)',
+    border: '1px solid #f7a9a5',
     borderRadius: '16px',
-    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
     color: 'var(--fg)',
     height: 'min(35%, 75%)',
     width: 'clamp(34%, 700px, 90%)',
