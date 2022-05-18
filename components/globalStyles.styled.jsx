@@ -128,23 +128,25 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3, h4, h5, h6 {
-    text-shadow: 0px 1px 6px hsl(2deg 46% 40%);
-  ;
+    font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
+    font-weight: normal;
     text-align: center;
-  }
-
-  figure {
-    user-select: none;
+    text-shadow: 0px 1px 6px hsl(2deg 46% 40%);
   }
 
   p, a {
     font-size: 1rem;
     font-weight: normal;
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
-    
+    font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
+
     @media screen and (min-width: 1200px) {
       font-size: 1.1rem;
     }
+  }
+
+  figure {
+    user-select: none;
   }
 
   h1 {
@@ -168,25 +170,23 @@ const GlobalStyle = createGlobalStyle`
   
   h3 {
     font-size: 1.5rem;
-    font-weight: normal;
   }
 
   h4 {
-    font-weight: normal;
     font-size: 1.25rem;
+
   }
   
   h5 {
-    font-weight: normal;
     font-size: 1rem;
+    font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
   }
 
   /* Keyframes */
   @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 `;
 
 export default GlobalStyle;
