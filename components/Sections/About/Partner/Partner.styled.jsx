@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const StyledPartner = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,7 +8,6 @@ export const StyledPartner = styled.div`
     text-align: center;
   }
 `;
-
 
 export const NumberWrapper = styled.h5`
   font-size: 3.5rem;

@@ -174,13 +174,11 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     font-weight: normal;
     font-size: 1.25rem;
-    font-family: 'PP Supply Mono';
   }
   
   h5 {
     font-weight: normal;
     font-size: 1rem;
-    font-family: 'PP Supply Mono';
   }
 
   /* Keyframes */
