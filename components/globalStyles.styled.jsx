@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'PP Supply Sans';
-    src: url('/fonts/PPSupplySans-Regular.ttf') format('ttf');
+    src: url('https://res.cloudinary.com/dsbhmynmq/raw/upload/v1652411837/AmbrosiaLab/Font/PPSupplySans-Regular_k4garq.ttf') format('ttf');
     font-weight: normal;
   }
 
@@ -108,7 +108,6 @@ const GlobalStyle = createGlobalStyle`
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    margin-right: 
   }
 
   svg {
@@ -141,7 +140,6 @@ const GlobalStyle = createGlobalStyle`
   p, a {
     font-size: 1rem;
     font-weight: normal;
-    font-family: 'PP Supply Mono';
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
     
     @media screen and (min-width: 1200px) {
