@@ -23,6 +23,7 @@ export const ResearchCard = styled.div`
   justify-content: space-between;
 
   border: 1px solid rgba(244, 205, 221, 0.5);
+  border-radius: 4px;
   transition: all 0.3s ease-out;
 
   & p {
@@ -54,6 +55,8 @@ export const StyledButton = styled.button`
   background: rgba(202, 168, 162, 0.1);
   color: var(--fg);
   border: 1px solid rgba(244, 205, 220, 0.75);
+  border-radius: 4px;
+
   padding: 0.5rem;
   width: 75%;
   align-self: center;
@@ -90,8 +93,8 @@ export const customStyles = {
     borderRadius: '16px',
     boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
     color: 'var(--fg)',
-    height: 'min(35%, 75%)',
-    width: 'clamp(34%, 700px, 90%)',
+    height: 'min(60%, 600px)',
+    width: 'clamp(40%, 700px, 80%)',
     top: '0',
     left: '0',
     animation: 'fadeIn 0.3s',

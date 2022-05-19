@@ -9,7 +9,7 @@ const About = () => {
     <StyledAbout id='about'>
       <FadeIn>
         <h1>{t('section.about')}</h1>
-        <h2>{t('about.subtitle')}</h2>
+        <h3>{t('about.subtitle')}</h3>
       </FadeIn>
       <FadeIn delay='800'>
         <IntroWrapper>
