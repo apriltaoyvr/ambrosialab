@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { StyledAbout, IntroWrapper, ParagraphWrapper } from './About.styled';
 import FadeIn from '../../FadeIn';
 import { useTranslation } from 'next-i18next';
@@ -21,6 +22,14 @@ const About = () => {
             )}
           </ParagraphWrapper>
         </IntroWrapper>
+      </FadeIn>
+      <FadeIn delay='1200'>
+        <Image
+          src='/images/honeycomb.svg'
+          width={150}
+          height={150}
+          alt='A minimalist arrangement of 3 hexagons'
+        />
       </FadeIn>
     </StyledAbout>
   );

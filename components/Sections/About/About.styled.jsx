@@ -1,26 +1,19 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
-  gap: 2rem;
+  
   background-image: url('/images/hexagons.svg');
   background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;
-
+  
   border-top: 1px solid
-    hsla(354, 46.84684684684685%, 56.470588235294116%, 0.9);
+  hsla(354, 46.84684684684685%, 56.470588235294116%, 0.9);
+  gap: 2rem;
 
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5 {
-    text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
-  }
-
-  & p {
-    text-shadow: 0px 1px 4px hsl(2deg 46% 40%);
-  }
+  justify-content: center;
+  align-items: center;
+  
 `;
 
 export const IntroWrapper = styled.main`
