@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Description = styled.p`
-  font-size: 1.2rem;
   padding: 1rem;
-  text-align: justify;
   transition: 'all 0.3s cubic-bezier(0.4, 0, 1, 1)';
 `;
 
@@ -67,8 +65,6 @@ export const Portrait = styled.figure`
 `;
 
 export const PortraitExtend = styled(Portrait)`
-  min-width: 200px;
-  min-height: 200px;
   filter: none;
   margin: 1rem;
 
@@ -82,7 +78,7 @@ export const PortraitExtend = styled(Portrait)`
 export const customStyles = {
   overlay: {
     background: 'rgba(196, 93, 93, 0.5)',
-    backdropFilter: 'blur(6px)',
+    backdropFilter: 'blur(12px)',
     display: 'flex',
     alignContent: 'center',
     transition: 'all 1s cubic-bezier(0.4, 0, 1, 1)',
@@ -92,10 +88,10 @@ export const customStyles = {
     flexDirection: 'column',
     background: `rgba(219, 157, 154, 0.25)`,
     border: '1px solid #f7a9a5',
-    borderRadius: '16px',
+    borderRadius: '6px',
     boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
     color: 'var(--fg)',
-    height: 'clamp(35%, 40%, 1000px)',
+    height: 'min(60%, 600px)',
     width: 'clamp(40%, 700px, 90%)',
     top: '0',
     left: '0',

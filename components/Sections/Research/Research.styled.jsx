@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
+export const StyledResearch = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-
-  justify-content: center;
-  align-self: center;
 
   @media screen and (min-width: 1200px) {
     display: grid;
@@ -18,9 +22,10 @@ export const ItemWrapper = styled.div`
 export const ResearchCard = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 
   border: 1px solid rgba(244, 205, 221, 0.5);
   border-radius: 4px;
@@ -83,14 +88,14 @@ export const customStyles = {
     background: 'rgba(196, 93, 93, 0.5)',
     display: 'flex',
     alignContent: 'center',
-    backdropFilter: 'blur(6px)',
+    backdropFilter: 'blur(12px)',
     overflow: 'hidden',
     transition: 'all 1s cubic-bezier(0.4, 0, 1, 1)',
   },
   content: {
     background: `rgba(219, 157, 154, 0.25)`,
     border: '1px solid #f7a9a5',
-    borderRadius: '16px',
+    borderRadius: '6px',
     boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
     color: 'var(--fg)',
     height: 'min(60%, 600px)',

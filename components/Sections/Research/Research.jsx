@@ -1,13 +1,13 @@
 import { useTranslation } from 'next-i18next';
 import ResearchItem from './ResearchItem';
 import FadeIn from '../../FadeIn';
-import { ItemWrapper } from './Research.styled';
+import { StyledResearch, ItemWrapper } from './Research.styled';
 
 const Research = () => {
   const { t } = useTranslation('common');
 
   return (
-    <section id='research'>
+    <StyledResearch id='research'>
       <FadeIn>
         <h1>{t('section.research')}</h1>
       </FadeIn>
@@ -24,7 +24,7 @@ const Research = () => {
           ))}
         </ItemWrapper>
       </FadeIn>
-    </section>
+    </StyledResearch>
   );
 };
 

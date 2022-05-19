@@ -16,7 +16,6 @@ export const StyledNav = styled.nav`
 
   display: flex;
   flex-direction: ${(props) => (props.isCollapsed ? 'column' : 'row')};
-  justify-content: space-between;
   align-items: ${(props) => (props.isCollapsed ? 'flex-start' : 'center')};
 
   @media screen and (min-width: 1700px) {
@@ -27,6 +26,8 @@ export const StyledNav = styled.nav`
     border-bottom: none;
     border-left: 2px dashed var(--fg);
     font-size: 1.5rem;
+    justify-content: space-between;
+    
     & .menu {
       display: none;
     }

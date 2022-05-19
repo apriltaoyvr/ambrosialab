@@ -4,10 +4,9 @@ import styled from 'styled-components';
 export const StyledHero = styled.header`
   background: linear-gradient(
     135deg,
-    hsla(339, 55.75%, 44.33%, 0.30) 0%,
-    hsla(18, 92.36%, 74.3%, 0.30) 100%
+    hsla(339, 55.75%, 44.33%, 0.4) 0%,
+    hsla(18, 92.36%, 74.3%, 0.4) 100%
   );
-  border-bottom: 2px dashed var(--fg);
 
   height: 100vh;
 

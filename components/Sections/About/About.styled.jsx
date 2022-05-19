@@ -2,6 +2,13 @@ import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
   gap: 2rem;
+  background-image: url('/images/hexagons.svg');
+  background-size: 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-top: 1px solid
+    hsla(354, 46.84684684684685%, 56.470588235294116%, 0.9);
 
   & h1,
   & h2,
