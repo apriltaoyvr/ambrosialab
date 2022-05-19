@@ -139,10 +139,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
     font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 1.1rem;
-    }
   }
 
   figure {
@@ -180,6 +176,10 @@ const GlobalStyle = createGlobalStyle`
   h5 {
     font-size: 1rem;
     font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
+  }
+
+  h6 {
+    font-size: 0.9rem;
   }
 
   /* Keyframes */
