@@ -26,6 +26,8 @@ export const StoryWrapper = styled.section`
 export const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;

@@ -12,6 +12,7 @@ export const StyledHero = styled.header`
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   & h1,
   & h2,
