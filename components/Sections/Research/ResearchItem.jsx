@@ -1,7 +1,13 @@
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { ResearchCard, ResearchIcon, StyledButton, StyledParagraph, customStyles } from './Research.styled';
+import {
+  ResearchCard,
+  ResearchIcon,
+  StyledButton,
+  StyledParagraph,
+  customStyles,
+} from './Research.styled';
 
 const ResearchItem = (props) => {
   const { t } = useTranslation('common');

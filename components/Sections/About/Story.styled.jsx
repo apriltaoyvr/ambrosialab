@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StoryWrapper = styled.section`
   background: linear-gradient(180deg, #7a8a62 0%, #858467 100%);
-  border-top: 2px dashed var(--fg);
-  border-bottom: 2px dashed var(--fg);
+  border-top: 1px solid hsla(201, 100%, 95%, 0.25);
+  border-bottom: 1px solid hsla(201, 100%, 95%, 0.25);
 
   h1,
   h2,
@@ -27,11 +27,12 @@ export const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
   }
 `;
 

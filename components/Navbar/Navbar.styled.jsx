@@ -5,18 +5,21 @@ export const StyledNav = styled.nav`
   position: fixed;
   right: 0;
   width: 100%;
-  height: ${(props) => (props.isCollapsed ? '100vh' : 'unset')};
+  height: ${(props) => (props.isOpen ? '100vh' : 'unset')};
   z-index: 3;
 
-  border: ${(props) =>
-    props.isCollapsed ? '2px solid transparent' : '2px dashed transparent'};
-  border-bottom: 2px dashed var(--fg);
-  backdrop-filter: blur(${(props) => (props.isCollapsed ? '30px' : '4px')});
+  border: 2px solid transparent;
+  border-bottom: ${(props) =>
+    props.isOpen
+      ? ''
+      : `1px dashed
+    hsla(201, 100%, 95%, 0.5)`};
+  backdrop-filter: blur(${(props) => (props.isOpen ? '30px' : '4px')});
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 
   display: flex;
-  flex-direction: ${(props) => (props.isCollapsed ? 'column' : 'row')};
-  align-items: ${(props) => (props.isCollapsed ? 'flex-start' : 'center')};
+  flex-direction: ${(props) => (props.isOpen ? 'column' : 'row')};
+  align-items: ${(props) => (props.isOpen ? 'flex-start' : 'center')};
 
   @media screen and (min-width: 1700px) {
     height: 100%;
@@ -24,10 +27,10 @@ export const StyledNav = styled.nav`
     flex-direction: column;
     gap: 1rem;
     border-bottom: none;
-    border-left: 2px dashed var(--fg);
+    border-left: 2px dashed hsla(201, 100%, 95%, 0.5);
     font-size: 1.5rem;
     justify-content: space-between;
-    
+
     & .menu {
       display: none;
     }
@@ -35,7 +38,7 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledLinks = styled.div`
-  display: ${(props) => (props.isCollapsed ? 'flex' : 'none')};
+  display: ${(props) => (props.isOpen ? 'flex' : 'none')};
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -83,7 +86,7 @@ export const NavFooter = styled.footer`
   flex-direction: column;
   gap: 1.5rem;
   padding: 1rem;
-  align-self: ${(props) => (props.isCollapsed ? 'center' : 'null')};
+  align-self: ${(props) => (props.isOpen ? 'center' : 'null')};
 `;
 
 export const LogoWrapper = styled.div`

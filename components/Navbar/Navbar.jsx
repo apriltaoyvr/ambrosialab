@@ -18,25 +18,25 @@ import LangMenu from './LangMenu/LangMenu';
 
 const Navbar = ({}) => {
   const { t } = useTranslation();
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
-    setIsCollapsed(!isCollapsed);
+    setIsOpen(!isOpen);
   };
 
   const closeNav = () => {
-    setIsCollapsed(false);
+    setIsOpen(false);
   };
 
   return (
-    <StyledNav isCollapsed={isCollapsed}>
-      {isCollapsed ? (
+    <StyledNav isOpen={isOpen}>
+      {isOpen ? (
         <StyledIcon icon={faX} size='2x' onClick={toggleNav} />
       ) : (
         <StyledIcon icon={faBars} size='2x' onClick={toggleNav} />
       )}
 
-      <StyledLinks isCollapsed={isCollapsed}>
+      <StyledLinks isOpen={isOpen}>
         <LogoWrapper>
           <Link href='/'>
             <Image
@@ -68,7 +68,7 @@ const Navbar = ({}) => {
         </Link>
       </StyledLinks>
 
-      <NavFooter isCollapsed={isCollapsed}>
+      <NavFooter isOpen={isOpen}>
         <LangMenu />
       </NavFooter>
     </StyledNav>
