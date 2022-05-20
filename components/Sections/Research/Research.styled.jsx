@@ -76,7 +76,6 @@ export const StyledButton = styled.button`
 
 export const StyledParagraph = styled.p`
   font-size: 1rem;
-  text-align: justify;
   padding: 1rem;
   @media screen and (min-width: 1200px) {
     font-size: 1rem;
