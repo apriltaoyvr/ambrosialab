@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
   
-  background-image: url('/images/hexagons.svg');
   background-size: 80% 80%;
   background-position: center;
   background-repeat: no-repeat;
