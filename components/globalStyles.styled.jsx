@@ -128,7 +128,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3, h4, h5, h6 {
-    font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
+    font-family: 'PP Supply Mono', 'Fira Code', Monospace;
     font-weight: normal;
     text-align: center;
     text-shadow: 0px 1px 6px hsl(2deg 46% 40%);
@@ -138,7 +138,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-weight: normal;
     text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
-    font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
+    font-family: 'PP Supply Mono', 'Fira Code', Monospace;
   }
 
   figure {
@@ -146,22 +146,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 2.5rem;
-    padding: 1rem;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 4rem;
-    }
+    font-size: clamp(1.5rem, 1.7527rem + 1.0989vw, 4.5rem);
+    padding: 0.5rem;
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: clamp(1.25rem, 1.7527rem + 1.0989vw, 2.5rem);
     font-weight: normal;
     padding-bottom: 1rem;
-
-    @media screen and (min-width: 1200px) {
-      font-size: 2.5rem;
-    }
   }
   
   h3 {
@@ -175,7 +167,7 @@ const GlobalStyle = createGlobalStyle`
   
   h5 {
     font-size: 1rem;
-    font-family: 'PP Supply Sans', 'PP Supply Mono', 'Fira Code', Monospace;
+    font-family: 'PP Supply Mono', 'Fira Code', Monospace;
   }
 
   h6 {
