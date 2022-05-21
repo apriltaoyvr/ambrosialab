@@ -9,7 +9,8 @@ export const StyledHero = styled.header`
   );
 
   height: 100vh;
-
+  word-break: break-all;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
