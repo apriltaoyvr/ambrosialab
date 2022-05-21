@@ -11,7 +11,7 @@ const AwardsWrapper = styled.main`
   grid-template-columns: 1fr;
   gap: 1rem;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1500px) {
     justify-content: center;
     grid-template-columns: repeat(3, 500px);
   }
