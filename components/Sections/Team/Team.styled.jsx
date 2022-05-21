@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Description = styled.p`
   padding: 1rem;
-  transition: 'all 0.3s cubic-bezier(0.4, 0, 1, 1)';
 `;
 
 export const TeamContent = styled.aside`
@@ -92,7 +91,7 @@ export const customStyles = {
     boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
     color: 'var(--fg)',
     height: 'min(75%, 500px)',
-    width: 'clamp(40%, 400px, 90%)',
+    width: 'clamp(30%, 400px, 90%)',
     top: '0',
     left: '0',
     animation: 'fadeIn 0.3s',

@@ -4,7 +4,12 @@ export const StyledAbout = styled.section`
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  
+      background: linear-gradient(
+      0deg,
+      hsl(332, 78.49462365591397%, 36.47058823529412%) 50%,
+      hsla(332, 78.49462365591397%, 36.47058823529412%, 0.5) 100%
+    );
+
 `;
 
 export const IntroWrapper = styled.main`

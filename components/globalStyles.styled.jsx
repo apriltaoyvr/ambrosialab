@@ -92,11 +92,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: var(--fg);
-    background: hsl(18, 62%, 65.8%);
     background: linear-gradient(
       135deg,
-      hsl(339, 55.75%, 44.33%) 0%,
-      hsl(18, 62%, 65.8%) 100%
+      hsl(332, 78.49462365591397%, 36.47058823529412%) 0%,
+      hsl(9, 62.06896551724138%, 65.88235294117646%) 100%
     );
     background-attachment: fixed;
     font-family: 'PP Supply Mono', 'Fira Code', Monospace;  

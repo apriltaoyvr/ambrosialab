@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StoryWrapper = styled.section`
   background: linear-gradient(180deg, #7a8a62 0%, #858467 100%);
-  border-top: 1px solid hsla(201, 100%, 95%, 0.25);
-  border-bottom: 1px solid hsla(201, 100%, 95%, 0.25);
+  border-top: 1px solid hsla(201, 100%, 95%, 0.75);
+  border-bottom: 1px solid hsla(201, 100%, 95%, 0.75);
 
   h1,
   h2,

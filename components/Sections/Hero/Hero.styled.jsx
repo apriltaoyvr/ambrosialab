@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 export const StyledHero = styled.header`
   background: linear-gradient(
-    135deg,
-    hsla(339, 55.75%, 44.33%, 0.25) 0%,
-    hsla(18, 92.36%, 74.3%, 0.25) 100%
+    180deg,
+    hsla(332, 78.49462365591397%, 36.47058823529412%, 0.2) 50%,
+    hsla(332, 78.49462365591397%, 36.47058823529412%, 0.5) 100%
   );
+
 
   height: 100vh;
   word-break: break-all;
@@ -30,7 +31,7 @@ export const StyledHero = styled.header`
 export const VideoWrapper = styled.video`
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   position: absolute;
   top: 0;
   left: 0;
