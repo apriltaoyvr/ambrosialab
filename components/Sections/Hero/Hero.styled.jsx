@@ -4,10 +4,9 @@ import styled from 'styled-components';
 export const StyledHero = styled.header`
   background: linear-gradient(
     180deg,
-    hsla(332, 78.49462365591397%, 36.47058823529412%, 0.2) 50%,
+    hsla(332, 78.49462365591397%, 36.47058823529412%, 0.2) 0%,
     hsla(332, 78.49462365591397%, 36.47058823529412%, 0.5) 100%
   );
-
 
   height: 100vh;
   word-break: break-all;
@@ -30,20 +29,20 @@ export const StyledHero = styled.header`
 
 export const VideoWrapper = styled.video`
   object-fit: cover;
-  width: 100vw;
-  height: 150vh;
   position: absolute;
+  width: 100vw;
+  height: 155vh;
   top: 0;
   left: 0;
   z-index: -1;
 `;
 
 export const TextWrapper = styled.hgroup`
-  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 12rem;
 
   @media screen and (min-width: 1200px) {
     width: 100%;
@@ -53,37 +52,13 @@ export const TextWrapper = styled.hgroup`
 `;
 
 export const TitleHero = styled(animated.h1)`
-  font-size: 3rem;
+  font-size: clamp(3rem, 1.7727rem + 5.4545vw, 12rem);
   font-weight: bold;
   text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
-
-  @media screen and (min-width: 768px) {
-    font-size: 6rem;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 8rem;
-  }
-
-  @media screen and (min-width: 1900px) {
-    font-size: 12rem;
-  }
 `;
 
 export const SubtitleHero = styled(animated.h2)`
   text-shadow: 0px 4px 6px hsl(2deg 46% 42%);
-  font-size: 2rem;
+  font-size: clamp(2rem, 1.4545rem + 2.4242vw, 6rem);
   font-weight: normal;
-
-  @media screen and (min-width: 768px) {
-    font-size: 3rem;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 4rem;
-  }
-
-  @media screen and (min-width: 1900px) {
-    font-size: 6rem;
-  }
 `;
