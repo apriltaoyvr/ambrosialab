@@ -9,10 +9,11 @@ const StyledAwards = styled.section`
 const AwardsWrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr;
+  gap: 1rem;
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 500px);
   }
 `;
 
