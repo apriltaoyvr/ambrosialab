@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const StyledHero = styled.header`
   background: linear-gradient(
     180deg,
-    hsla(332, 78.49462365591397%, 36.47058823529412%, 0.2) 0%,
-    hsla(332, 78.49462365591397%, 36.47058823529412%, 0.5) 100%
+    hsla(343, 50%, 49%, 0.2) 0%,
+    hsla(343, 50%, 49%, 0.5) 100%
   );
 
   height: 100vh;

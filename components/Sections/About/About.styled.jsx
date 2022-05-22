@@ -6,9 +6,9 @@ export const StyledAbout = styled.section`
   align-items: center;
       background: linear-gradient(
       0deg,
-      hsla(332, 78%, 36%, 1) 0%,
-      hsla(332, 78%, 36%, 0.9) 80%,
-      hsla(332, 78%, 36%, 0.5) 100%
+      hsl(343, 50%, 49%) 0%,
+      hsla(343, 50%, 49%, 0.9) 80%,
+      hsla(343, 50%, 49%, 0.5) 100%
     );
 
 `;

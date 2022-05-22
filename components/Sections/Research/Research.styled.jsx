@@ -5,7 +5,10 @@ export const StyledResearch = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: hsla(332, 78%, 36%, 1);
+  background: linear-gradient(
+    180deg, 
+    hsla(343, 50%, 49%, 1),
+    hsla(343, 50%, 49%, 0.5));
 `;
 
 export const ItemWrapper = styled.div`
