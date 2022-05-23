@@ -93,7 +93,6 @@ export const customStyles = {
     alignContent: 'center',
     backdropFilter: 'blur(12px)',
     overflow: 'hidden',
-    transition: 'all 1s cubic-bezier(0.4, 0, 1, 1)',
   },
   content: {
     background: `rgba(219, 157, 154, 0.25)`,
@@ -106,8 +105,6 @@ export const customStyles = {
     top: '0',
     left: '0',
     animation: 'fadeIn 0.3s',
-    transition: 'all 0.5s cubic-bezier(0.4, 0, 1, 1)',
-
     transform:
       'translate(calc( (100vw - 100%) / 2 ), calc( (100vh - 100%) / 2 )',
   },
