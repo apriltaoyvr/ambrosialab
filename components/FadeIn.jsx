@@ -16,6 +16,7 @@ const FadeIn = ({ delay, children }) => {
     },
     config: { tension: 220, friction: 120 },
   });
+
   return (
     <Waypoint onEnter={() => setInview(true)}>
       <animated.div style={transition}>{children}</animated.div>
@@ -24,8 +25,7 @@ const FadeIn = ({ delay, children }) => {
 };
 
 FadeIn.defaultProps = {
-  delay: 500,
-  children: 'Test'
+  delay: 500
 };
 
 export default FadeIn;
