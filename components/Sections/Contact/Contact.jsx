@@ -4,7 +4,6 @@ import {
   ContactWrapper,
   ContactItem,
 } from './Contact.styled.jsx';
-import FadeIn from '../../FadeIn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,
@@ -17,10 +16,7 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <FadeIn>
         <h1>{t('section.contact')}</h1>
-      </FadeIn>
-      <FadeIn>
         <ContactSection>
           <ContactWrapper>
             <ContactItem>
@@ -44,7 +40,6 @@ const Contact = () => {
             </ContactItem>
           </ContactWrapper>
         </ContactSection>
-      </FadeIn>
     </section>
   );
 };

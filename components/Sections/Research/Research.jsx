@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 /* Components */
 import ResearchItem from './ResearchItem';
-import FadeIn from '../../FadeIn';
 import {
   StyledResearch,
   ItemWrapper,
@@ -21,12 +20,9 @@ const Research = () => {
 
   return (
     <StyledResearch id='research'>
-      <FadeIn>
         <hgroup>
           <h1>{t('section.research')}</h1>
         </hgroup>
-      </FadeIn>
-      <FadeIn delay='1000'>
         <ItemWrapper>
           {t('research.activities', { returnObjects: true }).map(
             (activity, index) => (
@@ -40,13 +36,9 @@ const Research = () => {
             )
           )}
         </ItemWrapper>
-      </FadeIn>
-      <FadeIn delay='1500'>
         <hgroup>
           <h3>{t('research.subtitle')}</h3>
         </hgroup>
-      </FadeIn>
-      <FadeIn delay='1750'>
         <LogoWrapper>
           <Link href={'https://www.sbd4nano.eu/'} passHref>
             <Logo
@@ -60,7 +52,6 @@ const Research = () => {
             <Logo src={sd4} alt='SD4 logo' />
           </Link>
         </LogoWrapper>
-      </FadeIn>
     </StyledResearch>
   );
 };

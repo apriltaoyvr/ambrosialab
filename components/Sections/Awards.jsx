@@ -1,6 +1,5 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
-import FadeIn from '../FadeIn';
 
 const StyledAwards = styled.section`
   align-items: center;
@@ -27,10 +26,7 @@ const Awards = () => {
 
   return (
     <StyledAwards id='awards'>
-      <FadeIn>
         <h1>{t('section.awards')}</h1>
-      </FadeIn>
-      <FadeIn delay='1200'>
         <AwardsWrapper>
           {t('awards', { returnObjects: true }).map((award, index) => (
             <div key={index}>
@@ -40,7 +36,6 @@ const Awards = () => {
             </div>
           ))}
         </AwardsWrapper>
-      </FadeIn>
     </StyledAwards>
   );
 };

@@ -1,17 +1,13 @@
 import { useTranslation } from 'next-i18next';
 import TeamMember from './TeamMember';
 import { TeamWrapper } from './Team.styled';
-import FadeIn from '../../FadeIn';
 
 const Team = () => {
   const { t } = useTranslation('common');
 
   return (
     <section id='team'>
-      <FadeIn>
         <h1>{t('section.team')}</h1>
-      </FadeIn>
-      <FadeIn delay='1200'>
         <TeamWrapper>
           {t('team', { returnObjects: true }).map((team, index) => (
             <TeamMember
@@ -23,7 +19,6 @@ const Team = () => {
             />
           ))}
         </TeamWrapper>
-      </FadeIn>
     </section>
   );
 };
