@@ -1,5 +1,5 @@
 import { appWithTranslation } from 'next-i18next';
-import GlobalStyle from '../components/globalStyles.styled';
+import GlobalStyle from '../components/globalStyles';
 
 
 function MyApp({ Component, pageProps }) {

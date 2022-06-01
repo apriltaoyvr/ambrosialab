@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export const StyledResearch = styled.section`
   display: flex;
@@ -6,20 +7,42 @@ export const StyledResearch = styled.section`
   justify-content: center;
   align-items: center;
   background: linear-gradient(
-    180deg, 
+    180deg,
     hsla(343, 50%, 49%, 1),
-    hsla(343, 50%, 49%, 0.5));
+    hsla(343, 50%, 49%, 0.5)
+  );
 `;
 
 export const ItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  padding-bottom: 2.5rem;
 
   @media screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-auto-columns: 500px;
+  }
+`;
+
+export const LogoWrapper = styled.aside`
+  display: grid;
+  gap: 2rem;
+  margin: 2rem;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+  }
+`;
+
+export const Logo = styled(Image)`
+  transition: filter 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
   }
 `;
 

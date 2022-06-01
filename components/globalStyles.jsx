@@ -104,9 +104,8 @@ const GlobalStyle = createGlobalStyle`
   section {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 2rem 4rem;
+    gap: 1rem;
   }
 
   svg {
@@ -124,9 +123,11 @@ const GlobalStyle = createGlobalStyle`
   ;
     text-align: center;
     user-select: none;
+    margin: auto;
   }
 
   h3, h4, h5, h6 {
+    margin: auto;
     font-family: 'PP Supply Mono', 'Fira Code', Monospace;
     font-weight: normal;
     text-align: center;
