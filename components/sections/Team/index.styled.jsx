@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const Description = styled.p`
-  padding: 1rem;
-`;
-
 export const TeamWrapper = styled.div`
   display: flex;
   flex-direction: column;

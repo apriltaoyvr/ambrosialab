@@ -57,7 +57,7 @@ const Navbar = ({}) => {
         <Link href='/#story'>
           <a onClick={closeNav}>{t('section.story')}</a>
         </Link>
-        <Link href='/#team' >
+        <Link href='/#team'>
           <a onClick={closeNav}>{t('section.team')}</a>
         </Link>
         <Link href='/#awards'>

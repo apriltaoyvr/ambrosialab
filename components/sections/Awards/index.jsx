@@ -1,11 +1,17 @@
 import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const StyledAwards = styled.section`
+import {
+  fadeContainer,
+  fadeItem,
+} from '../../utility/framer';
+
+const StyledAwards = styled(motion.section)`
   align-items: center;
 `;
 
-const AwardsWrapper = styled.main`
+const AwardsWrapper = styled(motion.main)`
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -16,7 +22,7 @@ const AwardsWrapper = styled.main`
   }
 `;
 
-const AwardDesc = styled.p`
+const AwardDesc = styled(motion.p)`
   font-size: 1.25rem;
   text-align: center;
 `;
@@ -25,17 +31,23 @@ const Awards = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledAwards id='awards'>
-        <h1>{t('section.awards')}</h1>
-        <AwardsWrapper>
-          {t('awards', { returnObjects: true }).map((award, index) => (
-            <div key={index}>
-              <h3>{award.title}</h3>
-              <AwardDesc>{award.description}</AwardDesc>
-              <AwardDesc>{award.year}</AwardDesc>
-            </div>
-          ))}
-        </AwardsWrapper>
+    <StyledAwards
+      id='awards'
+      variants={fadeContainer}
+      initial='hidden'
+      whileInView='visible'
+      exit='hidden'
+    >
+      <motion.h1 variants={fadeItem}>{t('section.awards')}</motion.h1>
+      <AwardsWrapper>
+        {t('awards', { returnObjects: true }).map((award, index) => (
+          <motion.div key={index} variants={fadeItem}>
+            <motion.h3>{award.title}</motion.h3>
+            <AwardDesc>{award.description}</AwardDesc>
+            <AwardDesc>{award.year}</AwardDesc>
+          </motion.div>
+        ))}
+      </AwardsWrapper>
     </StyledAwards>
   );
 };

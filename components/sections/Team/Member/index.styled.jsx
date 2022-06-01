@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const TeamContent = styled.aside`
+export const TeamContent = styled(motion.aside)`
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -16,7 +17,7 @@ export const TeamContent = styled.aside`
   }
 `;
 
-export const Portrait = styled.figure`
+export const Portrait = styled(motion.figure)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,27 +53,6 @@ export const PortraitExtend = styled(Portrait)`
   }
 `;
 
-export const customStyles = {
-  overlay: {
-    background: 'rgba(196, 93, 93, 0.5)',
-    backdropFilter: 'blur(12px)',
-    display: 'flex',
-    alignContent: 'center',
-  },
-  content: {
-    display: 'flex',
-    flexDirection: 'column',
-    background: `rgba(219, 157, 154, 0.25)`,
-    border: '1px solid #f7a9a5',
-    borderRadius: '6px',
-    boxShadow: '0 4px 30px rgba(196, 93, 93, 0.1)',
-    color: 'var(--fg)',
-    height: 'min(75%, 500px)',
-    width: 'clamp(30%, 400px, 90%)',
-    top: '0',
-    left: '0',
-    animation: 'fadeIn 0.3s',
-    transform:
-      'translate(calc( (100vw - 100%) / 2 ), calc( (100vh - 100%) / 2 )',
-  },
-};
+export const Description = styled(motion.p)`
+  padding: 1rem;
+`;

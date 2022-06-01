@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { CircleFlag } from 'react-circle-flags';
+import { motion } from 'framer-motion';
 
 export const Flag = styled(CircleFlag)`
   &:hover {
@@ -7,7 +8,7 @@ export const Flag = styled(CircleFlag)`
   }
 `;
 
-export const Divider = styled.hr`
+export const Divider = styled(motion.hr)`
   border: none;
   border-left: 1px solid hsla(202.5, 40%, 96%, 0.75);
   box-shadow: 0px 0px 2px rgba(244, 205, 221, 0.25);
@@ -18,7 +19,7 @@ export const Divider = styled.hr`
   }
 `;
 
-export const StyledMenu = styled.div`
+export const StyledMenu = styled(motion.div)`
   display: flex;
   flex-direction: row;
   padding: 1rem;

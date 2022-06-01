@@ -1,40 +1,47 @@
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
-import Modal from 'react-modal';
+import Modal from '../../../utility/Modal';
+
 import {
   ResearchCard,
   ResearchIcon,
   StyledButton,
   StyledParagraph,
-  customStyles,
-} from '../index.styled';
+} from './index.styled';
+
+import {
+  fadeContainer,
+  fadeSubContainer,
+  fadeItem,
+} from '../../../utility/framer';
 
 const ResearchItem = (props) => {
   const { t } = useTranslation('common');
 
-  const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
+  const [modalOpen, setModalOpen] = useState(false);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  const close = () => {
+    setModalOpen(false);
+  };
+
+  const open = () => {
+    setModalOpen(true);
+  };
 
   return (
-    <ResearchCard>
+    <ResearchCard variants={fadeItem}>
       <hgroup>
         <ResearchIcon>{props.icon}</ResearchIcon>
         <h3>{props.title}</h3>
       </hgroup>
-      <StyledButton onClick={openModal}>
+      <StyledButton onClick={() => (modalOpen ? close() : open())}>
         <p>{t('utility.learn')}</p>
       </StyledButton>
       <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
+        modalOpen={modalOpen}
+        handleClose={close}
         contentLabel='Modal'
-        style={customStyles}
+        key={`Research Modal ${props.title}`}
       >
         <ResearchIcon>{props.icon}</ResearchIcon>
         <h2>{props.title}</h2>

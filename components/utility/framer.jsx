@@ -3,9 +3,8 @@ export const fadeContainer = {
   visible: {
     opacity: 1,
     transition: {
-      type: 'spring',
-      stiffness: 25,
-      staggerChildren: 0.33,
+      delay: 0.2,
+      staggerChildren: 0.5,
     },
   },
 };
@@ -15,8 +14,7 @@ export const fadeItem = {
   visible: {
     opacity: 1,
     transition: {
-      type: 'spring',
-      stiffness: 100,
+      duration: 0.66
     },
   },
 };

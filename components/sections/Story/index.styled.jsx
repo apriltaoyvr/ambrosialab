@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StoryWrapper = styled.section`
+export const Background = styled(motion.div)`
   background: linear-gradient(180deg, #7a8a62 0%, #858467 100%);
   border-top: 1px solid hsla(201, 100%, 95%, 0.75);
   border-bottom: 1px solid hsla(201, 100%, 95%, 0.75);
@@ -16,14 +17,16 @@ export const StoryWrapper = styled.section`
   p {
     text-shadow: 0px 1px 4px hsl(76deg 16% 27%);
   }
+`;
 
+export const StoryWrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 2rem;
 `;
 
-export const InnerWrapper = styled.div`
+export const InnerWrapper = styled(motion.main)`
   display: flex;
   flex-direction: column;
   align-items: center;

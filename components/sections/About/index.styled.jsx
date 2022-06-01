@@ -1,19 +1,23 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledAbout = styled.section`
+export const Background = styled(motion.div)`
+  background: linear-gradient(
+    0deg,
+    hsl(343, 50%, 49%) 0%,
+    hsla(343, 50%, 49%, 0.9) 80%,
+    hsla(343, 50%, 49%, 0.5) 100%
+  );
+`;
+
+export const StyledAbout = styled(motion.section)`
+  display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
-      background: linear-gradient(
-      0deg,
-      hsl(343, 50%, 49%) 0%,
-      hsla(343, 50%, 49%, 0.9) 80%,
-      hsla(343, 50%, 49%, 0.5) 100%
-    );
-
 `;
 
-export const IntroWrapper = styled.main`
+export const IntroWrapper = styled(motion.main)`
   display: grid;
 
   @media screen and (min-width: 1200px) {
@@ -21,7 +25,7 @@ export const IntroWrapper = styled.main`
   }
 `;
 
-export const ParagraphWrapper = styled.article`
+export const ParagraphWrapper = styled(motion.article)`
   align-self: center;
   grid-column: 2 / span 2;
 

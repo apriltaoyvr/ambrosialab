@@ -1,7 +1,11 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
 import { StyledMenu, Divider, Flag } from './index.styled';
+
+import { fadeContainer, fadeItem } from '../../framer';
 
 const countryCodes = {
   en: 'us',
@@ -22,18 +26,20 @@ const Flags = () => {
   };
 
   return (
-    <StyledMenu>
+    <StyledMenu variants={fadeContainer} initial='hidden' animate='visible'>
       {isOpen ? (
-        <>
-            {Object.entries(countryCodes)
-              .filter(([key]) => key !== router.locale)
-              .map(([key, value]) => (
-                <Link href={`/`} key={key} locale={key}>
+        <AnimatePresence>
+          {Object.entries(countryCodes)
+            .filter(([key]) => key !== router.locale)
+            .map(([key, value]) => (
+              <motion.div key={key} variants={fadeItem}>
+                <Link href={`/`} locale={key}>
                   <Flag countryCode={value} height='30' onClick={closeMenu} />
                 </Link>
-              ))}
-          <Divider delay='500' />
-        </>
+              </motion.div>
+            ))}
+          <Divider variants={fadeItem} />
+        </AnimatePresence>
       ) : (
         ''
       )}

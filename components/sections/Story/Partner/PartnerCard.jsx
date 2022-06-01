@@ -1,4 +1,4 @@
-import {StyledPartner, NumberWrapper, SubtitleWrapper} from './Partner.styled';
+import {StyledPartner, NumberWrapper, SubtitleWrapper} from './index.styled';
 
 const Partner = (props) => {
   return (

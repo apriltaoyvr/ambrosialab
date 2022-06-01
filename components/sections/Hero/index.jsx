@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next';
 
+import { fadeContainer, fadeItem } from '../../utility/framer';
 import {
   StyledHero, 
   VideoWrapper,
@@ -19,11 +20,14 @@ const Hero = () => {
           type='video/mp4'
         ></source>
       </VideoWrapper>
-      <TextWrapper>
-        <TitleHero >{t('section.name')}</TitleHero>
-        <SubtitleHero >
-          {t('section.subtitle')}
-        </SubtitleHero>
+      <TextWrapper
+        variants={fadeContainer}
+        initial='hidden'
+        whileInView='visible'
+        exit='hidden'
+      >
+        <TitleHero variants={fadeItem}>{t('section.name')}</TitleHero>
+        <SubtitleHero variants={fadeItem}>{t('section.subtitle')}</SubtitleHero>
       </TextWrapper>
     </StyledHero>
   );

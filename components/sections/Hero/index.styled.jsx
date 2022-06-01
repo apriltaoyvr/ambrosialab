@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-export const StyledHero = styled.header`
+export const StyledHero = styled(motion.header)`
   background: linear-gradient(
     180deg,
     hsla(343, 50%, 49%, 0.2) 0%,
@@ -27,7 +27,7 @@ export const StyledHero = styled.header`
   }
 `;
 
-export const VideoWrapper = styled.video`
+export const VideoWrapper = styled(motion.video)`
   object-fit: cover;
   position: absolute;
   width: 100vw;
@@ -37,7 +37,7 @@ export const VideoWrapper = styled.video`
   z-index: -1;
 `;
 
-export const TextWrapper = styled.hgroup`
+export const TextWrapper = styled(motion.hgroup)`
   display: flex;
   flex-direction: column;
   justify-content: center;
