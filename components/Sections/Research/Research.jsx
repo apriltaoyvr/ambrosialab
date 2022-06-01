@@ -43,7 +43,7 @@ const Research = () => {
       </FadeIn>
       <FadeIn delay='1500'>
         <hgroup>
-          <h3>Projects, Publications, and Organizations</h3>
+          <h3>{t('research.subtitle')}</h3>
         </hgroup>
       </FadeIn>
       <FadeIn delay='1750'>
