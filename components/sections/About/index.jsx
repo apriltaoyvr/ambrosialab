@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { StyledAbout, IntroWrapper, ParagraphWrapper } from './About.styled';
+import { StyledAbout, IntroWrapper, ParagraphWrapper } from './index.styled';
 import { useTranslation } from 'next-i18next';
 
 const About = () => {

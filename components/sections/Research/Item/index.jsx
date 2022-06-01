@@ -7,7 +7,7 @@ import {
   StyledButton,
   StyledParagraph,
   customStyles,
-} from './Research.styled';
+} from '../index.styled';
 
 const ResearchItem = (props) => {
   const { t } = useTranslation('common');

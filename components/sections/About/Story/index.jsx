@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Partner from './Partner/Partner';
-import { StoryWrapper, InnerWrapper, ParagraphWrapper } from './Story.styled';
+import { StoryWrapper, InnerWrapper, ParagraphWrapper } from './index.styled';
 
 const Story = () => {
   const { t } = useTranslation('common');

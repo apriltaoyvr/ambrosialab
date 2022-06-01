@@ -10,11 +10,11 @@ import {
   StyledIcon,
   LogoWrapper,
   NavFooter,
-} from './Navbar.styled';
+} from './index.styled';
 
 /* Icons */
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
-import LangMenu from './LangMenu/LangMenu';
+import LangMenu from './LangMenu';
 
 const Navbar = ({}) => {
   const { t } = useTranslation();

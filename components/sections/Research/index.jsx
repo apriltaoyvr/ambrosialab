@@ -3,13 +3,13 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 
 /* Components */
-import ResearchItem from './ResearchItem';
+import ResearchItem from './Item';
 import {
   StyledResearch,
   ItemWrapper,
   LogoWrapper,
   Logo,
-} from './Research.styled';
+} from './index.styled';
 
 /* Static Image Import */
 import bionano from '../../../public/images/subsidiary/bionano.png';

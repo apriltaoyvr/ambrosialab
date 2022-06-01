@@ -3,7 +3,7 @@ import {
   ContactSection,
   ContactWrapper,
   ContactItem,
-} from './Contact.styled.jsx';
+} from './index.styled.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPhone,

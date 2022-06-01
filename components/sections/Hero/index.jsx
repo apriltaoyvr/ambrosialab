@@ -7,7 +7,7 @@ import {
   TextWrapper,
   TitleHero,
   SubtitleHero
-} from './Hero.styled.jsx';
+} from './index.styled.jsx';
 
 const Hero = () => {
   const { t } = useTranslation('common');

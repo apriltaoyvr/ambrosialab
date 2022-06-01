@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useState } from 'react';
-import { StyledMenu, Divider, Flag } from './LangMenu.styled';
+import { StyledMenu, Divider, Flag } from './index.styled';
 
 const countryCodes = {
   en: 'us',
