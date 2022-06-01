@@ -24,26 +24,26 @@ const Research = () => {
       <FadeIn>
         <hgroup>
           <h1>{t('section.research')}</h1>
-          <h3>Subjects and focuses</h3>
         </hgroup>
       </FadeIn>
       <FadeIn delay='1000'>
         <ItemWrapper>
-          {t('activities', { returnObjects: true }).map((activity, index) => (
-            <ResearchItem
-              title={activity.title}
-              description={activity.description}
-              info={activity.info}
-              icon={activity.icon}
-              key={index}
-            />
-          ))}
+          {t('research.activities', { returnObjects: true }).map(
+            (activity, index) => (
+              <ResearchItem
+                title={activity.title}
+                description={activity.description}
+                info={activity.info}
+                icon={activity.icon}
+                key={index}
+              />
+            )
+          )}
         </ItemWrapper>
       </FadeIn>
       <FadeIn delay='1500'>
         <hgroup>
-          <h2>External</h2>
-          <h3>Projects, Research, and Publications</h3>
+          <h3>Projects, Publications, and Organizations</h3>
         </hgroup>
       </FadeIn>
       <FadeIn delay='1750'>
