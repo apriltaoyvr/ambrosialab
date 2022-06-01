@@ -10,11 +10,13 @@ const StyledLoader = styled.div`
   justify-content: center;
   align-items: center;
 
+  background: hsl(9, 62.06896551724138%, 65.88235294117646%);
+  
   & svg {
     min-width: 50vw;
     min-height: 25vh;
   }
-`
+`;
 
 const LoadingScreen = () => {
   return (
