@@ -1,5 +1,5 @@
-import { animated } from 'react-spring';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const StyledHero = styled.header`
   background: linear-gradient(
@@ -51,13 +51,13 @@ export const TextWrapper = styled.hgroup`
   }
 `;
 
-export const TitleHero = styled(animated.h1)`
+export const TitleHero = styled(motion.h1)`
   font-size: clamp(3rem, 1.7727rem + 5.4545vw, 12rem);
   font-weight: bold;
   text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
 `;
 
-export const SubtitleHero = styled(animated.h2)`
+export const SubtitleHero = styled(motion.h2)`
   text-shadow: 0px 4px 6px hsl(2deg 46% 42%);
   font-size: clamp(2rem, 1.4545rem + 2.4242vw, 6rem);
   font-weight: normal;

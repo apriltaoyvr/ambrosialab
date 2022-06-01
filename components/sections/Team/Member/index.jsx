@@ -6,10 +6,10 @@ import {
   PortraitExtend,
   Description,
   TeamContent,
-  customStyles
-} from './Team.styled.jsx';
+  customStyles,
+} from './index.styled';
 
-const Team = (props) => {
+const Member = (props) => {
   const { t } = useTranslation('common');
 
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -43,4 +43,4 @@ const Team = (props) => {
   );
 };
 
-export default Team;
+export default Member;

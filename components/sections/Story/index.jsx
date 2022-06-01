@@ -10,7 +10,7 @@ const Story = () => {
           <h1>{t('section.story')}</h1>
         <InnerWrapper>
             <ParagraphWrapper>
-              {t('about.story.paragraphs', { returnObjects: true }).map(
+              {t('story.paragraphs', { returnObjects: true }).map(
                 (paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 )

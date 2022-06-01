@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import { useSpring, config } from 'react-spring';
 
 import {
   StyledHero, 
@@ -12,21 +11,6 @@ import {
 const Hero = () => {
   const { t } = useTranslation('common');
 
-    const titleFade = useSpring({
-      to: { opacity: 1 },
-      from: { opacity: 0 },
-      delay: 1000,
-      config: config.molasses	
-    });
-
-    const subtitleFade = useSpring({
-      to: { opacity: 1 },
-      from: { opacity: 0 },
-      delay: 1300,
-      config: config.molasses,
-    });
-
-
   return (
     <StyledHero className='hero'>
       <VideoWrapper autoPlay muted loop>
@@ -36,8 +20,8 @@ const Hero = () => {
         ></source>
       </VideoWrapper>
       <TextWrapper>
-        <TitleHero style={titleFade}>{t('section.name')}</TitleHero>
-        <SubtitleHero style={subtitleFade}>
+        <TitleHero >{t('section.name')}</TitleHero>
+        <SubtitleHero >
           {t('section.subtitle')}
         </SubtitleHero>
       </TextWrapper>

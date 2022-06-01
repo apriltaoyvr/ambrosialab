@@ -4,12 +4,12 @@ import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
-import LoadingScreen from '../components/Loading/LoadingScreen';
+import LoadingScreen from '../components/utility/LoadingScreen';
 import Navbar from '../components/utility/Navbar';
-import Hero from '../components/sections/Hero/index.jsx'
+import Hero from '../components/sections/Hero/'
 import About from '../components/sections/About';
 import Research from '../components/sections/Research';
-import Story from '../components/sections/About/Story';
+import Story from '../components/sections/Story';
 import Team from '../components/sections/Team';
 import Awards from '../components/sections/Awards';
 import Contact from '../components/sections/Contact';
