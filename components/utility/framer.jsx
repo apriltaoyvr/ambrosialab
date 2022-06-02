@@ -4,7 +4,7 @@ export const fadeContainer = {
     opacity: 1,
     transition: {
       delay: 0.2,
-      staggerChildren: 0.5,
+      staggerChildren: 0.45,
     },
   },
 };

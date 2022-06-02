@@ -30,7 +30,7 @@ export const ItemWrapper = styled(motion.div)`
 
   @media screen and (min-width: 1200px) {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: 500px;
   }
 `;

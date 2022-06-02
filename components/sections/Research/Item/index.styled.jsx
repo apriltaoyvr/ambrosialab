@@ -10,7 +10,6 @@ export const ResearchCard = styled(motion.div)`
   padding: 1rem;
 
   border: 1px solid rgba(244, 205, 221, 0.5);
-  border-radius: 4px;
   transition: all 0.3s ease-out;
 
   & p {
@@ -41,7 +40,6 @@ export const StyledButton = styled(motion.button)`
   background: rgba(202, 168, 162, 0.1);
   color: var(--fg);
   border: 1px solid rgba(244, 205, 220, 0.75);
-  border-radius: 4px;
 
   padding: 0.5rem;
   width: 75%;
