@@ -10,7 +10,7 @@ export const StyledBackdrop = styled(motion.div)`
   bottom: 0;
   height: 100vh;
   width: 100vw;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,6 @@ export const StyledModal = styled(motion.div)`
   height: clamp(50%, 500px, 90%);
   margin: auto;
   padding: 1rem 1rem 2rem 1rem;
-  gap: 1rem;
 
   overflow-y: scroll;
 
@@ -37,7 +36,10 @@ export const StyledModal = styled(motion.div)`
   border: 1px solid #f7a9a5;
   box-shadow: 0 4px 30px rgba(196, 93, 93, 0.1);
 `;
+
 export const WindowBar = styled.hgroup`
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

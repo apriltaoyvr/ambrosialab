@@ -35,15 +35,17 @@ const Member = (props) => {
           key={`Modal ${props.title}`}
         >
           <PortraitExtend image={props.image} />
-          <motion.h3>{props.name}</motion.h3>
-          <motion.h5>{props.title}</motion.h5>
+          <hgroup>
+            <h3>{props.name}</h3>
+            <h5>{props.title}</h5>
+          </hgroup>
           <Description>{props.description}</Description>
         </Modal>
       )}
-      <motion.hgroup>
-        <motion.h3>{props.name}</motion.h3>
-        <motion.h4>{props.title}</motion.h4>
-      </motion.hgroup>
+      <hgroup>
+        <h3>{props.name}</h3>
+        <h4>{props.title}</h4>
+      </hgroup>
     </TeamContent>
   );
 };
