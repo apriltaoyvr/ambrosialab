@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 
 export const Background = styled(motion.div)`
   background: linear-gradient(
-    0deg,
-    hsl(343, 50%, 49%) 0%,
-    hsla(343, 50%, 49%, 0.9) 80%,
-    hsla(343, 50%, 49%, 0.5) 100%
+    180deg,
+    hsla(343, 50%, 49%, 0.75) 10%,
+    hsla(343, 50%, 49%, 0.9) 20%,
+    hsla(343, 50%, 49%, 1) 50%,
+    hsla(343, 50%, 49%, 1) 100%
   );
 `;
 
@@ -34,7 +35,7 @@ export const ParagraphWrapper = styled(motion.article)`
     padding-bottom: 2rem;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1700px) {
     align-self: flex-start;
   }
 `;

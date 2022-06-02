@@ -26,10 +26,12 @@ export const StyledModal = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: clamp(25%, 500px, 90%);
-  height: min-content;
+  height: clamp(50%, 500px, 90%);
   margin: auto;
   padding: 1rem 1rem 2rem 1rem;
   gap: 1rem;
+
+  overflow-y: scroll;
 
   background: rgba(219, 157, 154, 0.25);
   border: 1px solid #f7a9a5;

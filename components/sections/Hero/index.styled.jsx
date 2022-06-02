@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export const StyledHero = styled(motion.header)`
   background: linear-gradient(
     180deg,
-    hsla(343, 50%, 49%, 0.2) 0%,
-    hsla(343, 50%, 49%, 0.5) 100%
+    hsla(343, 50%, 49%, 0.25) 0%,
+    hsla(343, 50%, 49%, 0.75) 100%
   );
 
   height: 100vh;
