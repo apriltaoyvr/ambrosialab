@@ -55,9 +55,5 @@ export const StyledButton = styled(motion.button)`
 
 export const StyledParagraph = styled(motion.p)`
   font-size: 1rem;
-  padding: 1rem;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 1rem;
-  }
+  padding: 2rem;
 `;

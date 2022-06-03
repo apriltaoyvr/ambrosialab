@@ -28,7 +28,7 @@ export const Portrait = styled(motion.figure)`
   aspect-ratio: 1;
 
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 73% 95%, 26% 95%, 0% 50%);
-
+  
   background-size: contain;
   background-image: url('/images/team/${(props) => props.image}');
 
