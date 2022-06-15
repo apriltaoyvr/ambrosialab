@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 export const Background = styled(motion.div)`
   background: linear-gradient(
     180deg,
-    hsla(343, 50%, 49%, 0.75) 10%,
-    hsla(343, 50%, 49%, 0.9) 20%,
-    hsla(343, 50%, 49%, 1) 50%,
+    hsla(343, 50%, 49%, 0.99) 0%,
     hsla(343, 50%, 49%, 1) 100%
   );
 `;
