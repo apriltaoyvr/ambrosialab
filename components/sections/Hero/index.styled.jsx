@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const StyledHero = styled(motion.header)`
+  background: transparent;
   background: linear-gradient(
     180deg,
     hsla(343, 50%, 49%, 0.25) 0%,
