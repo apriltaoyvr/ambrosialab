@@ -13,10 +13,7 @@ import {
   Logo,
 } from './index.styled';
 
-import {
-  fadeContainer,
-  fadeItem,
-} from '../../utility/framer';
+import { fadeContainer, fadeItem } from '../../utility/framer';
 
 /* Static Image Import */
 import bionano from '../../../public/images/subsidiary/bionano.png';
@@ -51,7 +48,7 @@ const Research = () => {
         <motion.h3 variants={fadeItem}>{t('research.subtitle')}</motion.h3>
         <LogoWrapper>
           <motion.div variants={fadeItem}>
-            <Link href={'https://www.sbd4nano.eu/'} passHref>
+            <Link href={'https://www.bionanopolys.eu/'} passHref>
               <Logo
                 src={bionano}
                 sizes='25%'
@@ -61,7 +58,7 @@ const Research = () => {
             </Link>
           </motion.div>
           <motion.div variants={fadeItem}>
-            <Link href={'https://www.bionanopolys.eu/'} passHref>
+            <Link href={'https://www.sbd4nano.eu/'} passHref>
               <Logo src={sd4} alt='SD4 logo' />
             </Link>
           </motion.div>
