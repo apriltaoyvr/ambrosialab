@@ -9,13 +9,13 @@ export const Background = styled(motion.div)`
   h1,
   h2,
   h3 {
-    text-shadow: 0px 2px 2px hsl(76deg 16% 27%);
+    text-shadow: 0px 1px 4px hsl(76deg 16% 27%);
   }
 
   h4,
   h5,
   p {
-    text-shadow: 0px 1px 4px hsl(76deg 16% 27%);
+    text-shadow: 0px 1px 3px hsl(76deg 16% 27%);
   }
 `;
 

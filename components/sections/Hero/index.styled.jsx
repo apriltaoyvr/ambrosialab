@@ -9,8 +9,6 @@ export const StyledHero = styled(motion.header)`
   );
 
   height: 100vh;
-  word-break: break-all;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;

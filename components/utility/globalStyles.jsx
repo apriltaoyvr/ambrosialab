@@ -104,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
   section {
     display: flex;
     flex-direction: column;
-    padding: 2rem 4rem;
+    padding: 2rem;
     gap: 1rem;
   }
 
@@ -119,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2  {
-    text-shadow: 0px 2px 4px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 4px hsl(2deg 46% 40%);
   ;
     text-align: center;
     user-select: none;
@@ -131,13 +131,13 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'PP Supply Mono', 'Fira Code', Monospace;
     font-weight: normal;
     text-align: center;
-    text-shadow: 0px 1px 6px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
   }
 
   p, a {
     font-size: 1rem;
     font-weight: normal;
-    text-shadow: 0px 1px 3px hsl(2deg 46% 40%);
+    text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
     font-family: 'PP Supply Mono', 'Fira Code', Monospace;
   }
 

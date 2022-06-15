@@ -32,7 +32,7 @@ export const ResearchCard = styled(motion.div)`
 
 export const ResearchIcon = styled(motion.figure)`
   font-size: 5rem;
-  text-shadow: 1px 2px 2px hsl(2deg 46% 40%);
+  text-shadow: 1px 2px 4px hsl(2deg 46% 40%);
   text-align: center;
 `;
 
@@ -55,5 +55,6 @@ export const StyledButton = styled(motion.button)`
 
 export const StyledParagraph = styled(motion.p)`
   font-size: 1rem;
-  padding: 2rem;
+  text-align: justify;
+  padding: 3rem;
 `;
