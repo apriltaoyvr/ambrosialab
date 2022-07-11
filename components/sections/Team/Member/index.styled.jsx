@@ -8,10 +8,6 @@ export const TeamContent = styled(motion.aside)`
   justify-content: center;
   gap: 1rem;
 
-  &:last-child {
-    grid-column-start: 2;
-  }
-
   @media screen and (min-width: 1200px) {
     max-width: 80%;
   }
@@ -26,13 +22,14 @@ export const Portrait = styled(motion.figure)`
   min-width: 150px;
   min-height: 150px;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
-  background-size: contain;
+  background-size: cover;
   background-image: url('/images/team/${(props) => props.image}');
 
   filter: opacity(0.8);
-  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+  transition: filter 0.3s cubic-bezier(0.4, 0, 1, 1);
 
   &:hover {
     cursor: pointer;
@@ -53,4 +50,5 @@ export const PortraitExtend = styled(Portrait)`
 
 export const Description = styled(motion.p)`
   padding: 1rem;
+  text-align: justify;
 `;

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { CircleFlag } from 'react-circle-flags';
+import { motion } from 'framer-motion';
 
 export const StyledPartner = styled.div`
   display: flex;
@@ -7,6 +9,31 @@ export const StyledPartner = styled.div`
   & p {
     text-align: center;
   }
+`;
+
+export const PartnerWrapper = styled(motion.aside)`
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 5rem;
+  align-self: center;
+  grid-column: 9 / span 2;
+
+  @media screen and (min-width: 1200px) {
+    align-self: flex-start;
+  }
+`;
+
+export const FlagWrapper = styled.figure`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+`;
+
+export const StyledFlag = styled(CircleFlag)`
+  filter: drop-shadow(0px 1px 4px hsla(76deg 16% 27% 0.1));
 `;
 
 export const NumberWrapper = styled.h5`
