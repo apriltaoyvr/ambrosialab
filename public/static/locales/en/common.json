@@ -133,6 +133,18 @@
       "title": "Member of the Scientific Committee",
       "description": "The scientific committee plays a monitoring role in order to maintain high quality standards in the processes of business management and scientific-technological address in accordance with the trends of the cosmetic and nutritional market.",
       "image": "rastrelli.jpg"
+    },
+    {
+      "name": "Dr. Giacomo Panozzo",
+      "title": "Member of the Scientific Committee",
+      "description": "Dr. Giacomo Panozzo is an ophthalmologist and a research manager of ESASO (European School of Adv. Studies in Ophtalmology, Switzerland). The scientific committee plays a monitoring role in order to maintain high quality standards in the processes of business management and scientific-technological address in accordance with the trends of the cosmetic and nutritional market.",
+      "image": "panozzo.jpg"
+    },
+    {
+      "name": "Prof. Matteo Radice",
+      "title": "External Sustainability Consultant ",
+      "description": "Prof. Matteo Radice is a professor of UEA (Universidad Estatal Amazónica).",
+      "image": "radice.jpg"
     }
   ],
   "awards": [

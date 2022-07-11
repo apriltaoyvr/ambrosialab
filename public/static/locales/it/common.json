@@ -133,6 +133,18 @@
       "title": "Membro del Comitato Scientifico",
       "description": "Il comitato scientifico svolge ruolo di monitoraggio al fine del mantenimento di elevati standard qualitativi nei processi di gestione aziendale e di indirizzo scientifico-tecnologico in aderenza ai trend del mercato cosmetico e nutrizionale.",
       "image": "rastrelli.jpg"
+    },
+    {
+      "name": "Dott. Giacomo Panozzo",
+      "title": "Membro del Comitato Scientifico",
+      "description": "Il Dott. Giacomo Panozzo è un oculista e un responsabile della ricerca dell'ESASO (Scuola Europea di Studi Avanzati in Oftalmologia, Svizzera). Il comitato scientifico svolge ruolo di monitoraggio al fine del mantenimento di elevati standard qualitativi nei processi di gestione aziendale e di indirizzo scientifico-tecnologico in aderenza ai trend del mercato cosmetico e nutrizionale.",
+      "image": "panozzo.jpg"
+    },
+    {
+      "name": "Prof. Matteo Radice",
+      "title": "Consulente esterno per la sostenibilità",
+      "description": "Il Prof. Matteo Radice è professore dell'UEA (Universidad Estatal Amazónica).",
+      "image": "radice.jpg"
     }
   ],
   "awards": [
