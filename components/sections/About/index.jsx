@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {
-  Background, StyledAbout,
+  Background,
+  StyledAbout,
   IntroWrapper,
   ParagraphWrapper,
 } from './index.styled';
