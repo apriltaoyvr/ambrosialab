@@ -14,7 +14,28 @@ export const fadeItem = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.66
+      duration: 0.66,
     },
+  },
+};
+
+export const slideContainer = {
+  hidden: { opacity: 0, y: '10vh' },
+  visible: {
+    opacity: 1,
+    y: '0',
+    transition: {
+      delay: 0.2,
+      staggerChildren: 0.45,
+    },
+  },
+};
+
+export const slideItem = {
+  hidden: { opacity: 0, y: '2vh' },
+  visible: {
+    opacity: 1,
+    y: '0',
+    duration: 1,
   },
 };

@@ -23,7 +23,9 @@ export const Portrait = styled(motion.figure)`
   min-height: 150px;
   aspect-ratio: 1;
   border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 50%;
+  border: 2px solid #ce6469e6;
 
   background-size: cover;
   background-image: url('/images/team/${(props) => props.image}');

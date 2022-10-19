@@ -12,28 +12,35 @@ import {
 
 import {
   fadeContainer,
-  fadeSubContainer,
   fadeItem,
+  slideContainer,
+  slideItem,
 } from '../../utility/framer';
 
 const Story = () => {
   const { t } = useTranslation('common');
 
   return (
-    <Background>
+    <Background
+      id='story'
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+      }}
+      exit={{ opacity: 0 }}
+    >
       <StoryWrapper
-        id='story'
-        variants={fadeContainer}
+        variants={slideContainer}
         initial='hidden'
         whileInView='visible'
         exit='hidden'
       >
-        <motion.h1 variants={fadeItem}>{t('section.story')}</motion.h1>
+        <motion.h1>{t('section.story')}</motion.h1>
         <InnerWrapper>
-          <ParagraphWrapper>
+          <ParagraphWrapper variants={slideContainer}>
             {t('story.paragraphs', { returnObjects: true }).map(
               (paragraph, index) => (
-                <motion.p key={index} variants={fadeItem}>
+                <motion.p key={index} variants={slideItem}>
                   {paragraph}
                 </motion.p>
               )
