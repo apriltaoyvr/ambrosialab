@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 export const Background = styled(motion.div)`
   border-top: 1px solid hsla(201, 100%, 95%, 0.75);
   border-bottom: 1px solid hsla(201, 100%, 95%, 0.75);
-  background-color: hsl(0, 0%, 0%, 0.025);
   backdrop-filter: blur(4px);
+  background-color: hsl(342, 51%, 48%);
   background-image: radial-gradient(
       at 40% 20%,
-      hsla(28, 100%, 74%, 0.33) 0px,
+      hsla(28, 100%, 74%, 0.45) 0px,
       transparent 50%
     ),
-    radial-gradient(at 80% 0%, hsla(212, 100%, 56%, 0.33) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.33) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 0.33) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 0.33) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(283, 48%, 66%, 0.33) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0.33) 0px, transparent 50%);
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.45) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.45) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 0.45) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 0.45) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 0.45) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0.45) 0px, transparent 50%);
 `;
 
 export const StoryWrapper = styled(motion.section)`
@@ -24,6 +24,7 @@ export const StoryWrapper = styled(motion.section)`
   flex-direction: column;
   justify-content: flex-start;
   gap: 2rem;
+  background-color: hsla(342, 51%, 48%, 0.2);
 `;
 
 export const InnerWrapper = styled(motion.main)`
