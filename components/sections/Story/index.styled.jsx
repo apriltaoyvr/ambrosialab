@@ -7,16 +7,12 @@ export const Background = styled(motion.div)`
   backdrop-filter: blur(4px);
   background-color: hsl(342, 51%, 48%);
   background-image: radial-gradient(
-      at 40% 20%,
-      hsla(28, 100%, 74%, 0.45) 0px,
+      at 70% 70%,
+      hsla(25, 77%, 60%, 0.5) 0px,
       transparent 50%
     ),
-    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.45) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.45) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 0.45) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 0.45) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 0.45) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0.45) 0px, transparent 50%);
+    radial-gradient(at 20% 82%, hsla(45, 88%, 65%, 0.5) 0px, transparent 50%),
+    radial-gradient(at 52% 20%, hsla(343, 65%, 64%, 0.5) 0px, transparent 50%);
 `;
 
 export const StoryWrapper = styled(motion.section)`
