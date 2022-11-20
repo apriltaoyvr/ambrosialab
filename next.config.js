@@ -1,5 +1,12 @@
-const { i18n } = require('./next-i18next.config')
+const path = require('path')
 
 module.exports = {
-  i18n,
+  i18n: {
+    defaultLocale: 'it',
+    locales: ['en', 'it'],
+    localePath: path.resolve('./public/static/locales')
+  },
+  compiler: {
+    styledComponents: true,
+  },
 }
