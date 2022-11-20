@@ -48,23 +48,23 @@ const Navbar = ({}) => {
             />
           </Link>
         </LogoWrapper>
-        <Link href='/#about'>
-          <a onClick={closeNav}>{t('section.about')}</a>
+        <Link href='/#about' onClick={closeNav}>
+          {t('section.about')}
         </Link>
-        <Link href='/#research'>
-          <a onClick={closeNav}>{t('section.research')}</a>
+        <Link href='/#research' onClick={closeNav}>
+          {t('section.research')}
         </Link>
-        <Link href='/#story'>
-          <a onClick={closeNav}>{t('section.story')}</a>
+        <Link href='/#story' onClick={closeNav}>
+          {t('section.story')}
         </Link>
-        <Link href='/#team'>
-          <a onClick={closeNav}>{t('section.team')}</a>
+        <Link href='/#team' onClick={closeNav}>
+          {t('section.team')}
         </Link>
-        <Link href='/#awards'>
-          <a onClick={closeNav}>{t('section.awards')}</a>
+        <Link href='/#awards' onClick={closeNav}>
+          {t('section.awards')}
         </Link>
-        <Link href='/#contact'>
-          <a onClick={closeNav}>{t('section.contact')}</a>
+        <Link href='/#contact' onClick={closeNav}>
+          {t('section.contact')}
         </Link>
       </StyledLinks>
 
