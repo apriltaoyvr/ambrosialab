@@ -21,6 +21,7 @@ import sd4 from '../../../public/images/subsidiary/sd4.png';
 
 const Research = () => {
   const { t } = useTranslation('common');
+  const css = { width: '100%', height: 'auto' };
 
   return (
     <Background id='research'>
@@ -49,17 +50,12 @@ const Research = () => {
         <LogoWrapper>
           <motion.div variants={fadeItem}>
             <Link href={'https://www.bionanopolys.eu/'} passHref>
-              <Logo
-                src={bionano}
-                sizes='25%'
-                fill='responsive'
-                alt='Bionano logo'
-              />
+              <Logo src={bionano} sizes='25%' style={css} alt='Bionano logo' />
             </Link>
           </motion.div>
           <motion.div variants={fadeItem}>
             <Link href={'https://www.sbd4nano.eu/'} passHref>
-              <Logo src={sd4} alt='SD4 logo' />
+              <Logo src={sd4} alt='SD4 logo' style={css} />
             </Link>
           </motion.div>
         </LogoWrapper>
