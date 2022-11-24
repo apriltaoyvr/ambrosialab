@@ -1,24 +1,113 @@
 {
-  "utility": {
-    "learn": "Learn more"
-  },
-  "section": {
-    "name": "AmbrosiaLab",
-    "subtitle": "Health + Wellness Research",
-    "about": "About",
-    "research": "Research",
-    "story": "Story",
-    "team": "Team",
-    "awards": "Awards",
-    "contact": "Contact"
-  },
   "about": {
-    "subtitle": "A simple and intuitive design is an effective design",
     "paragraphs": [
       "Our company is able to provide complete assistance in all phases of project development: clinical validation of the formulas conceived, development of the prototype, stability and efficacy assessments, training of those responsible for scientific dissemination.",
       "AmbrosiaLab represents an extremely competent external partner for client companies, which makes use of a set of resources, tools and cutting-edge technologies of its own and of the entire university network.",
       "AmbrosiaLab also offers research and development interventions through which you can have all the know-how necessary for the creation and marketing of your finished product."
-    ]
+    ],
+    "subtitle": "A simple and intuitive design is an effective design"
+  },
+  "awards": [
+    {
+      "description": "Best University Startups",
+      "title": "Premio SICC – Luigi Carinelli",
+      "year": "2015"
+    },
+    {
+      "description": "Company Excellence",
+      "title": "Provincial Award",
+      "year": "2011 "
+    },
+    {
+      "description": "Day of Remembrance and Gratitude",
+      "title": "Provincial Recognition",
+      "year": "2006"
+    },
+    {
+      "description": "SPF Booster",
+      "title": "Mauro Prevedello",
+      "year": "2006"
+    },
+    {
+      "description": "Female Enterprises",
+      "title": "Provincial Award",
+      "year": "2005"
+    }
+  ],
+  "gallery": [
+    "Paola and Eleonora at the Making Cosmetics conference, proud of our inventions"
+  ],
+  "partners": {
+    "first": {
+      "subtitle": "Raw Materials",
+      "title": "Production Partners"
+    },
+    "second": {
+      "subtitle": "Under an AmbrosiaLab licence",
+      "title": "Business Partners"
+    },
+    "third": {
+      "subtitle": "Finished Products",
+      "title": "Production Partners"
+    }
+  },
+  "research": {
+    "activities": [
+      {
+        "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
+        "icon": "faLips",
+        "info": "The consultancy on cosmetic products includes the execution of basic analyzes on raw materials and the creation of prototypes and finished products, up to the realization of the final formulation with the commissioning of the pilot test. \nThanks to a work team, heterogeneous in experience and professional training, the product development project is followed in all its facets, chemical, microbiological and practical. \nIn particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. \nScientific assistance for the development of customized applications and patented products. The technical skills acquired in the field of UV protection allow 360 ° assistance in the development of solar products.",
+        "title": "Cosmetics"
+      },
+      {
+        "description": "Active ingredients research and product design. Regulatory support.",
+        "icon": "faPotFood",
+        "info": "Research and selection of active ingredients aimed at product design and enhancement of synergies between functional ingredients. \nScientific support on a bibliographic basis of the effects claimed by the product. In particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. Scientific assistance for the development of customized applications and patented products.",
+        "title": "Supplements and Food"
+      },
+      {
+        "description": "Search and selection of raw materials with mechanism consistent with the definition of MD.",
+        "icon": "faSuitcaseMedical",
+        "info": "Research and selection of raw materials with a mechanism compatible with the definition of DM, aimed at the design and development of formulation prototypes (topical forms). Clinical evaluation on a bibliographic basis for the preparation of the technical file.",
+        "title": "Medical Devices"
+      },
+      {
+        "description": "Clinical evaluations on cosmetic products and supplements.",
+        "icon": "faVial",
+        "info": "Clinical evaluations on cosmetic products and supplements, in particular: efficacy evaluations (hydration, sebometry, soothing action, elasticity, skin collagen, antioxidant capacity), safety evaluations (patch test, PAO, nickel test), home use tests on an appropriately selected panel of consumers. \nIn vitro evaluations to provide information relating to the safety profile and functionality of the finished cosmetic product, in particular microbiological analyzes and stability studies, especially useful in the product development phase or as a screening test on raw materials in order to select the active ingredient with the best tolerability and efficacy profile. \nProcessing and setting up of specific and personalized protocols in vitro and in vivo for the evaluation of the efficacy of cosmetics and supplements. \nEvaluation of the sun protection factor (SPF) in vivo and UVA in vitro according to the ISO protocol. \nExecution of analyzes and tests for quality control, in particular in vitro tests for the evaluation of the antioxidant capacity of raw materials and finished products.",
+        "title": "Testing"
+      },
+      {
+        "description": "Consultancy in the patents field, patent search and filling of patent applications.",
+        "icon": "faFileCertificate",
+        "info": "Patent consultancy, with particular reference to the technical-scientific component, including drafting of patents, assistance in infringement disputes, technical consultancy.",
+        "title": "Patents"
+      },
+      {
+        "description": "Contract researcher and scientific support in pharmaceutic, cosmetic and nutrition.",
+        "icon": "faMicroscope",
+        "info": "Consultancy and bibliographic research for scientific support in the pharmaceutical, cosmetic and nutritional fields for the compilation of rationales, clinical evaluations, technical dossiers, material for scientific communication.",
+        "title": "Scientific Activities"
+      },
+      {
+        "description": "Regulatory assistance in pharmaceutical, cosmetic and nutritional fields.",
+        "icon": "faScaleBalanced",
+        "info": "Advice on regulatory aspects relating to all aspects relating to the production and marketing of cosmetic products (Regulation (EC) No. 1223/2009 of the European Parliament and of the Council, of 30 November 2009, on cosmetic products and related updates), including notification of cosmetic products on the European portal and the evaluation of the safety of cosmetic products with the preparation of the Cosmetic Product Safety Report (CPSR) and Product Information File (PIF) as required by Reg. Regulation (EC) no. 1223/2009.",
+        "title": "Regulations"
+      }
+    ],
+    "subtitle": "Projects, Publications, and Organizations"
+  },
+  "section": {
+    "about": "About",
+    "awards": "Awards",
+    "contact": "Contact",
+    "gallery": "Gallery",
+    "name": "AmbrosiaLab",
+    "research": "Research",
+    "story": "Story",
+    "subtitle": "Health + Wellness Research",
+    "team": "Team"
   },
   "story": {
     "paragraphs": [
@@ -30,160 +119,75 @@
       "Its prime location in the university area but close to the motorway link and rail, are ideal for an effective technological exchange to its institutional partners."
     ]
   },
-  "partners": {
-    "first": {
-      "title": "Production Partners",
-      "subtitle": "Raw Materials"
-    },
-    "second": {
-      "title": "Business Partners",
-      "subtitle": "Under an AmbrosiaLab licence"
-    },
-    "third": {
-      "title": "Production Partners",
-      "subtitle": "Finished Products"
-    }
-  },
-  "research": {
-    "subtitle": "Projects, Publications, and Organizations",
-    "activities": [
-      {
-        "title": "Cosmetics",
-        "description": "Research and development of new ingredients, prototypes and finished products, regulatory assistance.",
-        "icon": "💅",
-        "info": "The consultancy on cosmetic products includes the execution of basic analyzes on raw materials and the creation of prototypes and finished products, up to the realization of the final formulation with the commissioning of the pilot test. \nThanks to a work team, heterogeneous in experience and professional training, the product development project is followed in all its facets, chemical, microbiological and practical. \nIn particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. \nScientific assistance for the development of customized applications and patented products. The technical skills acquired in the field of UV protection allow 360 ° assistance in the development of solar products."
-      },
-      {
-        "title": "Supplements and Food",
-        "description": "Active ingredients research and product design. Regulatory support.",
-        "icon": "💊",
-        "info": "Research and selection of active ingredients aimed at product design and enhancement of synergies between functional ingredients. \nScientific support on a bibliographic basis of the effects claimed by the product. In particular, in the study of new formulations new products with a high technological content are created, continuously searching for new raw materials, which meet both the functional requirements and specific marketing requests. Scientific assistance for the development of customized applications and patented products."
-      },
-      {
-        "title": "Medical Devices",
-        "description": "Search and selection of raw materials with mechanism consistent with the definition of MD.",
-        "icon": "⚕️",
-        "info": "Research and selection of raw materials with a mechanism compatible with the definition of DM, aimed at the design and development of formulation prototypes (topical forms). Clinical evaluation on a bibliographic basis for the preparation of the technical file."
-      },
-      {
-        "title": "Testing",
-        "description": "Clinical evaluations on cosmetic products and supplements.",
-        "icon": "🧪",
-        "info": "Clinical evaluations on cosmetic products and supplements, in particular: efficacy evaluations (hydration, sebometry, soothing action, elasticity, skin collagen, antioxidant capacity), safety evaluations (patch test, PAO, nickel test), home use tests on an appropriately selected panel of consumers. \nIn vitro evaluations to provide information relating to the safety profile and functionality of the finished cosmetic product, in particular microbiological analyzes and stability studies, especially useful in the product development phase or as a screening test on raw materials in order to select the active ingredient with the best tolerability and efficacy profile. \nProcessing and setting up of specific and personalized protocols in vitro and in vivo for the evaluation of the efficacy of cosmetics and supplements. \nEvaluation of the sun protection factor (SPF) in vivo and UVA in vitro according to the ISO protocol. \nExecution of analyzes and tests for quality control, in particular in vitro tests for the evaluation of the antioxidant capacity of raw materials and finished products."
-      },
-      {
-        "title": "Patents",
-        "description": "Consultancy in the patents field, patent search and filling of patent applications.",
-        "icon": "📋",
-        "info": "Patent consultancy, with particular reference to the technical-scientific component, including drafting of patents, assistance in infringement disputes, technical consultancy."
-      },
-      {
-        "title": "Scientific Activities",
-        "description": "Contract researcher and scientific support in pharmaceutic, cosmetic and nutrition.",
-        "icon": "🥼",
-        "info": "Consultancy and bibliographic research for scientific support in the pharmaceutical, cosmetic and nutritional fields for the compilation of rationales, clinical evaluations, technical dossiers, material for scientific communication."
-      },
-      {
-        "title": "Regulations",
-        "description": "Regulatory assistance in pharmaceutical, cosmetical and nutritional fields.",
-        "icon": "⚖️",
-        "info": "Advice on regulatory aspects relating to all aspects relating to the production and marketing of cosmetic products (Regulation (EC) No. 1223/2009 of the European Parliament and of the Council, of 30 November 2009, on cosmetic products and related updates), including notification of cosmetic products on the European portal and the evaluation of the safety of cosmetic products with the preparation of the Cosmetic Product Safety Report (CPSR) and Product Information File (PIF) as required by Reg. Regulation (EC) no. 1223/2009."
-      }
-    ]
-  },
   "team": [
     {
-      "name": "Stefano Manfredini",
-      "title": "Founder + Member of the Scientific Committee",
       "description": "Stefano Manfredini is a professor of pharmaceutical chemistry and toxicology, Director of the Master in Cosmetic Science and Technology at the University of Ferrara, Italy.",
-      "image": "manfredini.jpg"
+      "image": "manfredini.jpg",
+      "name": "Stefano Manfredini",
+      "title": "Founder + Member of the Scientific Committee"
     },
     {
-      "name": "Silvia Vertuani",
-      "title": "Founder + Member of the Scientific Committee",
       "description": "Silvia Vertuani, Ph.D. in Cosmetic Science, Specialist in Cosmetic Science and Technology, Associate Professor at the Department of Pharmaceutical Chemistry and Toxicology, University of Ferrara, Faculty of Pharmacy.",
-      "image": "vertuani.jpg"
+      "image": "vertuani.jpg",
+      "name": "Silvia Vertuani",
+      "title": "Founder + Member of the Scientific Committee"
     },
     {
-      "name": "Paola Ziosi",
-      "title": "R&D Cosmetics Manager",
       "description": "Paola Ziosi, graduated in 1999 in Chemistry and Pharmaceutical Technology and specialized in Cosmetic Science in 2002, is currently in charge of research and development laboratory of AmbrosiaLab.",
-      "image": "ziosi.jpg"
+      "image": "ziosi.jpg",
+      "name": "Paola Ziosi",
+      "title": "R&D Cosmetics Manager"
     },
     {
-      "name": "Sonia Molesini",
-      "title": "R&D MD Manager",
       "description": "Degree in Pharmaceutical Chemistry and Technology, Master in Forensic Sciences and specializes in the assessment of cosmetics safety. Currently is in charge of regulatory activities, the design and implementation of effective testing and scientific consultancy.",
-      "image": "molesini.jpg"
+      "image": "molesini.jpg",
+      "name": "Sonia Molesini",
+      "title": "R&D MD Manager"
     },
     {
-      "name": "Eleonora Lodi",
-      "title": "Prototype Development Manager",
       "description": "Eleonora Lodi, graduated in sciences and technologies of dietary and herbal cosmetic products. She is responsible for the preparation of cosmetic products.",
-      "image": "lodi.jpg"
+      "image": "lodi.jpg",
+      "name": "Eleonora Lodi",
+      "title": "Prototype Development Manager"
     },
     {
-      "name": "Silvia Bolognesi",
-      "title": "Administrative Manager",
       "description": "Graduated in Economics from the University of Bologna, in AmbrosiaLab deals with administration, personnel management, customer and supplier relationships.",
-      "image": "bolognesi.jpg"
+      "image": "bolognesi.jpg",
+      "name": "Silvia Bolognesi",
+      "title": "Administrative Manager"
     },
     {
+      "description": "",
+      "image": "costa.jpg",
       "name": "Stefania Costa",
-      "title": "Researcher",
-      "description": "",
-      "image": "costa.jpg"
+      "title": "Researcher"
     },
     {
+      "description": "",
+      "image": "gugel.jpg",
       "name": "Irene Gugel",
-      "title": "PhD Student",
-      "description": "",
-      "image": "gugel.jpg"
+      "title": "PhD Student"
     },
     {
-      "name": "Francesco Rastrelli",
-      "title": "Member of the Scientific Committee",
       "description": "The scientific committee plays a monitoring role in order to maintain high quality standards in the processes of business management and scientific-technological address in accordance with the trends of the cosmetic and nutritional market.",
-      "image": "rastrelli.jpg"
+      "image": "rastrelli.jpg",
+      "name": "Francesco Rastrelli",
+      "title": "Member of the Scientific Committee"
     },
     {
-      "name": "Dr. Giacomo Panozzo",
-      "title": "Member of the Scientific Committee",
       "description": "Dr. Giacomo Panozzo is an ophthalmologist and a research manager of ESASO (European School of Adv. Studies in Ophtalmology, Switzerland). The scientific committee plays a monitoring role in order to maintain high quality standards in the processes of business management and scientific-technological address in accordance with the trends of the cosmetic and nutritional market.",
-      "image": "panozzo.jpg"
+      "image": "panozzo.jpg",
+      "name": "Dr. Giacomo Panozzo",
+      "title": "Member of the Scientific Committee"
     },
     {
-      "name": "Prof. Matteo Radice",
-      "title": "External Sustainability Consultant ",
       "description": "Prof. Matteo Radice is a professor of UEA (Universidad Estatal Amazónica).",
-      "image": "radice.jpg"
+      "image": "radice.jpg",
+      "name": "Prof. Matteo Radice",
+      "title": "External Sustainability Consultant "
     }
   ],
-  "awards": [
-    {
-      "title": "Premio SICC – Luigi Carinelli",
-      "description": "Best University Startups",
-      "year": "2015"
-    },
-    {
-      "title": "Provincial Award",
-      "description": "Company Excellence",
-      "year": "2011 "
-    },
-    {
-      "title": "Provincial Recognition",
-      "description": "Day of Remembrance and Gratitude",
-      "year": "2006"
-    },
-    {
-      "title": "Mauro Prevedello",
-      "description": "SPF Booster",
-      "year": "2006"
-    },
-    {
-      "title": "Provincial Award",
-      "description": "Female Enterprises",
-      "year": "2005"
-    }
-  ]
+  "utility": {
+    "learn": "Learn more"
+  }
 }
