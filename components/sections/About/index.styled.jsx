@@ -25,8 +25,10 @@ export const IntroWrapper = styled(motion.main)`
 `;
 
 export const ParagraphWrapper = styled(motion.article)`
+  max-width: 65ch;
   align-self: center;
   grid-column: 2 / span 2;
+  
 
   & p {
     text-align: justify;
