@@ -16,7 +16,7 @@ const Hero = () => {
     <StyledHero className='hero'>
       <VideoWrapper autoPlay muted loop>
         <source
-          src='https://res.cloudinary.com/dsbhmynmq/video/upload/v1652411735/AmbrosiaLab/sour-cherry-blossom_uowq2m.mp4'
+          src='https://res.cloudinary.com/dsbhmynmq/video/upload/ac_none,c_scale,h_1420/v1669323859/AmbrosiaLab/sour-cherry-blossom_uowq2m_xokjws.webm'
           type='video/mp4'
         ></source>
       </VideoWrapper>
