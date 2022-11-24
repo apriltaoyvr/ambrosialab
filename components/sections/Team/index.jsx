@@ -1,12 +1,18 @@
 import { useTranslation } from 'next-i18next';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-import { fadeContainer, fadeItem } from '../../utility/framer';
 import Member from './Member';
-import { TeamWrapper } from './index.styled';
+import { TeamWrapper, ItemWrapper } from './index.styled';
+import { fadeContainer, fadeItem } from '../../utility/framer';
+import conference from '/public/images/makingmakeup.jpg';
 
 const Team = () => {
   const { t } = useTranslation('common');
+  const css = {
+    height: '100%',
+    width: 'auto',
+  };
 
   return (
     <motion.section
@@ -29,6 +35,20 @@ const Team = () => {
           />
         ))}
       </TeamWrapper>
+      {/*<motion.h2 style={{ marginTop: '1rem' }}>{t('section.gallery')}</motion.h2>
+      <ItemWrapper variants={fadeItem}>
+        <Image
+          src={conference}
+          alt='{t("gallery[0]")}'
+          placeholder='blur'
+          style={css}
+          sizes='(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw'
+          draggable='false'
+        ></Image>
+        <motion.h5>{t('gallery[0]')}</motion.h5>}
+      </ItemWrapper>*/}
     </motion.section>
   );
 };

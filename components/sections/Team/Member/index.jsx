@@ -1,9 +1,8 @@
 import { useTranslation } from 'next-i18next';
-
 import { motion } from 'framer-motion';
 import { fadeContainer, fadeItem } from '../../../utility/framer';
-
 import { useState } from 'react';
+import Image from 'next/image';
 import Modal from '../../../utility/Modal';
 
 import {
@@ -23,10 +22,15 @@ const Member = (props) => {
 
   return (
     <TeamContent key={props.key} variants={fadeItem}>
-      <Portrait
-        image={props.image}
-        onClick={() => (modalOpen ? close() : open())}
-      />
+      <Portrait onClick={() => (modalOpen ? close() : open())}>
+        <Image
+          src={`/images/team/${props.image}`}
+          alt={props.key}
+          key={props.key}
+          variants={fadeItem}
+          fill
+        ></Image>
+      </Portrait>
       {modalOpen && (
         <Modal
           modalOpen={modalOpen}
@@ -34,7 +38,15 @@ const Member = (props) => {
           contentLabel='Modal'
           key={`Modal ${props.title}`}
         >
-          <PortraitExtend image={props.image} />
+          <PortraitExtend image={props.image}>
+            <Image
+              src={`/images/team/${props.image}`}
+              alt={props.key}
+              key={props.key}
+              variants={fadeItem}
+              fill
+            ></Image>
+          </PortraitExtend>
           <hgroup>
             <h3>{props.name}</h3>
             <h5>{props.title}</h5>

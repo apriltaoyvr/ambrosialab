@@ -21,21 +21,18 @@ export const Portrait = styled(motion.figure)`
 
   min-width: 150px;
   min-height: 150px;
-  aspect-ratio: 1;
-  border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  border-radius: 50%;
-  border: 2px solid #ce6469e6;
-
-  background-size: cover;
-  background-image: url('/images/team/${(props) => props.image}');
-
   filter: opacity(0.8);
-  transition: filter 0.3s cubic-bezier(0.4, 0, 1, 1);
 
   &:hover {
     cursor: pointer;
     filter: opacity(1);
+  }
+
+  img {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 50%;
+    border: 2px solid #ce6469e6;
+    transition: filter 0.3s cubic-bezier(0.4, 0, 1, 1);
   }
 `;
 
