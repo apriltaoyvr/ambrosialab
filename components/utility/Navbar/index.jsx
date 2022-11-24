@@ -13,7 +13,7 @@ import {
 } from './index.styled';
 
 /* Icons */
-import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faX } from '@fortawesome/pro-light-svg-icons';
 import LangMenu from './LangMenu';
 
 const Navbar = ({}) => {
