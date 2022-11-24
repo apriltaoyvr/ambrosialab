@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "stylelint-check": "stylelint-config-prettier-check",
-    "lint:css": "stylelint './src/**/*.js'"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.1.2",
