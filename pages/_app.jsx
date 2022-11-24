@@ -10,7 +10,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 
-const fira = Fira_Code({ weight: '400', subsets: ['latin'] });
+const fira = Fira_Code({ weight: ['400', '700'], subsets: ['latin'] });
 
 function MyApp({ Component, pageProps }) {
   return (

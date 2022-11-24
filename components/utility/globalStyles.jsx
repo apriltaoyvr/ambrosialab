@@ -65,18 +65,21 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'PP Supply Sans';
     src: url('https://res.cloudinary.com/dsbhmynmq/raw/upload/v1652411837/AmbrosiaLab/Font/PPSupplySans-Regular_k4garq.ttf') format('ttf');
     font-weight: normal;
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'PP Supply Sans';
     src: url('https://res.cloudinary.com/dsbhmynmq/raw/upload/v1652411837/AmbrosiaLab/Font/PPSupplySans-Bold_dmicbx.ttf') format('ttf');
-    font-weight: bold;
+    font-weight: bold;    
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'PP Supply Mono';
     src: url('https://res.cloudinary.com/dsbhmynmq/raw/upload/v1652411837/AmbrosiaLab/Font/PPSupplyMono-Regular_i1gjsm.ttf') format('ttf');
-    font-weight: normal;
+    font-weight: normal;    
+    font-display: swap;
   }
 
     /* Scrollbar */
@@ -108,11 +111,6 @@ const GlobalStyle = createGlobalStyle`
     gap: 1rem;
   }
 
-  svg {
-    max-height: 35px;
-    max-width: 35px;
-  }
-
   a {
     color: inherit;
     text-decoration: none;
@@ -139,6 +137,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     text-shadow: 0px 1px 2px hsl(2deg 46% 40%);
     font-family: 'PP Supply Mono', 'Fira Code', Monospace;
+    max-width: 65ch;
   }
 
   figure {
