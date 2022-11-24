@@ -39,6 +39,7 @@ const About = () => {
             width={150}
             height={150}
             alt='A minimalist arrangement of 3 hexagons'
+            draggable='false'
           />
         </motion.div>
       </StyledAbout>
