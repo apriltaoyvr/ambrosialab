@@ -1,7 +1,9 @@
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
-import Modal from '../../../utility/Modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLips, faPotFood, faSuitcaseMedical, faVial, faFileCertificate, faMicroscope, faScaleBalanced } from '@fortawesome/pro-duotone-svg-icons';
 
+import Modal from '../../../utility/Modal';
 import {
   ResearchCard,
   ResearchIcon,
@@ -9,11 +11,17 @@ import {
   StyledParagraph,
 } from './index.styled';
 
-import {
-  fadeContainer,
-  fadeSubContainer,
-  fadeItem,
-} from '../../../utility/framer';
+import { fadeItem } from '../../../utility/framer';
+
+const faIcons = {
+  faLips,
+  faPotFood,
+  faSuitcaseMedical,
+  faVial,
+  faFileCertificate,
+  faMicroscope,
+  faScaleBalanced,
+}; 
 
 const ResearchItem = (props) => {
   const { t } = useTranslation('common');
@@ -31,7 +39,9 @@ const ResearchItem = (props) => {
   return (
     <ResearchCard variants={fadeItem}>
       <hgroup>
-        <ResearchIcon>{props.icon}</ResearchIcon>
+        <ResearchIcon>
+          <FontAwesomeIcon icon={faIcons[props.icon]} size='4x' fixedWidth />
+        </ResearchIcon>
         <h3>{props.title}</h3>
       </hgroup>
       <StyledButton onClick={() => (modalOpen ? close() : open())}>
@@ -43,8 +53,10 @@ const ResearchItem = (props) => {
         contentLabel='Modal'
         key={`Research Modal ${props.title}`}
       >
-        <ResearchIcon>{props.icon}</ResearchIcon>
         <h2>{props.title}</h2>
+        <ResearchIcon>
+          <FontAwesomeIcon icon={faIcons[props.icon]} size='4x' fixedWidth />
+        </ResearchIcon>
         <StyledParagraph>{props.info}</StyledParagraph>
       </Modal>
     </ResearchCard>

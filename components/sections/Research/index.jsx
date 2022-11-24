@@ -46,16 +46,24 @@ const Research = () => {
             )
           )}
         </ItemWrapper>
-        <motion.h3 variants={fadeItem}>{t('research.subtitle')}</motion.h3>
+        <motion.h3 style={{ fontWeight: 'bold' }} variants={fadeItem}>
+          {t('research.subtitle')}
+        </motion.h3>
         <LogoWrapper>
           <motion.div variants={fadeItem}>
             <Link href={'https://www.bionanopolys.eu/'} passHref>
-              <Logo src={bionano} sizes='25%' style={css} alt='Bionano logo' />
+              <Logo
+                src={bionano}
+                alt='Bionano logo'
+                style={css}
+                sizes='25%'
+                draggable='false'
+              />
             </Link>
           </motion.div>
           <motion.div variants={fadeItem}>
             <Link href={'https://www.sbd4nano.eu/'} passHref>
-              <Logo src={sd4} alt='SD4 logo' style={css} />
+              <Logo src={sd4} alt='SD4 logo' style={css} draggable='false' />
             </Link>
           </motion.div>
         </LogoWrapper>
