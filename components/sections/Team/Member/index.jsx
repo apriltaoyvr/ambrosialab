@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import { motion } from 'framer-motion';
-import { fadeContainer, fadeItem } from '../../../utility/framer';
+import { fadeItem } from '../../../utility/framer';
 import { useState } from 'react';
 import Image from 'next/image';
 import Modal from '../../../utility/Modal';
@@ -13,8 +13,6 @@ import {
 } from './index.styled';
 
 const Member = (props) => {
-  const { t } = useTranslation('common');
-
   const [modalOpen, setModalOpen] = useState(false);
 
   const close = () => setModalOpen(false);
@@ -28,8 +26,9 @@ const Member = (props) => {
           alt={props.key}
           key={props.key}
           variants={fadeItem}
-          fill
-        ></Image>
+          width={150}
+          height={150}
+        />
       </Portrait>
       {modalOpen && (
         <Modal
@@ -44,20 +43,21 @@ const Member = (props) => {
               alt={props.key}
               key={props.key}
               variants={fadeItem}
-              fill
-            ></Image>
+              width={150}
+              height={150}
+            />
           </PortraitExtend>
           <hgroup>
-            <h3>{props.name}</h3>
-            <h5>{props.title}</h5>
+            <motion.h3>{props.name}</motion.h3>
+            <motion.h5>{props.title}</motion.h5>
           </hgroup>
           <Description>{props.description}</Description>
         </Modal>
       )}
-      <hgroup>
-        <h3>{props.name}</h3>
-        <h4>{props.title}</h4>
-      </hgroup>
+      <motion.hgroup>
+        <motion.h3>{props.name}</motion.h3>
+        <motion.h4>{props.title}</motion.h4>
+      </motion.hgroup>
     </TeamContent>
   );
 };
