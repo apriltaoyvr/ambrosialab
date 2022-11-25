@@ -35,11 +35,11 @@ const Team = () => {
           />
         ))}
       </TeamWrapper>
-      {/*<motion.h2 style={{ marginTop: '1rem' }}>{t('section.gallery')}</motion.h2>
+      <motion.h2 style={{ marginTop: '1rem' }}>{t('section.gallery')}</motion.h2>
       <ItemWrapper variants={fadeItem}>
         <Image
           src={conference}
-          alt='{t("gallery[0]")}'
+          alt='{t("gallery.makingCosmetics")}'
           placeholder='blur'
           style={css}
           sizes='(max-width: 768px) 100vw,
@@ -47,8 +47,8 @@ const Team = () => {
               33vw'
           draggable='false'
         ></Image>
-        <motion.h5>{t('gallery[0]')}</motion.h5>}
-      </ItemWrapper>*/}
+        <motion.h5>{t('gallery.makingCosmetics')}</motion.h5>
+      </ItemWrapper>
     </motion.section>
   );
 };

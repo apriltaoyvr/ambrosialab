@@ -34,9 +34,9 @@
       "year": "2005"
     }
   ],
-  "gallery": [
-    "Paola and Eleonora at the Making Cosmetics conference, proud of our inventions"
-  ],
+  "gallery": {
+    "makingCosmetics": "Paola and Eleonora at the Making Cosmetics conference, proud of our inventions"
+  },
   "partners": {
     "first": {
       "subtitle": "Raw Materials",
