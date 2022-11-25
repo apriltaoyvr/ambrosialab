@@ -34,9 +34,9 @@
       "year": "2005"
     }
   ],
-  "gallery": [
-    "Paola ed Eleonora alla Making Cosmetic Convention fiere della nostra invenzione."
-  ],
+  "gallery": {
+    "makingCosmetics": "Paola ed Eleonora alla Making Cosmetic Convention fiere della nostra invenzione."
+  },
   "partners": {
     "first": {
       "subtitle": "di materie prime",
