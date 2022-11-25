@@ -1,7 +1,7 @@
 import { AnimatePresence, MotionConfig, motion } from 'framer-motion';
 import { StyledModal, WindowBar, WindowIcon } from './index.styled';
 import Backdrop from './Backdrop';
-import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faX } from '@fortawesome/pro-light-svg-icons';
 
 const Modal = ({ modalOpen, handleClose, children }) => {
   return (

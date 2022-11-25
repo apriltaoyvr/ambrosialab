@@ -198,13 +198,6 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.2.1"
 
-"@fortawesome/free-solid-svg-icons@6.2.1":
-  version "6.2.1"
-  resolved "https://npm.fontawesome.com/@fortawesome/free-solid-svg-icons/-/6.2.1/free-solid-svg-icons-6.2.1.tgz#2290ea5adcf1537cbd0c43de6feb38af02141d27"
-  integrity sha512-oKuqrP5jbfEPJWTij4sM+/RvgX+RMFwx3QZCZcK9PrBDgxC35zuc7AOFsyMjMd/PIFPeB2JxyqDr5zs/DZFPPw==
-  dependencies:
-    "@fortawesome/fontawesome-common-types" "6.2.1"
-
 "@fortawesome/pro-duotone-svg-icons@^6.2.1":
   version "6.2.1"
   resolved "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/6.2.1/pro-duotone-svg-icons-6.2.1.tgz#9628b42b43c1359adbd6d7c2723e4c4f3ec030d7"
