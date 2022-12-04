@@ -32,8 +32,8 @@ const Flags = () => {
           {Object.entries(countryCodes)
             .filter(([key]) => key !== router.locale)
             .map(([key, value]) => (
-              <motion.div key={key} variants={fadeItem} >
-                <Link href={`/`} locale={key}>
+              <motion.div key={key} variants={fadeItem}>
+                <Link href={`/`} locale={key} scroll={false}>
                   <Flag countryCode={value} height='30' onClick={closeMenu} />
                 </Link>
               </motion.div>
