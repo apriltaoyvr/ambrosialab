@@ -21,19 +21,19 @@ export const Divider = styled(motion.hr)`
 
 export const StyledMenu = styled(motion.div)`
   display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  gap: 1rem;
-  transition: all 0.3s ease-out;
 
   position: absolute;
   top: 0;
   right: 0;
+  flex-direction: row;
+  gap: 1rem;
+  transition: all 0.3s ease-out;
+  padding: 1rem;
 
   @media screen and (min-width: 1700px) {
     position: relative;
     top: unset;
-    padding: 0;
     flex-direction: column;
+    padding: 0;
   }
 `;

@@ -12,8 +12,8 @@ export const Background = styled(motion.div)`
 export const StyledAbout = styled(motion.section)`
   display: flex;
   gap: 2rem;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 export const IntroWrapper = styled(motion.main)`
@@ -25,14 +25,14 @@ export const IntroWrapper = styled(motion.main)`
 `;
 
 export const ParagraphWrapper = styled(motion.article)`
-  max-width: 65ch;
-  align-self: center;
   grid-column: 2 / span 2;
+  align-self: center;
+  max-width: 65ch;
   
 
   & p {
-    text-align: justify;
     padding-bottom: 2rem;
+    text-align: justify;
   }
 
   @media screen and (min-width: 1700px) {

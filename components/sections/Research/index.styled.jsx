@@ -13,8 +13,8 @@ export const Background = styled(motion.div)`
 export const StyledResearch = styled(motion.section)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(
     180deg,
     hsla(343, 50%, 49%, 1),
@@ -37,9 +37,9 @@ export const ItemWrapper = styled(motion.div)`
 
 export const LogoWrapper = styled(motion.aside)`
   display: grid;
+  grid-template-columns: 300px;
   gap: 2rem;
   margin: 2rem;
-  grid-template-columns: 300px;
 
   @media screen and (min-width: 1200px) {
     display: grid;

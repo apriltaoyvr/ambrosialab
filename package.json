@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "stylelint **/*.styled.jsx",
+    "stylelint:fix": "stylelint --fix **/*.styled.jsx"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -28,9 +30,12 @@
     "eslint": "^8.28.0",
     "eslint-config-next": "13.0.5",
     "eslint-config-prettier": "^8.5.0",
+    "postcss-jsx": "^0.36.4",
+    "postcss-syntax": "^0.36.2",
     "stylelint": "^14.15.0",
+    "stylelint-config-concentric-order": "^5.1.0",
+    "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0",
     "turbo": "^1.6.3"
   }
 }

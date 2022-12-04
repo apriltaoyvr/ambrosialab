@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const StyledHero = styled(motion.header)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: transparent;
   background: linear-gradient(
     180deg,
@@ -10,9 +13,6 @@ export const StyledHero = styled(motion.header)`
   );
 
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   & h1,
   & h2,
@@ -27,33 +27,33 @@ export const StyledHero = styled(motion.header)`
 `;
 
 export const VideoWrapper = styled(motion.video)`
-  object-fit: cover;
   position: absolute;
-  width: 100vw;
-  height: 155vh;
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100vw;
+  height: 155vh;
+  object-fit: cover;
 `;
 
 export const TextWrapper = styled(motion.hgroup)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding-bottom: 12rem;
 
   @media screen and (min-width: 1200px) {
-    width: 100%;
     justify-content: center;
     justify-items: start;
+    width: 100%;
   }
 `;
 
 export const TitleHero = styled(motion.h1)`
+  text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
   font-size: clamp(3rem, 1.7727rem + 5.4545vw, 12rem);
   font-weight: bold;
-  text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
 `;
 
 export const SubtitleHero = styled(motion.h2)`

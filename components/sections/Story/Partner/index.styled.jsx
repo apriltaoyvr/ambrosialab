@@ -14,10 +14,10 @@ export const StyledPartner = styled.div`
 export const PartnerWrapper = styled(motion.aside)`
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  grid-column: 9 / span 2;
   gap: 5rem;
   align-self: center;
-  grid-column: 9 / span 2;
+  padding-top: 2rem;
 
   @media screen and (min-width: 1200px) {
     align-self: flex-start;
@@ -28,8 +28,8 @@ export const FlagWrapper = styled.figure`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 0.5rem;
+  justify-content: center;
 `;
 
 export const StyledFlag = styled(CircleFlag)`
@@ -37,8 +37,8 @@ export const StyledFlag = styled(CircleFlag)`
 `;
 
 export const NumberWrapper = styled.h5`
-  font-size: 3.5rem;
   text-shadow: 0px 2px 3px hsl(2deg 46% 40%);
+  font-size: 3.5rem;
 `;
 
 export const SubtitleWrapper = styled.h3`

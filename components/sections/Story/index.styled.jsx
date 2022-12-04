@@ -18,8 +18,8 @@ export const Background = styled(motion.div)`
 export const StoryWrapper = styled(motion.section)`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 2rem;
+  justify-content: flex-start;
   background-color: hsla(342, 51%, 48%, 0.2);
 `;
 
@@ -31,8 +31,8 @@ export const InnerWrapper = styled(motion.main)`
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
   }
 `;
 
@@ -40,8 +40,8 @@ export const ParagraphWrapper = styled(motion.main)`
   padding: 2rem;
   max-width: 800px;
   & p {
-    text-align: justify;
     padding-bottom: 2rem;
+    text-align: justify;
   }
   @media screen and (min-width: 1200px) {
     align-self: flex-start;

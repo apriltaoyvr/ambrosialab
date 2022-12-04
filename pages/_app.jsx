@@ -5,7 +5,8 @@ import { Fira_Code } from '@next/font/google';
 import GlobalStyle from '../components/utility/globalStyles';
 
 /* Font Awesome 
-** Config and autoAddCss to prevent FOCU */
+ * Config and autoAddCss to prevent FOCU 
+*/
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;

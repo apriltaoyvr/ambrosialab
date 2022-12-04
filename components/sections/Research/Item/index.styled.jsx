@@ -4,21 +4,13 @@ import { motion } from 'framer-motion';
 export const ResearchCard = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   gap: 1rem;
-  padding: 1rem;
-
-  border: 1px solid rgba(244, 205, 221, 0.5);
+  align-items: center;
+  justify-content: space-between;
   transition: all 0.3s ease-out;
 
-  & p {
-    align-self: center;
-
-    @media screen and (min-width: 1200px) {
-      max-width: unset;
-    }
-  }
+  border: 1px solid rgba(244, 205, 221, 0.5);
+  padding: 1rem;
 
   &:last-child {
     grid-column-start: 2;
@@ -27,6 +19,14 @@ export const ResearchCard = styled(motion.div)`
   &:hover {
     border: 1px solid #f9e6ee;
     box-shadow: 0px 0px 10px rgba(244, 205, 221, 0.25);
+  }
+
+  & p {
+    align-self: center;
+
+    @media screen and (min-width: 1200px) {
+      max-width: unset;
+    }
   }
 `;
 
@@ -37,24 +37,24 @@ export const ResearchIcon = styled(motion.figure)`
 `;
 
 export const StyledButton = styled(motion.button)`
-  background: rgba(202, 168, 162, 0.1);
-  color: var(--fg);
+  align-self: center;
+  transition: all 0.1s ease-out;
   border: 1px solid rgba(244, 205, 220, 0.75);
+  background: rgba(202, 168, 162, 0.1);
 
   padding: 0.5rem;
   width: 75%;
-  align-self: center;
-  transition: all 0.1s ease-out;
+  color: var(--fg);
 
   &:hover {
-    cursor: pointer;
     border: 1px solid rgba(244, 205, 221, 1);
     background: rgba(208, 169, 163, 0.2);
+    cursor: pointer;
   }
 `;
 
 export const StyledParagraph = styled(motion.p)`
-  font-size: 1rem;
-  text-align: justify;
   padding: 1.25rem;
+  text-align: justify;
+  font-size: 1rem;
 `;
