@@ -2,8 +2,10 @@
 
 # dependencies
 /node_modules
+.yarn
 /.pnp
-.pnp.js
+.pnp.*
+.pnp.loader.*
 
 # testing
 /coverage
@@ -12,6 +14,11 @@
 /.next/
 /out/
 .turbo
+next-env.d.ts
+
+# development
+/.vscode/
+.npmrc
 
 # production
 /build
@@ -27,10 +34,10 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
-
-# development 
-.vscode
