@@ -25,11 +25,11 @@ export const StyledModal = styled(motion.div)`
   position: fixed;
   flex-direction: column;
   align-items: center;
+  z-index: 50;
   margin: auto;
   border: 1px solid ${(props) => props.theme.secondary};
   box-shadow: 0 4px 30px
     ${(props) => transparentize(0.1, props.theme.background)};
-  z-index: 50;
 
   background: ${(props) => transparentize(0.25, props.theme.background)};
   width: clamp(25%, 600px, 90%);
@@ -39,8 +39,8 @@ export const StyledModal = styled(motion.div)`
 `;
 
 export const ContentWrapper = styled(motion.article)`
-  max-width: 65ch;
   padding: 2rem;
+  max-width: 65ch;
 `;
 
 export const WindowBar = styled.hgroup`

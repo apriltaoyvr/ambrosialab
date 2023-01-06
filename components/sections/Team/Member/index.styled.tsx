@@ -17,14 +17,14 @@ export const TeamContent = styled(motion.aside)`
 export const Portrait = styled(motion.figure)`
   display: flex;
   flex-direction: column;
-  align-self: center;
   place-content: center;
   place-items: center;
+  align-self: center;
+  transition: filter 0.2s cubic-bezier(0.4, 0, 1, 1);
 
   min-width: 150px;
   min-height: 150px;
   filter: opacity(0.9);
-  transition: filter 0.2s cubic-bezier(0.4, 0, 1, 1);
 
   &:hover {
     cursor: pointer;
