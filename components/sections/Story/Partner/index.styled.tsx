@@ -24,7 +24,7 @@ export const PartnerWrapper = styled(motion.aside)`
   }
 `;
 
-export const FlagWrapper = styled.figure`
+export const FlagWrapper = styled(motion.figure)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

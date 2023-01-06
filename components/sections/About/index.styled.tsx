@@ -2,11 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Background = styled(motion.div)`
-  background: linear-gradient(
-    180deg,
-    hsla(343, 50%, 49%, 0.99) 0%,
-    hsla(343, 50%, 49%, 1) 100%
-  );
+  background: ${props => props.theme.background};
 `;
 
 export const StyledAbout = styled(motion.section)`

@@ -11,6 +11,8 @@ import {
   TeamContent,
 } from './index.styled';
 
+const MotionImage = motion(Image);
+
 const Member = (props) => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -18,17 +20,23 @@ const Member = (props) => {
   const open = () => setModalOpen(true);
 
   return (
-    <TeamContent key={props.key} variants={fadeItem}>
-      <Portrait onClick={() => (modalOpen ? close() : open())}>
-        <Image
-          src={`/images/team/${props.image}`}
-          alt={props.key}
-          key={props.key}
-          variants={fadeItem}
-          width={150}
-          height={150}
-        />
-      </Portrait>
+    <>
+      <TeamContent key={props.key} variants={fadeItem}>
+        <Portrait onClick={() => (modalOpen ? close() : open())}>
+          <MotionImage
+            src={`/images/team/${props.image}`}
+            alt={props.key}
+            key={props.key}
+            variants={fadeItem}
+            width={150}
+            height={150}
+          />
+        </Portrait>
+        <motion.hgroup>
+          <motion.h3>{props.name}</motion.h3>
+          <motion.h4>{props.title}</motion.h4>
+        </motion.hgroup>
+      </TeamContent>
       {modalOpen && (
         <Modal
           modalOpen={modalOpen}
@@ -36,7 +44,7 @@ const Member = (props) => {
           key={`Modal ${props.title}`}
         >
           <PortraitExtend image={props.image}>
-            <Image
+            <MotionImage
               src={`/images/team/${props.image}`}
               alt={props.key}
               key={props.key}
@@ -52,11 +60,7 @@ const Member = (props) => {
           <Description>{props.description}</Description>
         </Modal>
       )}
-      <motion.hgroup>
-        <motion.h3>{props.name}</motion.h3>
-        <motion.h4>{props.title}</motion.h4>
-      </motion.hgroup>
-    </TeamContent>
+    </>
   );
 };
 

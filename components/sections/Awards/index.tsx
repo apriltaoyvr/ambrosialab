@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import {
   fadeContainer,
   fadeItem,
-} from '../../utility/framer';
+} from 'components/utility/framer';
 
 const StyledAwards = styled(motion.section)`
   align-items: center;
@@ -40,8 +40,8 @@ const Awards = () => {
     >
       <motion.h1 variants={fadeItem}>{t('section.awards')}</motion.h1>
       <AwardsWrapper>
-        {t('awards', { returnObjects: true }).map((award, index) => (
-          <motion.div key={index} variants={fadeItem}>
+        {t('awards', { returnObjects: true }).map((award) => (
+          <motion.div key={award.title} variants={fadeItem}>
             <motion.h3>{award.title}</motion.h3>
             <AwardDesc>{award.description}</AwardDesc>
             <AwardDesc>{award.year}</AwardDesc>

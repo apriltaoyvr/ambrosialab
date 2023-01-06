@@ -2,24 +2,12 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export const Background = styled(motion.div)`
-  background: linear-gradient(
-    180deg,
-    hsla(343, 50%, 49%, 1),
-    hsla(343, 50%, 49%, 0.5)
-  );
-`;
-
 export const StyledResearch = styled(motion.section)`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    180deg,
-    hsla(343, 50%, 49%, 1),
-    hsla(343, 50%, 49%, 0.5)
-  );
+
 `;
 
 export const ItemWrapper = styled(motion.div)`

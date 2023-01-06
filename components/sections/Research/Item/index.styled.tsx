@@ -11,6 +11,7 @@ export const ResearchCard = styled(motion.div)`
 
   border: 1px solid rgba(244, 205, 221, 0.5);
   padding: 1rem;
+  z-index: 0;
 
   &:last-child {
     grid-column-start: 2;

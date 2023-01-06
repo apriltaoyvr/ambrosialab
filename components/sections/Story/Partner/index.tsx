@@ -1,12 +1,6 @@
 import { useTranslation } from 'next-i18next';
-
-/* Components */
 import PartnerCard from './PartnerCard';
-
-/* Framer Motion */
-import { slideContainer, slideItem } from '../../../utility/framer';
-
-/* Styled Components */
+import { slideContainer, slideItem } from 'components/utility/framer';
 import { PartnerWrapper, FlagWrapper, StyledFlag } from './index.styled';
 
 const Partner = () => {

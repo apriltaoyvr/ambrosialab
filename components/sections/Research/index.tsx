@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 /* Components */
 import ResearchItem from './Item';
 import {
-  Background,
   StyledResearch,
   ItemWrapper,
   LogoWrapper,
@@ -16,15 +15,15 @@ import {
 import { fadeContainer, fadeItem } from '../../utility/framer';
 
 /* Static Image Import */
-import bionano from '../../../public/images/subsidiary/bionano.png';
-import sd4 from '../../../public/images/subsidiary/sd4.png';
+import bionano from 'public/images/subsidiary/bionano.png';
+import sd4 from 'public/images/subsidiary/sd4.png';
 
 const Research = () => {
   const { t } = useTranslation('common');
   const css = { width: '100%', height: 'auto' };
 
   return (
-    <Background id='research'>
+    <motion.div id='research'>
       <StyledResearch
         variants={fadeContainer}
         initial='hidden'
@@ -33,18 +32,16 @@ const Research = () => {
       >
         <motion.h1 variants={fadeItem}>{t('section.research')}</motion.h1>
         <ItemWrapper>
-          {t('research.activities', { returnObjects: true }).map(
-            (activity, index) => (
-              <ResearchItem
-                title={activity.title}
-                description={activity.description}
-                info={activity.info}
-                icon={activity.icon}
-                variants={fadeItem}
-                key={index}
-              />
-            )
-          )}
+          {t('research.activities', { returnObjects: true }).map((activity) => (
+            <ResearchItem
+              title={activity.title}
+              description={activity.description}
+              info={activity.info}
+              icon={activity.icon}
+              variants={fadeItem}
+              key={activity.title}
+            />
+          ))}
         </ItemWrapper>
         <motion.h3 style={{ fontWeight: 'bold' }} variants={fadeItem}>
           {t('research.subtitle')}
@@ -58,6 +55,7 @@ const Research = () => {
                 style={css}
                 sizes='25%'
                 draggable='false'
+                placeholder='blur'
               />
             </Link>
           </motion.div>
@@ -68,7 +66,7 @@ const Research = () => {
           </motion.div>
         </LogoWrapper>
       </StyledResearch>
-    </Background>
+    </motion.div>
   );
 };
 

@@ -8,11 +8,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: ${(props) => setLightness(0.75, props.theme.background)} ;
+    background-color: ${(props) => props.theme.secondary} ;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme.background};
+    background-color: ${(props) =>
+      transparentize(0.2, props.theme.background)};
   }
 
   html {
@@ -38,12 +39,7 @@ const GlobalStyle = createGlobalStyle`
   figure {
     user-select: none;
   }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
+  
   h1, h2, h3, h4, h5, h6  {
     text-shadow: ${(props) => props.theme.shadow.header} + ${(props) =>
   transparentize(0.5, props.theme.background)};
@@ -51,12 +47,16 @@ const GlobalStyle = createGlobalStyle`
     margin: auto;
   }
 
-  p, a {
-    font-size: 1rem;
+  h1, h2 {
+    font-weight: bold;
+  }
+
+  h3, h4 {
+    font-weight: 600;
+  }
+
+  h5, h6 {
     font-weight: normal;
-    text-shadow: ${(props) => props.theme.shadow.paragraph} + ${(props) =>
-  transparentize(0.5, props.theme.background)};
-    max-width: 65ch;
   }
 
   h1 {
@@ -85,6 +85,19 @@ const GlobalStyle = createGlobalStyle`
 
   h6 {
     font-size: 0.9rem;
+  }
+
+  p, a {
+    font-size: 1rem;
+    font-weight: normal;
+    text-shadow: ${(props) => props.theme.shadow.paragraph} + ${(props) =>
+  transparentize(0.5, props.theme.background)};
+    max-width: 65ch;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `;
 

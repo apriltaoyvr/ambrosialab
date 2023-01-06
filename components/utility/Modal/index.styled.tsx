@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { transparentize } from 'polished';
 
 export const StyledBackdrop = styled(motion.div)`
-
   display: flex;
   position: fixed;
   top: 0;
@@ -12,9 +12,9 @@ export const StyledBackdrop = styled(motion.div)`
   left: 0;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 50;
 
-  background: rgba(196, 93, 93, 0.5);
+  background: ${props => transparentize(0.2, props.theme.background)};
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(12px);
@@ -26,15 +26,21 @@ export const StyledModal = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   margin: auto;
-  border: 1px solid #f7a9a5;
-  box-shadow: 0 4px 30px rgba(196, 93, 93, 0.1);
+  border: 1px solid ${(props) => props.theme.secondary};
+  box-shadow: 0 4px 30px
+    ${(props) => transparentize(0.1, props.theme.background)};
+  z-index: 50;
 
-  background: rgba(219, 157, 154, 0.25);
-  padding: 1rem 2rem 2rem 1rem;
+  background: ${(props) => transparentize(0.25, props.theme.background)};
   width: clamp(25%, 600px, 90%);
   height: clamp(25%, 500px, 90%);
 
   overflow-y: scroll;
+`;
+
+export const ContentWrapper = styled(motion.article)`
+  max-width: 65ch;
+  padding: 2rem;
 `;
 
 export const WindowBar = styled.hgroup`
@@ -48,7 +54,9 @@ export const WindowBar = styled.hgroup`
 
 export const WindowIcon = styled(FontAwesomeIcon)`
   transition: color 0.2s ease-in-out;
+  padding: 0.5rem;
   &:hover {
     cursor: pointer;
   }
 `;
+

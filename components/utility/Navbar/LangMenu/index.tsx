@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { StyledMenu, Divider, Flag } from './index.styled';
 
-import { fadeContainer, fadeItem } from '../../framer';
+import { fadeContainer, fadeItem } from 'components/utility/framer';
 
 const countryCodes = {
   en: 'us',

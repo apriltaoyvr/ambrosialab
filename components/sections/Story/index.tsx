@@ -11,8 +11,6 @@ import {
 } from './index.styled';
 
 import {
-  fadeContainer,
-  fadeItem,
   slideContainer,
   slideItem,
 } from '../../utility/framer';

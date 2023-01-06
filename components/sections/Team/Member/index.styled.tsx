@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+interface Props {
+  image: string;
+}
 export const TeamContent = styled(motion.aside)`
   display: flex;
   flex-direction: column;
@@ -13,7 +16,7 @@ export const TeamContent = styled(motion.aside)`
   }
 `;
 
-export const Portrait = styled(motion.figure)`
+export const Portrait = styled(motion.figure)<Props>`
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -21,7 +24,8 @@ export const Portrait = styled(motion.figure)`
 
   min-width: 150px;
   min-height: 150px;
-  filter: opacity(0.8);
+  filter: opacity(0.9);
+  transition: filter 0.2s cubic-bezier(0.4, 0, 1, 1);
 
   &:hover {
     cursor: pointer;
@@ -29,15 +33,12 @@ export const Portrait = styled(motion.figure)`
   }
 
   img {
-    transition: filter 0.3s cubic-bezier(0.4, 0, 1, 1);
-    border: 2px solid #ce6469e6;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
 `;
 
-export const PortraitExtend = styled(Portrait)`
-
+export const PortraitExtend = styled(Portrait)<Props>`
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
   margin: 1rem;
   filter: none;

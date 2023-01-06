@@ -1,18 +1,11 @@
 import styled from 'styled-components';
+import { transparentize } from 'polished';
 import { motion } from 'framer-motion';
 
 export const Background = styled(motion.div)`
-  border-top: 1px solid hsla(201, 100%, 95%, 0.75);
-  border-bottom: 1px solid hsla(201, 100%, 95%, 0.75);
+  border-top: 1px solid ${props => transparentize(0.25, props.theme.foreground)};
+  border-bottom: 1px solid ${props => transparentize(0.25, props.theme.foreground)};
   backdrop-filter: blur(4px);
-  background-color: hsl(342, 51%, 48%);
-  background-image: radial-gradient(
-      at 70% 70%,
-      hsla(25, 77%, 60%, 0.5) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 20% 82%, hsla(45, 88%, 65%, 0.5) 0px, transparent 50%),
-    radial-gradient(at 52% 20%, hsla(343, 65%, 64%, 0.5) 0px, transparent 50%);
 `;
 
 export const StoryWrapper = styled(motion.section)`
@@ -20,7 +13,7 @@ export const StoryWrapper = styled(motion.section)`
   flex-direction: column;
   gap: 2rem;
   justify-content: flex-start;
-  background-color: hsla(342, 51%, 48%, 0.2);
+  background-color: ${(props) => props.theme.background};
 `;
 
 export const InnerWrapper = styled(motion.main)`
