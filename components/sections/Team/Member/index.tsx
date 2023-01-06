@@ -1,9 +1,8 @@
-import { useTranslation } from 'next-i18next';
 import { motion } from 'framer-motion';
-import { fadeItem } from '../../../utility/framer';
+import { fadeItem } from 'components/utility/framer';
 import { useState } from 'react';
 import Image from 'next/image';
-import Modal from '../../../utility/Modal';
+import Modal from 'components/utility/Modal';
 
 import {
   Portrait,
@@ -34,7 +33,6 @@ const Member = (props) => {
         <Modal
           modalOpen={modalOpen}
           handleClose={close}
-          contentLabel='Modal'
           key={`Modal ${props.title}`}
         >
           <PortraitExtend image={props.image}>

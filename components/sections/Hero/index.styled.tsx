@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-
+import { transparentize } from 'polished';
 export const StyledHero = styled(motion.header)`
   display: flex;
   flex-direction: column;
@@ -8,8 +8,8 @@ export const StyledHero = styled(motion.header)`
   background: transparent;
   background: linear-gradient(
     180deg,
-    hsla(343, 50%, 49%, 0.25) 0%,
-    hsla(343, 50%, 49%, 0.99) 100%
+    ${(props) => transparentize(0.75, props.theme.background)} 0%,
+    ${(props) => props.theme.background} 100%
   );
 
   height: 100vh;
@@ -18,11 +18,13 @@ export const StyledHero = styled(motion.header)`
   & h2,
   & h3,
   & h4 {
-    text-shadow: 0px 3px 6px hsl(347deg 51% 29%);
+    text-shadow: ${(props) => props.theme.shadow.header} +
+      ${(props) => props.theme.background};
   }
 
   & p {
-    text-shadow: 0px 1px 3px hsl(347deg 51% 29%);
+    text-shadow: ${(props) => props.theme.shadow.paragraph} +
+      ${(props) => props.theme.background};
   }
 `;
 
@@ -32,7 +34,7 @@ export const VideoWrapper = styled(motion.video)`
   left: 0;
   z-index: -1;
   width: 100vw;
-  height: 155vh;
+  height: 100vh;
   object-fit: cover;
 `;
 
@@ -51,13 +53,15 @@ export const TextWrapper = styled(motion.hgroup)`
 `;
 
 export const TitleHero = styled(motion.h1)`
-  text-shadow: 0px 4px 6px hsla(2deg 46% 42%);
+  text-shadow: 0px 4px 6px
+    ${(props) => transparentize(0.5, props.theme.background)};
   font-size: clamp(3rem, 1.7727rem + 5.4545vw, 12rem);
   font-weight: bold;
 `;
 
 export const SubtitleHero = styled(motion.h2)`
-  text-shadow: 0px 4px 6px hsl(2deg 46% 42%);
+  text-shadow: 0px 4px 6px
+    ${(props) => transparentize(0.5, props.theme.background)};
   font-size: clamp(2rem, 1.4545rem + 2.4242vw, 6rem);
   font-weight: normal;
 `;

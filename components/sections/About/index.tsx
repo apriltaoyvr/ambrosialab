@@ -1,13 +1,13 @@
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import {
   Background,
   StyledAbout,
   IntroWrapper,
   ParagraphWrapper,
 } from './index.styled';
-import { useTranslation } from 'next-i18next';
-import { fadeContainer, fadeItem } from '../../utility/framer';
-import { motion } from 'framer-motion';
+import { fadeContainer, fadeItem } from 'components/utility/framer';
 
 const About = () => {
   const { t } = useTranslation('common');
@@ -24,13 +24,11 @@ const About = () => {
         <motion.h3 variants={fadeItem}>{t('about.subtitle')}</motion.h3>
         <IntroWrapper>
           <ParagraphWrapper>
-            {t('about.paragraphs', { returnObjects: true }).map(
-              (paragraph, index) => (
-                <motion.p key={index} variants={fadeItem}>
-                  {paragraph}
-                </motion.p>
-              )
-            )}
+            {t('about.paragraphs', { returnObjects: true }).map((paragraph) => (
+              <motion.p key={paragraph} variants={fadeItem}>
+                {paragraph}
+              </motion.p>
+            ))}
           </ParagraphWrapper>
         </IntroWrapper>
         <motion.div variants={fadeItem}>

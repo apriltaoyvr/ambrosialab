@@ -3,7 +3,8 @@ import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
   /* Prevent FOUC with ServerStyleSheet
-   ** https://styled-components.com/docs/advanced#server-side-rendering*/
+   * https://styled-components.com/docs/advanced#server-side-rendering
+   */
 
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();

@@ -1,13 +1,13 @@
 import { useTranslation } from 'next-i18next';
 
-import { fadeContainer, fadeItem } from '../../utility/framer';
+import { fadeContainer, fadeItem } from 'components/utility/framer';
 import {
   StyledHero, 
   VideoWrapper,
   TextWrapper,
   TitleHero,
   SubtitleHero
-} from './index.styled.jsx';
+} from './index.styled';
 
 const Hero = () => {
   const { t } = useTranslation('common');
