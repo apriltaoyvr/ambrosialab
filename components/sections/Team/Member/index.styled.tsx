@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-interface Props {
-  image: string;
-}
+
 export const TeamContent = styled(motion.aside)`
   display: flex;
   flex-direction: column;
@@ -16,11 +14,12 @@ export const TeamContent = styled(motion.aside)`
   }
 `;
 
-export const Portrait = styled(motion.figure)<Props>`
+export const Portrait = styled(motion.figure)`
   display: flex;
   flex-direction: column;
   align-self: center;
-  justify-content: center;
+  place-content: center;
+  place-items: center;
 
   min-width: 150px;
   min-height: 150px;
@@ -38,7 +37,7 @@ export const Portrait = styled(motion.figure)<Props>`
   }
 `;
 
-export const PortraitExtend = styled(Portrait)<Props>`
+export const PortraitExtend = styled(Portrait)`
   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
   margin: 1rem;
   filter: none;

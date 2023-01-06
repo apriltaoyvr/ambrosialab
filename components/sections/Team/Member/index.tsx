@@ -32,9 +32,11 @@ const Member = (props) => {
             height={150}
           />
         </Portrait>
-        <motion.hgroup>
+        <motion.hgroup style={{ textAlign: 'center' }}>
           <motion.h3>{props.name}</motion.h3>
-          <motion.h4>{props.title}</motion.h4>
+          <motion.span >
+            {props.title}
+          </motion.span>
         </motion.hgroup>
       </TeamContent>
       {modalOpen && (
@@ -43,12 +45,11 @@ const Member = (props) => {
           handleClose={close}
           key={`Modal ${props.title}`}
         >
-          <PortraitExtend image={props.image}>
+          <PortraitExtend>
             <MotionImage
               src={`/images/team/${props.image}`}
               alt={props.key}
               key={props.key}
-              variants={fadeItem}
               width={150}
               height={150}
             />
