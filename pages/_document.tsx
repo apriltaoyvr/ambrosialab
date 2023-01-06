@@ -40,6 +40,11 @@ class MyDocument extends Document {
             rel='image_src'
             href='https://user-images.githubusercontent.com/95392008/167490238-a75c7e8b-af98-4cbd-8a95-e94061497fad.png'
           />
+          <link
+            rel='alternate'
+            hrefLang='en'
+            href='https://www.ambrosialab.it/en'
+          />
         </Head>
         <body>
           <Main />
