@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { setLightness, transparentize } from 'polished';
+import { setSaturation, transparentize } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
   /* Scrollbar */
@@ -8,12 +8,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: ${(props) => props.theme.secondary} ;
+    background-color: hsl(346, 67%, 63%);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${(props) =>
-      transparentize(0.2, props.theme.background)};
+    background-color: hsl(345, 66%, 50%);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${setSaturation(0.75, 'hsl(345, 66%, 50%)')};
   }
 
   html {

@@ -13,7 +13,7 @@ export const StoryWrapper = styled(motion.section)`
   flex-direction: column;
   gap: 2rem;
   justify-content: flex-start;
-  background-color: ${(props) => props.theme.background};
+  background-color: hsla(11, 94%, 29%, 0.25);
 `;
 
 export const InnerWrapper = styled(motion.main)`

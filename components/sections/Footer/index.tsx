@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
-  border-top: 1px dotted var(--fg);
+  border-top: 1px dashed ${props => props.theme.foreground};
 
   & p {
     font-size: 1rem;
