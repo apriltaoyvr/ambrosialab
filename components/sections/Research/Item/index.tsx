@@ -1,5 +1,17 @@
+import { useState, lazy } from 'react';
 import { useTranslation } from 'next-i18next';
-import { useState } from 'react';
+import { fadeItem } from 'components/utility/framer';
+const Modal = lazy(() => import('components/utility/Modal'));
+
+/* Styled Components */
+import {
+  ResearchCard,
+  ResearchIcon,
+  StyledButton,
+  StyledParagraph,
+} from './index.styled';
+
+/* Font Awesome */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLips,
@@ -10,14 +22,6 @@ import {
   faMicroscope,
   faScaleBalanced,
 } from '@fortawesome/pro-duotone-svg-icons';
-import Modal from 'components/utility/Modal';
-import { fadeItem } from 'components/utility/framer';
-import {
-  ResearchCard,
-  ResearchIcon,
-  StyledButton,
-  StyledParagraph,
-} from './index.styled';
 
 const faIcons = {
   faLips,

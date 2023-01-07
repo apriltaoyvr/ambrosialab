@@ -1,9 +1,13 @@
+import { useState, lazy } from 'react';
+import Image from 'next/image';
+
+/* Framer */
 import { motion } from 'framer-motion';
 import { fadeItem } from 'components/utility/framer';
-import { useState } from 'react';
-import Image from 'next/image';
-import Modal from 'components/utility/Modal';
+const Modal = lazy(() => import('components/utility/Modal'));
+const MotionImage = motion(Image);
 
+/* Styled Components */
 import {
   Portrait,
   PortraitExtend,
@@ -11,7 +15,6 @@ import {
   TeamContent,
 } from './index.styled';
 
-const MotionImage = motion(Image);
 
 const Member = (props) => {
   const [modalOpen, setModalOpen] = useState(false);

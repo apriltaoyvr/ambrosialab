@@ -7,7 +7,6 @@ export const StyledResearch = styled(motion.section)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 `;
 
 export const ItemWrapper = styled(motion.div)`
