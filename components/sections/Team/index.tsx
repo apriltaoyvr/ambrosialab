@@ -21,6 +21,7 @@ const Team = () => {
       initial='hidden'
       whileInView='visible'
       exit='hidden'
+      viewport={{ once: true }}
     >
       <motion.h1 variants={fadeItem}>{t('section.team')}</motion.h1>
       <TeamWrapper>
@@ -35,7 +36,9 @@ const Team = () => {
           />
         ))}
       </TeamWrapper>
-      <motion.h2 style={{ marginTop: '1rem' }}>{t('section.gallery')}</motion.h2>
+      <motion.h2 style={{ marginTop: '1rem' }}>
+        {t('section.gallery')}
+      </motion.h2>
       <ItemWrapper variants={fadeItem}>
         <Image
           src={conference}

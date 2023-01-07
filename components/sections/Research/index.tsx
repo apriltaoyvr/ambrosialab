@@ -29,6 +29,7 @@ const Research = () => {
         initial='hidden'
         whileInView='visible'
         exit='hidden'
+        viewport={{ once: true }}
       >
         <motion.h1 variants={fadeItem}>{t('section.research')}</motion.h1>
         <ItemWrapper>

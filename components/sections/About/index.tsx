@@ -19,12 +19,13 @@ const About = () => {
         initial='hidden'
         whileInView='visible'
         exit='hidden'
+        viewport={{ once: true }}
       >
         <motion.h1 variants={fadeItem}>{t('section.about')}</motion.h1>
         <motion.h3 variants={fadeItem}>{t('about.subtitle')}</motion.h3>
         <IntroWrapper>
           <ParagraphWrapper>
-            {t('about.paragraphs', { returnObjects: true }).map((paragraph) => (
+            {t('about.paragraphs').map((paragraph) => (
               <motion.p key={paragraph} variants={fadeItem}>
                 {paragraph}
               </motion.p>
