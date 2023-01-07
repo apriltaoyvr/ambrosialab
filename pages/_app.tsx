@@ -1,8 +1,9 @@
+import { Analytics } from '@vercel/analytics/react';
 import { appWithTranslation } from 'next-i18next';
 import { Fira_Code } from '@next/font/google';
 
 /* Styles */
-import 'styles/reset.css'
+import 'styles/reset.css';
 import { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme';
 import GlobalStyle from 'styles/globalStyles';
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Component {...pageProps} className={fira.className} />
+      <Analytics />
     </ThemeProvider>
   );
 }
