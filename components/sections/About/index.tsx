@@ -25,7 +25,7 @@ const About = () => {
         <motion.h3 variants={fadeItem}>{t('about.subtitle')}</motion.h3>
         <IntroWrapper>
           <ParagraphWrapper>
-            {t('about.paragraphs').map((paragraph) => (
+            {t('about.paragraphs', { returnObjects: true }).map((paragraph) => (
               <motion.p key={paragraph} variants={fadeItem}>
                 {paragraph}
               </motion.p>
