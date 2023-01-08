@@ -2,8 +2,7 @@ import { useState, lazy } from 'react';
 import Image from 'next/image';
 
 /* Framer */
-import { motion } from 'framer-motion';
-import { fadeItem } from 'components/utility/framer';
+import { motion, AnimatePresence } from 'framer-motion';
 import Modal from 'components/utility/Modal';
 const MotionImage = motion(Image);
 
@@ -37,23 +36,25 @@ const Member = ({ name, image, title, description }) => {
           <motion.span>{title}</motion.span>
         </motion.hgroup>
       </TeamContent>
-      {modalOpen && (
-        <Modal modalOpen={modalOpen} handleClose={close}>
-          <PortraitExtend>
-            <MotionImage
-              src={`/images/team/${image}`}
-              alt={name}
-              width={150}
-              height={150}
-            />
-          </PortraitExtend>
-          <hgroup>
-            <motion.h3>{name}</motion.h3>
-            <motion.h5>{title}</motion.h5>
-          </hgroup>
-          <Description>{description}</Description>
-        </Modal>
-      )}
+      <AnimatePresence>
+        {modalOpen && (
+          <Modal modalOpen={modalOpen} handleClose={close}>
+            <PortraitExtend>
+              <MotionImage
+                src={`/images/team/${image}`}
+                alt={name}
+                width={150}
+                height={150}
+              />
+            </PortraitExtend>
+            <hgroup>
+              <motion.h3>{name}</motion.h3>
+              <motion.h5>{title}</motion.h5>
+            </hgroup>
+            <Description>{description}</Description>
+          </Modal>
+        )}
+      </AnimatePresence>
     </>
   );
 };

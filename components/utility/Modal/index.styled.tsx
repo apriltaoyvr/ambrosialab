@@ -24,6 +24,7 @@ export const StyledModal = styled(motion.div)`
   display: flex;
   position: fixed;
   flex-direction: column;
+  place-content: center;
   align-items: center;
   z-index: 50;
   margin: auto;
@@ -39,6 +40,10 @@ export const StyledModal = styled(motion.div)`
 `;
 
 export const ContentWrapper = styled(motion.article)`
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
   padding: 2rem;
   max-width: 65ch;
 `;

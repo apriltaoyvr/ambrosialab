@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-
-
+import { transparentize } from 'polished';
 export const TeamContent = styled(motion.aside)`
   display: flex;
   flex-direction: column;
@@ -20,25 +19,25 @@ export const Portrait = styled(motion.figure)`
   place-content: center;
   place-items: center;
   align-self: center;
-  transition: filter 0.2s cubic-bezier(0.4, 0, 1, 1);
-
-  min-width: 150px;
-  min-height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
   filter: opacity(0.9);
+  transition: filter 0.1s cubic-bezier(0.4, 0, 1, 1);
+  border: 1px solid ${(props) => transparentize(0.2, props.theme.foreground)};
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
   &:hover {
     cursor: pointer;
     filter: opacity(1);
   }
 
-  img {
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  & img {
+    border-radius: 4px;
   }
 `;
 
 export const PortraitExtend = styled(Portrait)`
-  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
   margin: 1rem;
   filter: none;
 

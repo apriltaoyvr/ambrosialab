@@ -24,13 +24,13 @@ export const ItemWrapper = styled(motion.div)`
 
 export const LogoWrapper = styled(motion.aside)`
   display: grid;
-  grid-template-columns: 300px;
+  grid-template-columns: 1rem;
   gap: 2rem;
   margin: 2rem;
 
   @media screen and (min-width: 1200px) {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 500px));
+    grid-template-columns: repeat(2, minmax(200px, 25vw));
   }
 `;
 
