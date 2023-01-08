@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import Member from './Member';
-import { TeamWrapper, ItemWrapper } from './index.styled';
+import { TeamWrapper, ItemWrapper, GalleryItem } from './index.styled';
 import conference from '/public/images/makingmakeup.jpg';
 
 const Team = () => {
@@ -32,7 +32,7 @@ const Team = () => {
         {t('section.gallery')}
       </motion.h2>
       <ItemWrapper>
-        <Image
+        <GalleryItem
           src={conference}
           alt='{t("gallery.makingCosmetics")}'
           placeholder='blur'
@@ -41,7 +41,8 @@ const Team = () => {
               (max-width: 1200px) 50vw,
               33vw'
           draggable='false'
-        ></Image>
+          quality={100}
+        />
         <motion.h5>{t('gallery.makingCosmetics')}</motion.h5>
       </ItemWrapper>
     </motion.section>
