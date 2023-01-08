@@ -54,7 +54,7 @@ export const StyledLinks = styled.div<Props>`
 
     &:hover {
       text-shadow: 0px 0px 10px rgba(244, 205, 221, 0.25);
-      color: #eeffd5;
+      color: #d9fda3;
     }
   }
 

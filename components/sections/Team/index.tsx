@@ -21,18 +21,16 @@ const Team = () => {
       initial='hidden'
       whileInView='visible'
       exit='hidden'
-      viewport={{ once: true }}
     >
       <motion.h1 variants={fadeItem}>{t('section.team')}</motion.h1>
       <TeamWrapper>
-        {t('team', { returnObjects: true }).map((team, index) => (
+        {t('team', { returnObjects: true }).map((team) => (
           <Member
             name={team.name}
             title={team.title}
             description={team.description}
             image={team.image}
-            variants={fadeItem}
-            key={index}
+            key={team.name}
           />
         ))}
       </TeamWrapper>

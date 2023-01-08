@@ -17,7 +17,7 @@ export const StyledBackdrop = styled(motion.div)`
   background: ${props => transparentize(0.2, props.theme.background)};
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(4px);
 `;
 
 export const StyledModal = styled(motion.div)`
@@ -31,7 +31,7 @@ export const StyledModal = styled(motion.div)`
   box-shadow: 0 4px 30px
     ${(props) => transparentize(0.1, props.theme.background)};
 
-  background: ${(props) => transparentize(0.25, props.theme.background)};
+  background: ${(props) => transparentize(0.1, props.theme.background)};
   width: clamp(25%, 600px, 90%);
   height: clamp(25%, 500px, 90%);
 

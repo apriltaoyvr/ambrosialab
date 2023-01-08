@@ -1,7 +1,7 @@
 import { useState, lazy } from 'react';
 import { useTranslation } from 'next-i18next';
 import { fadeItem } from 'components/utility/framer';
-const Modal = lazy(() => import('components/utility/Modal'));
+import Modal from 'components/utility/Modal';
 
 /* Styled Components */
 import {
