@@ -10,30 +10,14 @@ import {
   ParagraphWrapper,
 } from './index.styled';
 
-import {
-  slideContainer,
-  slideItem,
-} from '../../utility/framer';
+import { slideContainer, slideItem } from '../../utility/framer';
 
 const Story = () => {
   const { t } = useTranslation('common');
 
   return (
-    <Background
-      id='story'
-      initial={{ opacity: 0 }}
-      whileInView={{
-        opacity: 1,
-      }}
-      exit={{ opacity: 0 }}
-      viewport={{ once: true }}
-    >
-      <StoryWrapper
-        variants={slideContainer}
-        initial='hidden'
-        whileInView='visible'
-        exit='hidden'
-      >
+    <Background id='story'>
+      <StoryWrapper initial='hidden' whileInView='visible' exit='hidden'>
         <motion.h1>{t('section.story')}</motion.h1>
         <InnerWrapper>
           <ParagraphWrapper variants={slideContainer}>

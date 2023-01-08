@@ -4,7 +4,6 @@ import Image from 'next/image';
 
 import Member from './Member';
 import { TeamWrapper, ItemWrapper } from './index.styled';
-import { fadeContainer, fadeItem } from '../../utility/framer';
 import conference from '/public/images/makingmakeup.jpg';
 
 const Team = () => {
@@ -15,14 +14,8 @@ const Team = () => {
   };
 
   return (
-    <motion.section
-      id='team'
-      variants={fadeContainer}
-      initial='hidden'
-      whileInView='visible'
-      exit='hidden'
-    >
-      <motion.h1 variants={fadeItem}>{t('section.team')}</motion.h1>
+    <motion.section id='team'>
+      <motion.h1>{t('section.team')}</motion.h1>
       <TeamWrapper>
         {t('team', { returnObjects: true }).map((team) => (
           <Member
@@ -37,7 +30,7 @@ const Team = () => {
       <motion.h2 style={{ marginTop: '1rem' }}>
         {t('section.gallery')}
       </motion.h2>
-      <ItemWrapper variants={fadeItem}>
+      <ItemWrapper>
         <Image
           src={conference}
           alt='{t("gallery.makingCosmetics")}'

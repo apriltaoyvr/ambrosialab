@@ -2,10 +2,7 @@ import { useTranslation } from 'next-i18next';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import {
-  fadeContainer,
-  fadeItem,
-} from 'components/utility/framer';
+import { fadeContainer, fadeItem } from 'components/utility/framer';
 
 const StyledAwards = styled(motion.section)`
   align-items: center;
@@ -31,18 +28,11 @@ const Awards = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledAwards
-      id='awards'
-      variants={fadeContainer}
-      initial='hidden'
-      whileInView='visible'
-      exit='hidden'
-      viewport={{ once: true }}
-    >
-      <motion.h1 variants={fadeItem}>{t('section.awards')}</motion.h1>
+    <StyledAwards id='awards'>
+      <motion.h1>{t('section.awards')}</motion.h1>
       <AwardsWrapper>
         {t('awards', { returnObjects: true }).map((award) => (
-          <motion.div key={award.title} variants={fadeItem}>
+          <motion.div key={award.title}>
             <motion.h3>{award.title}</motion.h3>
             <AwardDesc>{award.description}</AwardDesc>
             <AwardDesc>{award.year}</AwardDesc>

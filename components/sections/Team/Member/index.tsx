@@ -23,12 +23,11 @@ const Member = ({ name, image, title, description }) => {
 
   return (
     <>
-      <TeamContent variants={fadeItem}>
+      <TeamContent>
         <Portrait onClick={() => (modalOpen ? close() : open())}>
           <MotionImage
             src={`/images/team/${image}`}
             alt={name}
-            variants={fadeItem}
             width={150}
             height={150}
           />
