@@ -16,7 +16,6 @@ import {
 
 const Member = ({ name, image, title, description }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  debugger;
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
 

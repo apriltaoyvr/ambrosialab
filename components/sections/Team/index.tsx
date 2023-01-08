@@ -10,6 +10,7 @@ const Team = () => {
   const { t } = useTranslation('common');
   const css = {
     height: '100%',
+    maxHeight: '100%',
     width: 'auto',
   };
 
