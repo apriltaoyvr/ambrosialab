@@ -1,45 +1,24 @@
 import { useTranslation } from 'next-i18next';
-import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import { fadeContainer, fadeItem } from 'components/utility/framer';
-
-const StyledAwards = styled(motion.section)`
-  align-items: center;
-`;
-
-const AwardsWrapper = styled(motion.main)`
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-
-  @media screen and (min-width: 1500px) {
-    justify-content: center;
-    grid-template-columns: repeat(3, 500px);
-  }
-`;
-
-const AwardDesc = styled(motion.p)`
-  font-size: 1.25rem;
-  text-align: center;
-`;
+import { SectionWrapper, AwardsWrapper, Award } from './index.styled';
 
 const Awards = () => {
   const { t } = useTranslation('common');
 
   return (
-    <StyledAwards id='awards'>
+    <SectionWrapper id='awards'>
       <motion.h1>{t('section.awards')}</motion.h1>
       <AwardsWrapper>
         {t('awards', { returnObjects: true }).map((award) => (
-          <motion.div key={award.title}>
+          <Award key={award.title}>
             <motion.h3>{award.title}</motion.h3>
-            <AwardDesc>{award.description}</AwardDesc>
-            <AwardDesc>{award.year}</AwardDesc>
-          </motion.div>
+            <motion.span>{award.description}</motion.span>
+            <motion.span>{award.year}</motion.span>
+          </Award>
         ))}
       </AwardsWrapper>
-    </StyledAwards>
+    </SectionWrapper>
   );
 };
 
