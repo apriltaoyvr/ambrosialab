@@ -6,6 +6,7 @@ import Modal from 'components/utility/Modal';
 
 /* Styled Components */
 import {
+  ResearchCardWrapper,
   ResearchCard,
   ResearchIcon,
   StyledButton,
@@ -48,7 +49,7 @@ const ResearchItem = (props) => {
   };
 
   return (
-    <>
+    <ResearchCardWrapper>
       <ResearchCard variants={fadeItem}>
         <hgroup>
           <ResearchIcon>
@@ -79,7 +80,7 @@ const ResearchItem = (props) => {
           </Modal>
         )}
       </AnimatePresence>
-    </>
+    </ResearchCardWrapper>
   );
 };
 

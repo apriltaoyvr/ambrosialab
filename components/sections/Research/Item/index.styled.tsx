@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+export const ResearchCardWrapper = styled.div`
+  &:last-child {
+    grid-column-start: 2;
+  }
+`;
+
 export const ResearchCard = styled(motion.div)`
   display: flex;
   flex-direction: column;
@@ -12,10 +18,6 @@ export const ResearchCard = styled(motion.div)`
 
   border: 1px solid rgba(244, 205, 221, 0.5);
   padding: 1rem;
-
-  &:last-child {
-    grid-column-start: 2;
-  }
 
   &:hover {
     border: 1px solid #f9e6ee;
