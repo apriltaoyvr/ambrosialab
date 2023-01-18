@@ -2,6 +2,40 @@ import { createGlobalStyle } from 'styled-components';
 import { setSaturation, transparentize } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
+  /** Josh W Comeau Reset **/
+  /*
+  1. Use a more-intuitive box-sizing model.
+  */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+  /** End of Reset **/
+  
   /* Scrollbar */
   ::-webkit-scrollbar {
     width: 5px;
@@ -24,8 +58,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    margin: 0;
-    padding: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
     color: ${(props) => props.theme.foreground};
     background: ${(props) => props.theme.background};
     background-attachment: fixed;

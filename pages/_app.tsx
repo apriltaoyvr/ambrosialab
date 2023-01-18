@@ -3,7 +3,6 @@ import { appWithTranslation } from 'next-i18next';
 import { Fira_Code } from '@next/font/google';
 
 /* Styles */
-import 'styles/reset.css';
 import { ThemeProvider } from 'styled-components';
 import theme from 'styles/theme';
 import GlobalStyle from 'styles/globalStyles';
