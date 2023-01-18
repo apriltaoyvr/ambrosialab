@@ -14,7 +14,7 @@ export const StyledBackdrop = styled(motion.div)`
   justify-content: center;
   z-index: 50;
 
-  background: ${props => transparentize(0.2, props.theme.background)};
+  background: ${(props) => transparentize(0.2, props.theme.background)};
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(4px);
@@ -44,8 +44,11 @@ export const ContentWrapper = styled(motion.article)`
   flex-direction: column;
   place-content: center;
   align-items: center;
-  padding: 2rem;
-  max-width: 65ch;
+  margin: 1rem;
+
+  & p {
+    max-width: 65ch;
+  }
 `;
 
 export const WindowBar = styled.hgroup`
@@ -64,4 +67,3 @@ export const WindowIcon = styled(FontAwesomeIcon)`
     cursor: pointer;
   }
 `;
-

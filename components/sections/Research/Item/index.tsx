@@ -68,7 +68,7 @@ const ResearchItem = (props) => {
             handleClose={close}
             key={`Research Modal ${props.title}`}
           >
-            <h2>{props.title}</h2>
+            <h3>{props.title}</h3>
             <ResearchIcon>
               <FontAwesomeIcon
                 icon={faIcons[props.icon]}

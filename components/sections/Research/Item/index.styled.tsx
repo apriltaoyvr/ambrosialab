@@ -15,6 +15,7 @@ export const ResearchCard = styled(motion.div)`
   justify-content: space-between;
   transition: all 0.3s ease-out;
   z-index: 0;
+  height: 100%;
 
   border: 1px solid rgba(244, 205, 221, 0.5);
   padding: 1rem;
