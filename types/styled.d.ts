@@ -10,6 +10,7 @@ declare module 'styled-components' {
     shadow: {
       header: string;
       paragraph: string;
-    }
+    },
+    font: string;
   }
 }

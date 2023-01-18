@@ -1,8 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import { setSaturation, transparentize } from 'polished';
-import { Fira_Code } from '@next/font/google';
-
-const fira = Fira_Code({ weight: ['400', '700'], subsets: ['latin'] });
 
 const GlobalStyle = createGlobalStyle`
   /** Josh W Comeau Reset **/
@@ -56,6 +53,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${setSaturation(0.75, 'hsl(345, 66%, 50%)')};
   }
 
+  :root {
+
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -67,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.foreground};
     background: ${(props) => props.theme.background};
     background-attachment: fixed;
-    font-family:  ${fira.style.fontFamily}, 'Fira Code', Monospace;  
+    font-family:  ${(props) => props.theme.font}, 'Fira Code', Monospace;  
   }
 
   section {

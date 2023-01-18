@@ -23,9 +23,8 @@ const Hero = () => {
       <TextWrapper
         variants={fadeContainer}
         initial='hidden'
-        whileInView='visible'
+        animate='visible'
         exit='hidden'
-        viewport={{ once: true }}
       >
         <TitleHero variants={fadeItem}>{t('section.name')}</TitleHero>
         <SubtitleHero variants={fadeItem}>{t('section.subtitle')}</SubtitleHero>
