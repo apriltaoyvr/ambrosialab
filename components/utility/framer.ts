@@ -3,8 +3,7 @@ export const fadeContainer = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 0.2,
-      staggerChildren: 0.66,
+      staggerChildren: 0.55,
     },
   },
 };
@@ -22,8 +21,7 @@ export const slideContainer = {
     opacity: 1,
     y: '0',
     transition: {
-      delay: 0.2,
-      staggerChildren: 0.66,
+      staggerChildren: 0.45,
     },
   },
 };
