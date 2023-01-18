@@ -11,7 +11,7 @@ import {
   Portrait,
   PortraitExtend,
   Description,
-  TeamContent,
+  Profile,
 } from './index.styled';
 
 const Member = ({ name, image, title, description }) => {
@@ -21,30 +21,20 @@ const Member = ({ name, image, title, description }) => {
 
   return (
     <>
-      <TeamContent>
+      <Profile>
         <Portrait onClick={() => (modalOpen ? close() : open())}>
-          <MotionImage
-            src={`/images/team/${image}`}
-            alt={name}
-            width={150}
-            height={150}
-          />
+          <MotionImage src={`/images/team/${image}`} alt={name} fill />
         </Portrait>
-        <motion.hgroup style={{ textAlign: 'center' }}>
+        <motion.figcaption style={{ textAlign: 'center' }}>
           <motion.h3>{name}</motion.h3>
           <motion.span>{title}</motion.span>
-        </motion.hgroup>
-      </TeamContent>
+        </motion.figcaption>
+      </Profile>
       <AnimatePresence>
         {modalOpen && (
           <Modal modalOpen={modalOpen} handleClose={close}>
             <PortraitExtend>
-              <MotionImage
-                src={`/images/team/${image}`}
-                alt={name}
-                width={150}
-                height={150}
-              />
+              <MotionImage src={`/images/team/${image}`} alt={name} fill />
             </PortraitExtend>
             <hgroup>
               <motion.h3>{name}</motion.h3>
