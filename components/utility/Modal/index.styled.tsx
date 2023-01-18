@@ -34,9 +34,6 @@ export const StyledModal = styled(motion.div)`
 
   background: ${(props) => transparentize(0.1, props.theme.background)};
   width: clamp(25%, 600px, 90%);
-  height: clamp(25%, 500px, 90%);
-
-  overflow-y: scroll;
 `;
 
 export const ContentWrapper = styled(motion.article)`
@@ -45,8 +42,11 @@ export const ContentWrapper = styled(motion.article)`
   place-content: center;
   align-items: center;
   margin: 1rem;
-
+  
   & p {
+    min-height: 2rem;
+    max-height: 30vh;
+    overflow-y: auto;
     max-width: 65ch;
   }
 `;
