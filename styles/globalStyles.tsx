@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import { setSaturation, transparentize } from 'polished';
+import { Fira_Code } from '@next/font/google';
+
+const fira = Fira_Code({ weight: ['400', '700'], subsets: ['latin'] });
 
 const GlobalStyle = createGlobalStyle`
   /** Josh W Comeau Reset **/
@@ -35,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     isolation: isolate;
   }
   /** End of Reset **/
-  
+
   /* Scrollbar */
   ::-webkit-scrollbar {
     width: 5px;
@@ -64,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.foreground};
     background: ${(props) => props.theme.background};
     background-attachment: fixed;
-    font-family: 'Fira Code', Monospace;  
+    font-family:  ${fira.style.fontFamily}, 'Fira Code', Monospace;  
   }
 
   section {
