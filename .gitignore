@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 .yarn
+.yarnrc.yml
 /.pnp
 .pnp.*
 .pnp.loader.*
