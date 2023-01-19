@@ -23,7 +23,7 @@ const Member = ({ name, image, title, description }) => {
     <>
       <Profile>
         <Portrait onClick={() => (modalOpen ? close() : open())}>
-          <MotionImage src={`/images/team/${image}`} alt={name} fill />
+          <MotionImage src={`/images/team/${image}`} alt={name} width={200} height={200} />
         </Portrait>
         <motion.figcaption style={{ textAlign: 'center' }}>
           <motion.h3>{name}</motion.h3>
@@ -34,7 +34,7 @@ const Member = ({ name, image, title, description }) => {
         {modalOpen && (
           <Modal modalOpen={modalOpen} handleClose={close}>
             <PortraitExtend>
-              <MotionImage src={`/images/team/${image}`} alt={name} fill />
+              <MotionImage src={`/images/team/${image}`} alt={name} width={200} height={200} />
             </PortraitExtend>
             <hgroup>
               <motion.h3>{name}</motion.h3>

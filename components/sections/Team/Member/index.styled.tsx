@@ -20,8 +20,8 @@ export const Portrait = styled(motion.figure)`
   place-content: center;
   place-items: center;
   align-self: center;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   filter: opacity(0.9);
   transition: filter 0.1s cubic-bezier(0.4, 0, 1, 1);
   border: 1px solid ${(props) => transparentize(0.2, props.theme.foreground)};
