@@ -4,36 +4,40 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { transparentize } from 'polished';
 
 export const StyledBackdrop = styled(motion.div)`
-  display: flex;
   position: fixed;
+  z-index: 50;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 50;
 
-  background: ${(props) => transparentize(0.2, props.theme.background)};
   width: 100vw;
   height: 100vh;
+
+  background: ${(props) => transparentize(0.2, props.theme.background)};
   backdrop-filter: blur(4px);
 `;
 
 export const StyledModal = styled(motion.div)`
-  display: flex;
   position: fixed;
+  z-index: 50;
+
+  display: flex;
   flex-direction: column;
   place-content: center;
   align-items: center;
-  z-index: 50;
+
+  width: clamp(25%, 600px, 90%);
   margin: auto;
+
+  background: ${(props) => transparentize(0.1, props.theme.background)};
   border: 1px solid ${(props) => props.theme.secondary};
   box-shadow: 0 4px 30px
     ${(props) => transparentize(0.1, props.theme.background)};
-
-  background: ${(props) => transparentize(0.1, props.theme.background)};
-  width: clamp(25%, 600px, 90%);
 `;
 
 export const ContentWrapper = styled(motion.article)`
@@ -41,28 +45,31 @@ export const ContentWrapper = styled(motion.article)`
   flex-direction: column;
   place-content: center;
   align-items: center;
+
   margin: 1rem;
   
   & p {
-    min-height: 2rem;
-    max-height: 30vh;
     overflow-y: auto;
     max-width: 65ch;
+    min-height: 2rem;
+    max-height: 30vh;
   }
 `;
 
 export const WindowBar = styled.hgroup`
-  display: flex;
   position: sticky;
   top: 0;
+
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   width: 100%;
 `;
 
 export const WindowIcon = styled(FontAwesomeIcon)`
-  transition: color 0.2s ease-in-out;
   padding: 0.5rem;
+  transition: color 0.2s ease-in-out;
   &:hover {
     cursor: pointer;
   }

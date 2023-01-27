@@ -27,14 +27,14 @@ export const ItemWrapper = styled(motion.figure)`
   place-items: center;
 
   img {
-    transition: all 0.1s ease-out;
     box-shadow: 0 0 4px hsla(2deg 46% 40% / 1), 0 0 4px hsla(2deg 46% 40% / 0.8),
       0 0 6px hsla(2deg 46% 40% / 0.5);
+    transition: all 0.1s ease-out;
   }
 `;
 
 export const GalleryItem = styled(Image)`
+  max-height: 25vh;
   border: 1px solid ${(props) => props.theme.foreground};
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  max-height: 25vh;
 `;

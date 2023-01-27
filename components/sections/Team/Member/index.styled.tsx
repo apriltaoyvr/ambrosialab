@@ -20,12 +20,15 @@ export const Portrait = styled(motion.figure)`
   place-content: center;
   place-items: center;
   align-self: center;
-  height: 200px;
+
   width: 200px;
+  height: 200px;
+
   filter: opacity(0.9);
-  transition: filter 0.1s cubic-bezier(0.4, 0, 1, 1);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+  transition: filter 0.1s cubic-bezier(0.4, 0, 1, 1);
 
   &:hover {
     cursor: pointer;
@@ -33,8 +36,8 @@ export const Portrait = styled(motion.figure)`
   }
 
   & img {
-    border-radius: 4px;
     object-fit: cover;
+    border-radius: 4px;
   }
 `;
 

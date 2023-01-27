@@ -20,15 +20,17 @@ export const Divider = styled(motion.hr)`
 `;
 
 export const StyledMenu = styled(motion.div)`
-  display: flex;
-
   position: absolute;
   top: 0;
   right: 0;
+
+  display: flex;
   flex-direction: row;
   gap: 1rem;
-  transition: all 0.3s ease-out;
+
   padding: 1rem;
+
+  transition: all 0.3s ease-out;
 
   @media screen and (min-width: 1700px) {
     position: relative;

@@ -13,10 +13,11 @@ export const StyledPartner = styled.div`
 
 export const PartnerWrapper = styled(motion.aside)`
   display: flex;
-  flex-direction: column;
   grid-column: 9 / span 2;
+  flex-direction: column;
   gap: 5rem;
   align-self: center;
+
   padding-top: 2rem;
 
   @media screen and (min-width: 1200px) {
@@ -37,8 +38,8 @@ export const StyledFlag = styled(CircleFlag)`
 `;
 
 export const NumberWrapper = styled.h5`
-  text-shadow: 0px 2px 3px hsl(2deg 46% 40%);
   font-size: 3.5rem;
+  text-shadow: 0px 2px 3px hsl(2deg 46% 40%);
 `;
 
 export const SubtitleWrapper = styled.h3`

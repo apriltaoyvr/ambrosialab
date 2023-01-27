@@ -8,17 +8,20 @@ export const ResearchCardWrapper = styled.div`
 `;
 
 export const ResearchCard = styled(motion.div)`
+  z-index: 0;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.3s ease-out;
-  z-index: 0;
+
   height: 100%;
+  padding: 1rem;
 
   border: 1px solid rgba(244, 205, 221, 0.5);
-  padding: 1rem;
+
+  transition: all 0.3s ease-out;
 
   &:hover {
     border: 1px solid #f9e6ee;
@@ -35,30 +38,33 @@ export const ResearchCard = styled(motion.div)`
 `;
 
 export const ResearchIcon = styled(motion.figure)`
-  filter: drop-shadow(1px 2px 4px hsla(2deg 46% 40% / 0.8));
   margin: 1rem;
   text-align: center;
+  filter: drop-shadow(1px 2px 4px hsla(2deg 46% 40% / 0.8));
 `;
 
 export const StyledButton = styled(motion.button)`
   align-self: center;
-  transition: all 0.1s ease-out;
-  border: 1px solid rgba(244, 205, 220, 0.75);
-  background: rgba(202, 168, 162, 0.1);
 
-  padding: 0.5rem;
   width: 75%;
+  padding: 0.5rem;
+
   color: var(--fg);
 
+  background: rgba(202, 168, 162, 0.1);
+  border: 1px solid rgba(244, 205, 220, 0.75);
+
+  transition: all 0.1s ease-out;
+
   &:hover {
-    border: 1px solid rgba(244, 205, 221, 1);
-    background: rgba(208, 169, 163, 0.2);
     cursor: pointer;
+    background: rgba(208, 169, 163, 0.2);
+    border: 1px solid rgba(244, 205, 221, 1);
   }
 `;
 
 export const StyledParagraph = styled(motion.p)`
   padding: 1.25rem;
-  text-align: justify;
   font-size: 1rem;
+  text-align: justify;
 `;

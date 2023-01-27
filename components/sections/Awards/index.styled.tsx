@@ -8,14 +8,14 @@ export const SectionWrapper = styled(motion.section)`
 export const AwardsWrapper = styled(motion.main)`
   display: flex;
   flex-direction: column;
-  align-items: start;
-  place-content: center;
   gap: 1rem;
+  place-content: center;
+  align-items: start;
 
   @media screen and (min-width: 1500px) {
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(3, 400px);
+    justify-content: center;
   }
 `;
 
