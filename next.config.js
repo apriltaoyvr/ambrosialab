@@ -1,8 +1,13 @@
-const { i18n } = require('./next-i18next.config');
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
 
-module.exports = {
-  i18n,
-  compiler: {
-    styledComponents: true,
-  },
-}
+const withNextIntl = require('next-intl/plugin')(
+  // This is the default (also the `src` folder is supported out of the box)
+  './src/locales/i18n.ts'
+);
+
+module.exports = withNextIntl({
+  // Other Next.js configuration ...
+});
+
+

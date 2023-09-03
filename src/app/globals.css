@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-viva-700 to-viva-800 text-viva-100;
+  }
+
+  hgroup {
+    @apply my-4;
+  }
+
+  h1 {
+    @apply text-4xl font-bold mb-2;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  p {
+    @apply max-w-prose whitespace-pre-wrap;
+  }
+}
+
+@layer utilities {
+  .paragraph {
+    @apply text-justify leading-loose;
+  }
+}
