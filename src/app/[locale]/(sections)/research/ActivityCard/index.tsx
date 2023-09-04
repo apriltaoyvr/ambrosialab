@@ -1,19 +1,22 @@
 import { useTranslations } from 'next-intl';
+import ActivityModal from './ActivityModal';
 
 export default function ActivityCard({ keyName }: { keyName: string }) {
-  const t = useTranslations(`Research.${keyName}`);
+  const t = useTranslations(`Research`);
 
   return (
-    <section className='flex flex-col gap-1 p-2 border border-viva-200 place-items-center justify-between max-w-md h-full'>
+    <section className='flex h-full max-w-md flex-col place-items-center justify-between gap-1 border border-viva-200 p-2'>
       <header className='text-center'>
         <hgroup>
-          <h3 className='text-xl font-semibold'>{t('title')}</h3>
-          <span className='max-w-prose'>{t('description')}</span>
+          <h3 className='text-xl font-semibold mb-2'>{t(`${keyName}.title`)}</h3>
+          <span className='max-w-prose'>{t(`${keyName}.description`)}</span>
         </hgroup>
       </header>
-      <aside>
-        <button className='text-sm'>Learn more</button>
-      </aside>
+      <ActivityModal
+        learnMore={t('learnMore')}
+        title={t(`${keyName}.title`)}
+        info={t(`${keyName}.info`)}
+      />
     </section>
   );
 }

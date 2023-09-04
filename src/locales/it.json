@@ -12,9 +12,6 @@
     "title": "Ambrosialab",
     "subtitle": "Un design semplice ed intuitivo per un prodotto efficace"
   },
-  "Utility": {
-    "learn": "Scopri di più"
-  },
   "About": {
     "intro": {
       "title": "Chi Siamo",
@@ -28,6 +25,7 @@
   "Research": {
     "title": "Ricerca",
     "subtitle": "Progetti, pubblicazioni e organizzazioni",
+    "learnMore": "Scopri di più",
     "activities": {
       "cosmetics": {
         "description": "Ricerca e sviluppo di nuovi ingredienti, prototipi e prodotti finiti. Assistenza regolatoria.",

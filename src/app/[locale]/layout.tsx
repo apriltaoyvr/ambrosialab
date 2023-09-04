@@ -19,7 +19,6 @@ export default function RootLayout({
   params: { locale: string };
 }) {
   const locale = useLocale();
-
   return (
     <html lang={locale}>
       <body className={fira.className}>

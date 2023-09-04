@@ -8,9 +8,6 @@
     "story": "Story",
     "team": "Team"
   },
-  "Utility": {
-    "learn": "Learn more"
-  },
   "Hero": {
     "title": "Ambrosialab",
     "subtitle": "A simple and intuitive design is an effective design"
@@ -28,6 +25,7 @@
   "Research": {
     "title": "Research",
     "subtitle": "Projects, Publications, and Organizations",
+    "learnMore": "Learn more",
     "activities": {
       "cosmetics": {
         "title": "Cosmetics",
