@@ -4,7 +4,9 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-b from-viva-700 to-viva-800 text-viva-100;
+    @apply bg-gradient-to-b from-viva-700 to-viva-800 text-viva-100 scrollbar-thin scrollbar-track-viva-700 scrollbar-thumb-viva-300;
+    scrollbar-gutter: stable;
+    overflow: auto;
   }
 
   hgroup {
@@ -12,7 +14,7 @@
   }
 
   h1 {
-    @apply text-4xl font-bold mb-2;
+    @apply mb-2 text-4xl font-bold;
   }
 
   h2 {
