@@ -12,7 +12,7 @@ import {
   Logo,
 } from './index.styled';
 
-import { fadeContainer, fadeItem } from '../../utility/framer';
+import { fadeContainer, fadeItem } from '../../framer';
 
 /* Static Image Import */
 import bionano from 'public/images/subsidiary/bionano.png';

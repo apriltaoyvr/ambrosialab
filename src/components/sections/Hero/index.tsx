@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 
-import { fadeContainer, fadeItem } from 'components/utility/framer';
+import { fadeContainer, fadeItem } from 'src/components/framer';
 import {
   StyledHero, 
   VideoWrapper,

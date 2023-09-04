@@ -3,15 +3,15 @@ import Head from 'next/head';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 /* Components */
-import Navbar from 'components/utility/Navbar';
-import Hero from 'components/sections/Hero/';
-import About from 'components/sections/About';
-import Research from 'components/sections/Research';
-import Story from 'components/sections/Story';
-import Team from 'components/sections/Team';
-import Awards from 'components/sections/Awards';
-import Contact from 'components/sections/Contact';
-import Footer from 'components/sections/Footer';
+import Navbar from 'src/components/utility/Navbar';
+import Hero from 'src/components/sections/Hero';
+import About from 'src/components/sections/About';
+import Research from 'src/components/sections/Research';
+import Story from 'src/components/sections/Story';
+import Team from 'src/components/sections/Team';
+import Awards from 'src/components/sections/Awards';
+import Contact from 'src/components/sections/Contact';
+import Footer from 'src/components/sections/Footer';
 
 export default function Home() {
   return (

@@ -10,7 +10,7 @@ import {
   ParagraphWrapper,
 } from './index.styled';
 
-import { slideContainer, slideItem } from '../../utility/framer';
+import { slideContainer, slideItem } from '../../framer';
 
 const Story = () => {
   const { t } = useTranslation('common');

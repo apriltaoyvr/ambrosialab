@@ -1,10 +1,9 @@
-import { Analytics } from '@vercel/analytics/react';
 import { appWithTranslation } from 'next-i18next';
 
 /* Styles */
 import { ThemeProvider } from 'styled-components';
-import theme from 'styles/theme';
-import GlobalStyle from 'styles/globalStyles';
+import theme from '@/styles/theme';
+import GlobalStyle from '@/styles/globalStyles';
 
 /* Prevent FOUC for FontAwesome
  https://fontawesome.com/docs/web/use-with/react/use-with#getting-font-awesome-css-to-work
@@ -18,7 +17,6 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Component {...pageProps} />
-      <Analytics />
     </ThemeProvider>
   );
 }

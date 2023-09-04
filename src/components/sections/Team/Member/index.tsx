@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 /* Framer */
 import { motion, AnimatePresence } from 'framer-motion';
-import Modal from 'components/utility/Modal';
+import Modal from 'src/components/utility/Modal';
 const MotionImage = motion(Image);
 
 /* Styled Components */
