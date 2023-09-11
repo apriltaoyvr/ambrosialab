@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import PartnerCard from './PartnerCard';
-import { slideContainer, slideItem } from 'src/components/framer';
+import { slideContainer, slideItem } from '@/components/framer';
 import { PartnerWrapper, FlagWrapper, StyledFlag } from './index.styled';
 
 const Partner = () => {

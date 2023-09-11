@@ -7,7 +7,7 @@ import {
   IntroWrapper,
   ParagraphWrapper,
 } from './index.styled';
-import { fadeContainer, fadeItem } from 'src/components/framer';
+import { fadeContainer, fadeItem } from '@/components/framer';
 
 const About = () => {
   const { t } = useTranslation('common');

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { AnimatePresence } from 'framer-motion';
-import { fadeItem } from 'src/components/framer';
+import { fadeItem } from '@/components/framer';
 import Modal from 'src/components/utility/Modal';
 
 /* Styled Components */
