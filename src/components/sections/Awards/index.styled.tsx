@@ -10,12 +10,13 @@ export const AwardsWrapper = styled(motion.main)`
   flex-direction: column;
   gap: 1rem;
   place-content: center;
-  align-items: start;
+  align-items: center;
 
   @media screen and (min-width: 1500px) {
     display: grid;
     grid-template-columns: repeat(3, 400px);
     justify-content: center;
+    align-items: start;
   }
 `;
 

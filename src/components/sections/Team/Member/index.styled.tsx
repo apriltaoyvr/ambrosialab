@@ -26,7 +26,8 @@ export const Portrait = styled(motion.figure)`
 
   filter: opacity(0.9);
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 1px solid ${(props) => props.theme.foreground};
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px 0px;
 
   transition: filter 0.1s cubic-bezier(0.4, 0, 1, 1);
 

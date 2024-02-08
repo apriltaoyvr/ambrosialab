@@ -23,7 +23,7 @@ export const ItemWrapper = styled(motion.div)`
 
 export const LogoWrapper = styled(motion.aside)`
   display: grid;
-  grid-template-columns: 1rem;
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin: 2rem;
 
